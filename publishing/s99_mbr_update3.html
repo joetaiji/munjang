@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<title>문학광장 – 생활 속 작은 여유로움 "문장"</title>
+	<meta name="keywords" content="문학광장, 문장">
+	<meta name="description" content="생활 속 작은 여유로움 '문장'">
+	<meta name="copyright" content="문학광장">
+	<meta name="author" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="shortcut icon" href="../main/img/common/favicon.png">
+	<link rel="stylesheet" href="../css/slick.css">
+	
+	<link rel="stylesheet" href="../css/font.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/board.css">
+	<link rel="stylesheet" href="../css/member.css">
+	<link rel="stylesheet" href="../main/css/layout.css">
+	<link rel="stylesheet" href="../main/css/contents.css">
+	<script src="../js/jquery-3.2.1.min.js "></script>		
+	<script src="../js/slick.min.js"></script>	
+	<script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+<script src="../js/letterfx.min.js"></script> <!-- 리스트 비주얼 타이포애니 -->
+<link rel="stylesheet" href="../js/letterfx.css"> <!-- 리스트 비주얼 타이포애니 -->		
+	
+</head>
+
+<body>
+	<!--/*  skipNavigation*/-->
+	<div id="skipNav">
+		<a href="#contents">본문으로 바로가기</a>
+		<a href="#gnb1">주메뉴 바로가기</a>
+	</div>
+	<!--/*  //skipNavigation */-->
+	
+	<div id="wrap">	
+		<header id="header" class="header" data-include="include/header.html" data-id="9"></header>
+		<!--/*  //header */-->	
+
+		<!--/*  Main */-->
+		<main id="main" class="main">
+			
+			<div id="contents" class="contents">
+				<div class="title_area">
+					<h2 class="title_h1">회원정보 업데이트</h2>
+				</div>
+				<section class="member_section container">
+					
+					<ol class="join_step">
+						<li>
+							<div class="item">
+								<em class="num">01</em> <strong>본인인증</strong>
+							</div>
+						</li>						
+						<li>
+							<div class="item">
+								<em class="num">02</em> <strong>약관동의</strong>
+							</div>
+						</li>
+						<li class="active">
+							<div class="item">
+								<em class="num">03</em> <strong>정보입력</strong>
+								<span class="sr-only">현재 진행단계</span>
+							</div>
+						</li>
+						<li>
+							<div class="item">
+								<em class="num">04</em> <strong>수정완료</strong>
+							</div>
+						</li>
+					</ol>
+					<div class="join_step_cont">
+						<h4 class="title_h2 mt0">비밀번호 재설정</h4>
+						<ul class="write_form box bg_gray">	
+							<li>
+								<div class="pw_input row">
+									<label for="form1_row1_pw" class="col-sm-2 th form-label">비밀번호<i class="icon_star" aria-hidden="true"><span class="sr-only">필수입력</span></i></label>
+									<div class="col-sm-10 td">
+										<div class="form-row">
+											<input type="password" class="form-control" placeholder="비밀번호 입력" id="form1_row1_pw">	
+											<button type="button" class="btn_pw_view"><span class="sr-only">비밀번호보기</span><i class="ri-eye-off-line"></i></button>
+										</div>
+										<div class="note">											
+											<p class="basic_note"><i class="ri-check-line"></i>영문, 숫자, 특수문자를 포함한 10~20자 조합으로 입력해 주세요.</p>
+											<p class="basic_note"><i class="ri-check-line"></i>공백 및 3자 이상의 연속 또는 중복 문자는 사용 불가</p>
+										</div>
+									</div>
+								</div>
+								<!--/*  //row */-->
+							</li>
+							<li>
+								<div class="pw_input row">
+									<label for="form1_row2_pw" class="col-sm-2 th form-label">비밀번호 확인<i class="icon_star" aria-hidden="true"><span class="sr-only">필수입력</span></i></label>
+									<div class="col-sm-10 td">
+										<div class="form-row">
+											<input type="password" class="form-control" placeholder="변경할 비밀번호 확인" id="form1_row2_pw">
+											<button type="button" class="btn_pw_view"><span class="sr-only">비밀번호보기</span><i class="ri-eye-off-line"></i></button>
+										</div>
+										<div class="note">
+											<p class="basic_note"><i class="ri-check-line"></i> 비밀번호 확인을 위해 다시 한번 입력해 주세요.</p>											
+										</div>
+									</div>							
+								</div>
+								<!--/*  //row */-->
+							</li>			
+						</ul>
+						<h4 class="title_h2">수신 설정</h4>
+						<ul class="write_form box bg_gray">
+							<li>
+								<div class="row">
+									<strong class="col-sm-2 th form-label">메일 수신</strong>
+									<div class="col-sm-10 td noinput">
+										<ul class="form-inline">
+											<li class="custom-input">
+												<input type="radio" name="agree1" id="agree1Y" checked="">
+												<label for="agree1Y">받겠습니다.</label>
+											</li>
+											<li class="custom-input">
+												<input type="radio" name="agree1" id="agree1N">
+												<label for="agree1N">받지 않겠습니다.</label>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="row">
+									<strong class="col-sm-2 th form-label">SMS 수신</strong>
+									<div class="col-sm-10 td noinput">
+										<ul class="form-inline">
+											<li class="custom-input">
+												<input type="radio" name="agree2" id="agree2Y" checked="">
+												<label for="agree2Y">받겠습니다.</label>
+											</li>
+											<li class="custom-input">
+												<input type="radio" name="agree2" id="agree2N">
+												<label for="agree2N">받지 않겠습니다.</label>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="row">
+									<strong class="col-sm-2 th form-label">알림톡 수신</strong>
+									<div class="col-sm-10 td noinput">
+										<ul class="form-inline">
+											<li class="custom-input">
+												<input type="radio" name="agree3" id="agree3Y" checked="">
+												<label for="agree3Y">받겠습니다.</label>
+											</li>
+											<li class="custom-input">
+												<input type="radio" name="agree3" id="agree3N">
+												<label for="agree3N">받지 않겠습니다.</label>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+						</ul>
+
+						<h4 class="title_h2">주소 정보 업데이트</h4>
+						<div class="write_form box bg_gray">
+							<div class="row">
+								<label for="form3_row1_text" class="col-sm-2 th form-label"><strong>주소</strong></label>
+								<div class="col-sm-10 td">
+									<div class="form-row">
+										<input type="text" class="form-control w40" id="form3_row1_text" placeholder="우편번호">
+										<button type="button" class="btn type2 ml10">우편번호</button>
+									</div>
+									<div class="form-row">
+										<input type="text" class="form-control w100 mt10" placeholder="주소" title="기본 주소">
+									</div>
+									<div class="form-row">
+										<input type="text" class="form-control w100 mt10" placeholder="나머지 주소" title="상세 주소">
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						
+					</div>
+					<!--/*  //join_step_cont */-->
+
+					<div class="btn_area mt50">
+						<button class="btn btn_md">이전</button>
+						<button class="btn btn_md type2">다음</button>
+					</div>
+
+				</section>
+				<!--/*  //member_section */-->
+
+				
+
+				
+				
+			</div>
+			<!--/*  //contents */-->
+			
+			
+		</main>
+		<!--/*  //Main */-->
+		
+		<div class="side_right_util" data-include="include/side_right.html"></div>
+		<!--/*  //side_right_util */-->
+
+		<footer id="footer" class="footer" data-include="include/footer.html"></footer>
+		<!--/*  //footer */-->
+		
+
+	</div>
+	<!--/*  //wrap */-->
+	<script src="../main/js/func.js" defer></script>
+	<script src="../main/js/layout.js" defer></script>
+	<script src="../main/js/sub.js" defer></script>
+
+	
+<!--/*  //아래 파일은 local에서 include하기 위한 스크립트 파일로 개발에 입힐때는 필요없는 파일입니다.  */-->
+	<script src="../main/js/include.js"></script>
+</body>
+
+</html>

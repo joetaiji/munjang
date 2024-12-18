@@ -1,0 +1,72 @@
+<nav class="quick_nav">
+
+	<!--/* 좋아요 시작 : 뷰에서만 보입니다. */-->
+	<button type="button" class="btn_like">
+		<i class="ri-heart-line"></i>
+		<span class="tooltip">좋아요</span>
+	</button>	
+	<!--/*  //좋아요 끝 */-->
+	
+	<button type="button" class="btn_share" data-id="modal_share">
+		<i class="ri-share-line"></i>
+		<span class="tooltip">공유</span>
+	</button>
+
+	<!--/* 글담기 시작 : 뷰에서만 보입니다. */-->
+	<button type="button" class="btn_bookmark">
+		<i class="ri-bookmark-line"></i>
+		<span class="tooltip">글담기</span>
+	</button>
+	<!--/*  //글담기 끝 */-->
+	
+	<button type="button" class="btn_print" onclick="window.print();">
+		<i class="ri-printer-line"></i>
+		<span class="tooltip">프린트</span>
+	</button>	
+	
+	<!--/*  폰트크기 시작 : 게시판 뷰에서만 보입니다.*/-->
+	<button type="button" class="btn_fontsize">					
+		<svg xmlns="http://www.w3.org/2000/svg" width="32.04" height="17.6" viewBox="0 0 32.04 17.6">
+			<g id="text">
+				<g id="text_group">
+					<path id="sizeUp" d="M5.76-15.92H3.6V1.68H5.76V-7.2H8.4V-9H5.76ZM-8.16-3.12l1.24,1.68C-1.06-4.34,1.1-8.9,1.12-14.08H-7.2v1.8h6.1C-1.52-8.28-3.84-5.28-8.16-3.12Z" transform="translate(8 17)"/>
+					<path id="sizeDown" d="M4.032-11.144H2.52V1.176H4.032V-5.04H5.88V-6.3H4.032Zm-9.744,8.96.868,1.176A9.294,9.294,0,0,0,.784-9.856H-5.04V-8.6H-.77C-1.064-5.8-2.688-3.7-5.712-2.184Z" transform="translate(26 15)"/>
+				</g>
+			</g>
+			</svg>
+		<span class="tooltip">글자크기</span>
+	</button>
+	<div class="font_size" style="display:none;">
+		<strong class="title">글자 크기</strong>
+		<label for="sizeUp">20</label><input type="range" id="sizeUp" min="-6" max="20" value="0">
+	</div> 
+	<!--/*  // 폰트크기 끝 */-->
+	
+	<!--/*  <button type="button" class="btn_notify">
+		<i class="ri-notification-line"></i>
+		<span class="tooltip">알림</span>
+	</button> */-->
+	
+	<button type="button" class="btn_contrast">
+		<i class="ri-moon-line"></i>
+		<span class="tooltip">흑백모드</span>
+	</button>
+	
+	<button type="button" class="btn_modify">
+		<i class="ri-feedback-line"></i>
+		<span class="tooltip">수정요청</span>
+	</button>
+
+	<!--/*  본문보기설정 시작 : 뷰에서만 보입니다.*/-->
+	<button type="button" class="btn_setting" data-id="modal_view_setting">
+		<i class="ri-settings-3-line"></i>
+		<span class="tooltip">본문보기설정</span>
+	</button>
+	<!--/*  //본문보기설정 끝 */-->
+</nav>				
+<button type="button" class="btn_more">
+	<i class="ri-more-2-fill"></i>
+	<span class="tooltip">퀵메뉴</span>
+</button>
+
+

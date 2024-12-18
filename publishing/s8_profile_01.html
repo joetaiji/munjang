@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<title>문학광장 – 생활 속 작은 여유로움 "문장"</title>
+	<meta name="keywords" content="문학광장, 문장">
+	<meta name="description" content="생활 속 작은 여유로움 '문장'">
+	<meta name="copyright" content="문학광장">
+	<meta name="author" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="shortcut icon" href="../main/img/common/favicon.png">
+	<link rel="stylesheet" href="../css/slick.css">
+	
+	<link rel="stylesheet" href="../css/font.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/board.css">
+	<link rel="stylesheet" href="../css/member.css">
+	<link rel="stylesheet" href="../main/css/layout.css">
+	<link rel="stylesheet" href="../main/css/contents.css">
+	<link rel="stylesheet" href="../main/css/sub08.css"><!--/* 대카테고리별 css파일*/-->
+	<script src="../js/jquery-3.2.1.min.js "></script>		
+	<script src="../js/slick.min.js"></script>	
+	<script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+<script src="../js/letterfx.min.js"></script> <!-- 리스트 비주얼 타이포애니 -->
+<link rel="stylesheet" href="../js/letterfx.css"> <!-- 리스트 비주얼 타이포애니 -->		
+	
+</head>
+
+<body>
+	<!--/*  skipNavigation*/-->
+	<div id="skipNav">
+		<a href="#contents">본문으로 바로가기</a>
+		<a href="#gnb1">주메뉴 바로가기</a>
+	</div>
+	<!--/*  //skipNavigation */-->
+	
+	<div id="wrap">
+		<header id="header" class="header" data-include="include/header.html" data-id="8"></header>
+		<!--/*  //header */-->
+
+		<!--/*  Main */-->
+		<main id="main" class="main">
+
+			<div id="contents" class="contents">
+
+				<div class="snb_wrap container">
+					<section class="snb_section">
+						<h2 class="title">프로필 관리</h2>						
+						<div class="snb">
+							<nav class="nav">
+								<ul id="left_menu_top" class="depth2">								
+									<li><a href="" class="active">프로필 정보</a></li>
+									<li><a href="">활동 정보</a></li>
+								</ul>
+							</nav>
+						</div>
+					</section>
+					<!-- /* //snb_section */ -->
+					<section class="contents_section">	
+						<div class="title_area">
+							<h3 class="title_h1">프로필 정보</h3>
+						</div>
+						<!--/*  //title_area */-->
+						<section class="my_cont_section member_section">
+						
+							<div class="profile_info box bg_gray">
+								<div class="thumb">
+									<!--/*  이미지 없을때 아이콘 */-->
+									<span><i class="ri-user-line"></i></span>
+									<!--/*  이미지 있을때 
+									<span><img src="../main/img/sub/mento_sample1.jpg" alt=""></span>*/-->
+								</div>					
+								<ul class="write_form mt30">
+									<li>
+										<div class="attach_file">
+											<div class="input-file">
+												<label for="form1_file" class="file-label btn"><i class="ri-upload-line mr10"></i>프로필 사진 업로드</label>
+												<input type="file" id="form1_file" class="file-upload">
+											</div>	
+											<p class="help_note">최소사이즈는 330px*330px이고 1MB 이내 이미지 파일을 업로드 해주세요.</p>
+										</div>
+									</li>
+									<li>
+										<div class="row">
+											<label for="form1_row0_text" class="col-sm-2 th form-label">닉네임</label>
+											<div class="col-sm-10 td">
+												<div class="form-row">
+													<input type="text" class="form-control w100" id="form1_row0_text"  maxlength="16">
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="row">
+											<label for="form1_row1_text" class="col-sm-2 th form-label"><strong>직업</strong></label>
+											<div class="col-sm-10 td form-inline">
+												<input type="text" class="form-control" id="form1_row1_text"  maxlength="12" placeholder="직업을 입력해 주세요.">
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="row">
+											<label for="form1_row2_text" class="col-sm-2 th form-label"><strong>프로필 소개</strong></label>
+											<div class="col-sm-10 td">
+												<textarea class="form-control w100" id="form1_row2_text"  rows="5" placeholder="프로필 소개를 입력해 주세요."></textarea>
+												<div class="textarea_foot">
+													<p class="note info"><i class="ri-error-warning-fill"></i>200자 이내로 작성해 주세요.(공백포함)</p>
+													<span class="text_maxsize num">0/500</span>	
+												</div>
+											</div>
+											
+										</div>
+									</li>
+									<li>
+										<div class="row">
+											<strong class="col-sm-2 th form-label">활동분야</strong>
+											<div class="col-sm-10 td noinput">
+												<ul class="form-inline interest_list">
+													<li class="custom-input">
+														<input type="checkbox" id="interest1">
+														<label for="interest1">시</label>
+													</li>
+													<li class="custom-input">
+														<input type="checkbox" id="interest2">
+														<label for="interest2">소설</label>
+													</li>
+													<li class="custom-input">
+														<input type="checkbox" id="interest3">
+														<label for="interest3">수필</label>
+													</li>
+													<li class="custom-input">
+														<input type="checkbox" id="interest4">
+														<label for="interest4">평론</label>
+													</li>
+													<li class="custom-input">
+														<input type="checkbox" id="interest5">
+														<label for="interest5">아동문학</label>
+													</li>
+													<li class="custom-input">
+														<input type="checkbox" id="interest6">
+														<label for="interest6">청소년문학</label>
+													</li>										
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="row">
+											<label for="form1_row4_text" class="col-sm-2 th form-label"><strong>홈페이지</strong></label>
+											<div class="col-sm-10 td form-inline">										
+												<input type="url" class="form-control w100" name="url" id="form1_row4_text" placeholder="홈페이지가 있으 실 경우 링크를 입력해 주세요. 예)www.myhome.co.kr">
+											</div>
+											
+										</div>
+									</li>
+									<li>
+										<div class="row">
+											<label for="form1_row5_select" class="col-sm-2 th form-label"><strong>지역</strong></label>
+											<div class="col-sm-10 td form-inline">
+												<select class="form-select" id="form1_row5_select">
+													<option value="-">선택</option>
+													<option value="-">서울</option>
+													<option value="-">대전</option>
+													<option value="-">부산</option>
+													<option value="-">제주</option>
+												</select>
+											</div>
+											
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!--/*  //profile_info */-->
+							<div class="btn_area mt50">
+								<button type="button" class="btn btn-md">취소</button>
+								<button type="button" class="btn btn-md type2">등록하기</button>
+							</div>
+							
+						</section>
+						<!--/*  //my_cont_section */-->
+					</section>
+					<!--/*  //content_section */-->	
+				</div>
+				<!--/*  //snb_wrap */-->
+				
+				
+			</div>
+			<!--/*  //contents */-->
+			
+			
+		</main>
+		<!--/*  //Main */-->
+		<div class="side_right_util" data-include="include/side_right.html"></div>
+		<!--/*  //side_right_util */-->
+
+		<footer id="footer" class="footer" data-include="include/footer.html"></footer>
+		<!--/*  //footer */-->
+		
+
+	</div>
+	<!--/*  //wrap */-->
+	<script src="../main/js/include.js"></script><!--/*  //local에서 include하기 위한 임시파일로 개발에 입힐때는 필요없는 파일입니다.  */-->
+	
+	<script src="../main/js/func.js"></script>
+	<script src="../main/js/layout.js" defer></script>
+	<script src="../main/js/sub.js" defer></script>
+</body>
+
+</html>

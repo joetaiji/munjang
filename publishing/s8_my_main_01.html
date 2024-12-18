@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<title>문학광장 – 생활 속 작은 여유로움 "문장"</title>
+	<meta name="keywords" content="문학광장, 문장">
+	<meta name="description" content="생활 속 작은 여유로움 '문장'">
+	<meta name="copyright" content="문학광장">
+	<meta name="author" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="shortcut icon" href="../main/img/common/favicon.png">
+	<link rel="stylesheet" href="../css/slick.css">
+	
+	<link rel="stylesheet" href="../css/font.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/board.css">
+	<link rel="stylesheet" href="../css/member.css">
+	<link rel="stylesheet" href="../main/css/layout.css">
+	<link rel="stylesheet" href="../main/css/contents.css">
+	<link rel="stylesheet" href="../main/css/sub08.css"><!--/* 대카테고리별 css파일*/-->
+	<script src="../js/jquery-3.2.1.min.js "></script>		
+	<script src="../js/slick.min.js"></script>	
+	<script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+<script src="../js/letterfx.min.js"></script> <!-- 리스트 비주얼 타이포애니 -->
+<link rel="stylesheet" href="../js/letterfx.css"> <!-- 리스트 비주얼 타이포애니 -->		
+	
+</head>
+
+<body>
+	<!--/*  skipNavigation*/-->
+	<div id="skipNav">
+		<a href="#contents">본문으로 바로가기</a>
+		<a href="#gnb1">주메뉴 바로가기</a>
+	</div>
+	<!--/*  //skipNavigation */-->
+	
+	<div id="wrap">
+		<header id="header" class="header" data-include="include/header.html" data-id="8" data-type="main"></header>
+		<!--/*  //header */-->
+		
+
+		<!--/*  Main */-->
+		<main id="main" class="main my_munjang">
+			<section class="custom_visual my_munjang_visual" style="background: url(../main/img/sub/sample_img7.jpg) 50% 50% / cover no-repeat;">
+				<div class="container">
+					<h2 class="sr-only">나의문장</h2>	
+					
+					<div class="item author_profile">
+						<div class="flex">
+							<div class="thumb">
+								<!--/*  이미지 없을때 아이콘 */-->
+								<span><i class="ri-user-line"></i></span>
+								<!--/*  이미지 있을때 
+								<span><img src="../main/img/sub/mento_sample1.jpg" alt=""></span>*/-->
+							</div>
+							<div class="txt">
+								<strong class="name"><em>멘토</em>김애리사 작가</strong>
+								<small class="mail eng">kims@kakao.com</small>
+								<p class="desc">2018년 창작21 신인상 등단. 시집 『치마의 원주율』, 공동 시집 『시골시인 J』.</p>
+							</div>
+						</div>
+						<a href="" class="btn btn_profile"><span>프로필 설정</span><i class="ri-edit-line"></i></a>
+					</div>
+				
+					<div class="item author_myroom">
+						<div class="txt">
+							<p class="desc">김애리샤 작가님<br> 안녕하세요!</p>
+							<strong class="major_txt">나만의 글이 담긴 공간을 확인해볼까요?</strong>
+						</div>
+						<a href="s8_library_01.html" class="btn">나의 글방 바로가기</a>
+					</div>
+				
+					<div class="item today_choice">
+						<div class="flex">
+							<div class="txt">
+								<strong class="title">오늘의 선택</strong>
+								<p class="major_txt">많은 사람들이 선택한<br> 오늘의 작품을 살펴볼까요?</p>
+							</div>
+							<div class="thumb">
+								<!--/*  //작품커버이미지 */-->
+								<span><img src="../main/img/sub/book_thumb_04.png" alt=""></span>
+							</div>
+						</div>
+						<a href="" class="btn">오늘의 작품 읽기</a>
+					</div>
+					<!--/*  //item */-->					
+					
+					<button class="bg_img_file" data-id="modal_bg_modify">배경이미지 변경 <i class="ri-add-line ml10"></i></button>
+					
+					<!--/*  배경이미지 변경 팝업 */-->
+					<div class="modal-popup-wrap" id="modal_bg_modify">
+						<div class="modal-popup">
+							<div class="modal-title">
+								<strong>배경이미지 변경</strong>
+							</div>
+							<div class="modal-cont">	
+								<div class="input-file">
+									<input type="text" class="file-name form-control" placeholder="파일선택" readonly>
+									<input type="file" id="form1Upload1" class="file-upload">
+									<label for="form1Upload1" class="btn type2 file-label">찾아보기</label>
+								</div>	
+								<ul class="list_dash txt_left">
+									<li>권장 사이즈 안내 : 1920 X 376 px / 업로드 가능 확장자 : png, jpg</li>
+									<li>이미지 직접 등록과 관련해 저작권 문제가 발생할 수 있습니다.<br> 신중한 이미지 선택을 바랍니다.</li>
+									<li>이미지를 초기화 하실려면 <span class="underline">초기화</span>를 클릭해주세요.<br> 처음 설정된 이미지로 돌아갑니다.</li>
+								</ul>
+							</div>	
+							<div class="modal-foot">
+								<button class="btn type1 btn_reset">초기화</button>
+								<button class="btn type2 btn_save">변경</button>
+							</div>						
+							<button type="button" class="btn-close layer-close"><i class="ri-close-line"></i><span class="sr-only">팝업닫기</span></button>
+						</div>					
+					</div>
+					<!--/*  //modal-popup */-->
+
+				</div>
+				<!--/*  //container */-->
+			</section>
+			<div id="contents" class="contents">
+				
+				<section class="my_cont_section container">
+					
+					<div class="title_area">
+						<h3 class="title_h1">나의문장</h3>
+						<nav class="depth4">
+							<ul>
+								<li class="active" title="선택된 탭메뉴">
+								 <a href="s8_my_main_01.html"><span>홈</span></a>
+								</li>
+								<li title="비활성 탭메뉴" class="">
+									<a href="s8_my_main_02.html"><span>큐레이션</span></a>
+								</li>                          
+								<li title="비활성 탭메뉴" class="">
+									<a href="s8_my_main_03.html"><span>내구독</span></a>
+								</li>                          
+							</ul>
+						</nav>
+					</div>
+					<!--/*  //title_area */-->
+
+					<div class="alarm">
+						<i class="ri-message-3-line mr10"></i>
+						<div class="item_list">
+							<div class="item">최예술 작가님의 소설 ‘크리스마스에 보내는 편지’ 이(가) 등록되었습니다.</div>
+							<div class="item">전체공지가 자동으로 롤링되어 보여줍니다</div>
+						</div>
+					</div>
+					<div class="record">
+						<i class="ri-user-5-line mr10"></i> 어떤 영감을 기록하고 싶으세요?
+						<a href="" class="btn"><i class="ri-edit-line"></i><span>글쓰기</span></a>
+					</div>
+					<div class="board_list card_list dash_board">
+						<ul class="list_ul">
+							<li class="list_li">
+								<a href="s8_library_01.html" class="item">
+									<strong class="title">담은 글</strong>
+									<em class="num">45</em>
+								</a>
+							</li>
+							<li class="list_li">
+								<a href="s8_library_02.html" class="item">
+									<strong class="title">작성한 글</strong>
+									<em class="num">5</em>
+								</a>
+							</li>	
+							<li class="list_li">
+								<a href="s8_library_03.html" class="item all_read">
+									<strong class="title">다 읽은 글</strong>
+									<em class="num">145</em>
+								</a>
+							</li>	
+							<li class="list_li">
+								<a href="s8_library_04.html" class="item">
+									<strong class="title">읽고있는 글</strong>
+									<em class="num">245</em>
+								</a>
+							</li>	
+							<li class="list_li">
+								<a href="s8_author_01.html" class="item">
+									<strong class="title">팔로우</strong>
+									<em class="num">45</em>
+								</a>
+							</li>
+							<li class="list_li">
+								<a href="s8_author_02.html" class="item following">
+									<strong class="title">팔로잉</strong>
+									<em class="num">5</em>
+								</a>
+							</li>	
+							<li class="list_li">
+								<a href="s8_library_05.html" class="item">
+									<strong class="title">댓글</strong>
+									<em class="num">145</em>
+								</a>
+							</li>	
+							<li class="list_li">
+								<a href="s8_my_main_02.html" class="item curation">
+									<strong class="title">관심작가</strong>
+									<em class="num">245</em>
+								</a>
+							</li>	
+						</ul>
+					
+					</div>
+					<!--/*  //board_list */-->
+					
+					<h4 class="title_h2">읽고 있는 작품</h4>
+					<div class="board_list book_list">
+						<ul class="list_ul">
+							<li class="list_li">					
+								<!--/*  
+								카테고리별 클래스명
+								커버스토리 : type0
+								감상&비평 : type1
+								소설 : type2
+								수필 : type3
+								시 : type4
+								기획 : type5
+								Part.g : type6
+								*/-->				
+								<a href="board_view.html" class="item type4">
+									<div class="thumb">
+										<img src="../main/img/sub/list_thumb_sample1.jpg" alt="">
+									</div>										
+									<div class="txt">
+										<span class="category">시</span>
+										<strong class="title">롤리팝</strong>
+									</div>
+								</a>
+								<div class="thumb_hover">
+									<div class="link_wrap">
+										<button class="btn_like mr10">
+											<i class="ri-heart-line"></i>
+											<span class="sr-only">좋아요</span>
+											<em class="num">23</em>
+										</button>
+										<button class="btn_share mr10" data-id="modal_share">
+											<i class="ri-share-line"></i>
+											<span class="sr-only">공유하기</span>
+											<em class="num">23</em>
+										</button>
+										<a href="" class="btn_view"><i class="ri-arrow-right-line"></i><span class="sr-only">상세보기</span></a>
+									</div>
+								</div>
+								<div class="reading_info">
+									<div class="progress_bar">
+										<span style="width:30%;"><span class="sr-only">30%</span></span>
+									</div>
+									<span class="num">2022-09-16</span>
+								</div>
+								
+							</li>
+							<li class="list_li">									
+								<a href="board_view.html" class="item type1">
+									<div class="thumb">
+										<img src="../main/img/sub/list_thumb_sample2.jpg" alt="">
+									</div>										
+									<div class="txt">
+										<span class="category">감상&amp;비평</span>
+										<strong class="title">이상과 현실, 낭만과 한숨 사이. (QM 3집 [돈숨]과 we can love again)</strong>
+									</div>
+								</a>
+								<div class="thumb_hover">
+									<div class="link_wrap">
+										<button class="btn_like mr10">
+											<i class="ri-heart-line"></i>
+											<span class="sr-only">좋아요</span>
+											<em class="num">23</em>
+										</button>
+										<button class="btn_share mr10" data-id="modal_share">
+											<i class="ri-share-line"></i>
+											<span class="sr-only">공유하기</span>
+											<em class="num">23</em>
+										</button>
+										<a href="" class="btn_view"><i class="ri-arrow-right-line"></i><span class="sr-only">상세보기</span></a>
+									</div>
+								</div>
+								<div class="reading_info">
+									<div class="progress_bar">
+										<span style="width:85%;"><span class="sr-only">85%</span></span>
+									</div>
+									<span class="num">2022-08-20</span>
+								</div>
+							</li>
+							<li class="list_li">									
+								<a href="board_view.html" class="item type2">
+									<div class="thumb">
+										<!--/*  //등록된 이미지가 없을때 */-->
+									</div>
+									<div class="txt">
+										<span class="category">소설</span>
+										<strong class="title">모든 키보드에서 쉼표가 삭제되었다</strong>
+									</div>							
+								</a>
+								<div class="thumb_hover">
+									<div class="link_wrap">
+										<button class="btn_like mr10">
+											<i class="ri-heart-line"></i>
+											<span class="sr-only">좋아요</span>
+											<em class="num">23</em>
+										</button>
+										<button class="btn_share mr10" data-id="modal_share">
+											<i class="ri-share-line"></i>
+											<span class="sr-only">공유하기</span>
+											<em class="num">23</em>
+										</button>
+										<a href="" class="btn_view"><i class="ri-arrow-right-line"></i><span class="sr-only">상세보기</span></a>
+									</div>
+								</div>
+							</li>
+							<li class="list_li">									
+								<a href="board_view.html" class="item type3">
+									<div class="thumb"></div>
+									<div class="txt">
+										<span class="category">수필</span>
+										<strong class="title">성장한다는 것 (퇴고:20221124)</strong>
+									</div>											
+								</a>
+								<div class="thumb_hover">
+									<div class="link_wrap">
+										<button class="btn_like mr10">
+											<i class="ri-heart-line"></i>
+											<span class="sr-only">좋아요</span>
+											<em class="num">23</em>
+										</button>
+										<button class="btn_share mr10" data-id="modal_share">
+											<i class="ri-share-line"></i>
+											<span class="sr-only">공유하기</span>
+											<em class="num">23</em>
+										</button>
+										<a href="" class="btn_view"><i class="ri-arrow-right-line"></i><span class="sr-only">상세보기</span></a>
+									</div>
+								</div>
+							</li>	
+						</ul>
+						<a href="" class="more"><span class="sr-only">읽고 있는 작품</span>모두보기<i class="ri-add-line ml10"></i></a>
+					</div>
+					<!--/*  //board_list */-->
+
+					<div class="yellow_bg">
+
+						<h4 class="title_h2">좋아하는 작품</h4>
+						<div class="board_list book_list">
+							<ul class="list_ul">
+								<li class="list_li">
+									<a href="board_view.html" class="item ">
+										<div class="thumb">
+											<img src="../main/img/sub/list_thumb_sample1.jpg" alt="">
+										</div>										
+										<div class="txt">
+											<span class="category">시작 2015</span>
+											<strong class="title">롤리팝</strong>
+										</div>
+									</a>
+									<div class="thumb_hover">
+										<div class="link_wrap">
+											<button class="btn_like mr10">
+												<i class="ri-heart-line"></i>
+												<span class="sr-only">좋아요</span>
+												<em class="num">23</em>
+											</button>
+											<button class="btn_share mr10" data-id="modal_share">
+												<i class="ri-share-line"></i>
+												<span class="sr-only">공유하기</span>
+												<em class="num">23</em>
+											</button>
+											<a href="" class="btn_view"><i class="ri-arrow-right-line"></i><span class="sr-only">상세보기</span></a>
+										</div>
+									</div>
+								</li>
+								<li class="list_li">									
+									<a href="board_view.html" class="item ">
+										<div class="thumb">
+											<img src="../main/img/sub/list_thumb_sample2.jpg" alt="">
+										</div>										
+										<div class="txt">
+											<span class="category">시작 2015</span>
+											<strong class="title">이상과 현실, 낭만과 한숨 사이. (QM 3집 [돈숨]과 we can love again)</strong>
+										</div>
+									</a>
+									<div class="thumb_hover">
+										<div class="link_wrap">
+											<button class="btn_like mr10">
+												<i class="ri-heart-line"></i>
+												<span class="sr-only">좋아요</span>
+												<em class="num">23</em>
+											</button>
+											<button class="btn_share mr10" data-id="modal_share">
+												<i class="ri-share-line"></i>
+												<span class="sr-only">공유하기</span>
+												<em class="num">23</em>
+											</button>
+											<a href="" class="btn_view"><i class="ri-arrow-right-line"></i><span class="sr-only">상세보기</span></a>
+										</div>
+									</div>
+								</li>
+								<li class="list_li">									
+									<a href="board_view.html" class="item ">
+										<div class="thumb">
+											<!--/*  //등록된 이미지가 없을때 */-->
+										</div>
+										<div class="txt">
+											<span class="category">시작 2015</span>
+											<strong class="title">모든 키보드에서 쉼표가 삭제되었다</strong>
+										</div>							
+									</a>
+									<div class="thumb_hover">
+										<div class="link_wrap">
+											<button class="btn_like mr10">
+												<i class="ri-heart-line"></i>
+												<span class="sr-only">좋아요</span>
+												<em class="num">23</em>
+											</button>
+											<button class="btn_share mr10" data-id="modal_share">
+												<i class="ri-share-line"></i>
+												<span class="sr-only">공유하기</span>
+												<em class="num">23</em>
+											</button>
+											<a href="" class="btn_view"><i class="ri-arrow-right-line"></i><span class="sr-only">상세보기</span></a>
+										</div>
+									</div>
+								</li>
+								<li class="list_li">									
+									<a href="board_view.html" class="item ">
+										<div class="thumb"></div>
+										<div class="txt">
+											<span class="category">시작 2015</span>
+											<strong class="title">성장한다는 것 (퇴고:20221124)</strong>
+										</div>											
+									</a>
+									<div class="thumb_hover">
+										<div class="link_wrap">
+											<button class="btn_like mr10">
+												<i class="ri-heart-line"></i>
+												<span class="sr-only">좋아요</span>
+												<em class="num">23</em>
+											</button>
+											<button class="btn_share mr10" data-id="modal_share">
+												<i class="ri-share-line"></i>
+												<span class="sr-only">공유하기</span>
+												<em class="num">23</em>
+											</button>
+											<a href="" class="btn_view"><i class="ri-arrow-right-line"></i><span class="sr-only">상세보기</span></a>
+										</div>
+									</div>
+								</li>	
+							</ul>
+							<a href="" class="more"><span class="sr-only">좋아하는 작품</span>모두보기<i class="ri-add-line ml10"></i></a>
+						</div>
+						<!--/*  //board_list */-->
+
+						<h4 class="title_h2">좋아하는 작가</h4>
+						<div class="db_list writer_list col5">
+							<ul class="list_ul">
+								<li class="list_li">
+									<a href="" class="item">
+										<span class="category">소설가</span>
+										<strong class="title">한요나</strong>
+										<div class="thumb">
+											<img src="../main/img/sub/writer_thumb_01.png" alt="">
+										</div>									
+									</a>								
+									<div class="thumb_hover">
+										<div class="link_wrap">
+											<button class="btn_like mr10">
+												<i class="ri-heart-line"></i>
+												<span class="sr-only">좋아요</span>
+												<em class="num">23</em>
+											</button>
+											<button class="btn_share mr10">
+												<i class="ri-share-line"></i>
+												<span class="sr-only">공유하기</span>
+												<em class="num">23</em>
+											</button>
+											<a href="" class="btn_view"><i class="ri-arrow-right-line"></i><span class="sr-only">상세보기</span></a>
+										</div>
+									</div>								
+								</li>
+								<li class="list_li">
+									<a href="" class="item">
+										<span class="category">소설가</span>
+										<strong class="title">한요나</strong>
+										<div class="thumb">
+											<img src="../main/img/sub/writer_thumb_02.png" alt="">
+										</div>
+									</a>
+									<div class="thumb_hover">
+										<div class="link_wrap">
+											<button class="btn_like mr10">
+												<i class="ri-heart-line"></i>
+												<span class="sr-only">좋아요</span>
+												<em class="num">23</em>
+											</button>
+											<button class="btn_share mr10">
+												<i class="ri-share-line"></i>
+												<span class="sr-only">공유하기</span>
+												<em class="num">23</em>
+											</button>
+											<a href="" class="btn_view"><i class="ri-arrow-right-line"></i><span class="sr-only">상세보기</span></a>
+										</div>
+									</div>
+								</li>
+								<li class="list_li">
+									<a href="" class="item">
+										<span class="category">소설가</span>
+										<strong class="title">한요나</strong>
+										<div class="thumb">
+											<img src="../main/img/sub/writer_thumb_noimg.png" alt="">
+										</div>
+									</a>
+									<div class="thumb_hover">
+										<div class="link_wrap">
+											<button class="btn_like mr10">
+												<i class="ri-heart-line"></i>
+												<span class="sr-only">좋아요</span>
+												<em class="num">23</em>
+											</button>
+											<button class="btn_share mr10">
+												<i class="ri-share-line"></i>
+												<span class="sr-only">공유하기</span>
+												<em class="num">23</em>
+											</button>
+											<a href="" class="btn_view"><i class="ri-arrow-right-line"></i><span class="sr-only">상세보기</span></a>
+										</div>
+									</div>
+								</li>
+								<li class="list_li">
+									<a href="" class="item">
+										<span class="category">소설가</span>
+										<strong class="title">한요나</strong>
+										<div class="thumb">
+											<img src="../main/img/sub/writer_thumb_03.png" alt="">
+										</div>
+									</a>
+									<div class="thumb_hover">
+										<div class="link_wrap">
+											<button class="btn_like mr10">
+												<i class="ri-heart-line"></i>
+												<span class="sr-only">좋아요</span>
+												<em class="num">23</em>
+											</button>
+											<button class="btn_share mr10">
+												<i class="ri-share-line"></i>
+												<span class="sr-only">공유하기</span>
+												<em class="num">23</em>
+											</button>
+											<a href="" class="btn_view"><i class="ri-arrow-right-line"></i><span class="sr-only">상세보기</span></a>
+										</div>
+									</div>
+								</li>
+								<li class="list_li">
+									<a href="" class="item">
+										<span class="category">소설가</span>
+										<strong class="title">한요나</strong>
+										<div class="thumb">
+											<img src="../main/img/sub/writer_thumb_03.png" alt="">
+										</div>
+									</a>
+									<div class="thumb_hover">
+										<div class="link_wrap">
+											<button class="btn_like mr10">
+												<i class="ri-heart-line"></i>
+												<span class="sr-only">좋아요</span>
+												<em class="num">23</em>
+											</button>
+											<button class="btn_share mr10">
+												<i class="ri-share-line"></i>
+												<span class="sr-only">공유하기</span>
+												<em class="num">23</em>
+											</button>
+											<a href="" class="btn_view"><i class="ri-arrow-right-line"></i><span class="sr-only">상세보기</span></a>
+										</div>
+									</div>
+								</li>				
+							</ul>
+							<a href="" class="more"><span class="sr-only">좋아하는 작가</span>모두보기<i class="ri-add-line ml10"></i></a>
+						</div>
+						<!--/*  //db_list */-->
+						
+					</div>
+					<!--/*  //yellow_bg */-->
+
+				</section>
+				<!--/*  //my_cont_section */-->
+				
+			</div>
+			<!--/*  //contents */-->
+			
+			
+		</main>
+		<!--/*  //Main */-->
+		
+
+		<div class="side_right_util" data-include="include/side_right.html"></div>
+		<!--/*  //side_right_util */-->
+
+		<footer id="footer" class="footer" data-include="include/footer.html"></footer>
+		<!--/*  //footer */-->
+		
+
+	</div>
+	<!--/*  //wrap */-->	
+	
+	<script src="../main/js/include.js"></script><!--/*  //local에서 include하기 위한 임시파일로 개발에 입힐때는 필요없는 파일입니다.  */-->
+	
+	<script src="../main/js/func.js"></script>
+	<script src="../main/js/layout.js" defer></script>
+	<script src="../main/js/sub.js" defer></script>
+</body>
+
+</html>

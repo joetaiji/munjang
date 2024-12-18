@@ -1,0 +1,626 @@
+@charset "UTF-8";
+.gnb2 .sitemap_title a,
+.header .logo .main_logo {
+  background-image: url(../img/common/logo_webzine.svg);
+}
+
+.header .logo .sub_logo {
+  display: none;
+}
+
+.topmenu > li.lnb1 > a > span::before {
+  display: none;
+}
+
+.side_right_util .btn_back_magazine {
+  display: block;
+}
+
+/* ==============================================================================================================
+서브메인
+============================================================================================================== */
+.line_group .line {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100%;
+  background: var(--txte);
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.line_group .line.line1 {
+  left: calc(33.6% + 22.1% * 0);
+}
+.line_group .line.line2 {
+  left: calc(33.6% + 22.1% * 1);
+}
+.line_group .line.line3 {
+  left: calc(33.6% + 22.1% * 2);
+}
+
+.swiper-scrollbar {
+  background: var(--txtc);
+}
+
+.swiper-scrollbar-drag {
+  background: var(--black);
+}
+
+.section {
+  display: flex;
+}
+.section ~ .section {
+  padding-top: 15rem;
+}
+.section.container {
+  max-width: 1840px;
+}
+.section h2 {
+  font-size: 8rem;
+  margin-bottom: 3rem;
+}
+.section .title_area {
+  flex: 0 1 33.6%;
+  text-align: left;
+}
+.section .title_area strong {
+  font-size: 5rem;
+  display: block;
+  margin-bottom: 4rem;
+}
+.section .title_area .more {
+  font-size: 2.4rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+  border-bottom: 0.4rem solid var(--txt1);
+}
+.section .item_list {
+  flex: 0 1 66.4%;
+}
+.section .webzine_list .thumb {
+  height: 27rem;
+}
+.section .webzine_list .thumb img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section .desc {
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  max-height: 13.5rem;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  word-wrap: break-word;
+  word-break: keep-all;
+}
+.section .swiper-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.16);
+  border-radius: 50%;
+  width: 7rem;
+  height: 7rem;
+  opacity: 0.8;
+  -webkit-backdrop-filter: blur(32px);
+          backdrop-filter: blur(32px);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.4rem;
+  color: #fff;
+}
+.section .swiper-button-prev {
+  left: 3rem;
+}
+.section .swiper-button-next {
+  right: 3rem;
+}
+.section .swiper-button-disabled {
+  display: none;
+}
+.section .swiper-scrollbar {
+  opacity: 1 !important;
+}
+
+.section_cover_story {
+  margin-top: 10rem;
+  position: relative;
+  flex-direction: column;
+}
+.section_cover_story .cover_title {
+  display: flex;
+  align-items: center;
+}
+.section_cover_story .cover_title h2 {
+  display: flex;
+  align-items: flex-start;
+}
+.section_cover_story .cover_title .vol {
+  font-size: 3rem;
+  margin-left: 2rem;
+}
+.section_cover_story .cover_title .magazine_view {
+  display: flex;
+  margin-left: auto;
+  font-size: 2.4rem;
+}
+.section_cover_story .cover_title .magazine_view button {
+  border-bottom: 0.4rem solid var(--txt1);
+  padding-bottom: 0.6rem;
+}
+.section_cover_story .cover_title .magazine_view button ~ button {
+  margin-left: 2rem;
+}
+.section_cover_story .item .thumb {
+  height: 57rem;
+}
+.section_cover_story .item .thumb img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section_cover_story .item .txt {
+  position: absolute;
+  left: 6rem;
+  bottom: 6rem;
+  display: flex;
+  align-items: flex-end;
+  font-family: var(--font);
+  color: #151515;
+}
+.section_cover_story .item .etc_info {
+  font-size: 3.1rem;
+  font-weight: 700;
+}
+.section_cover_story .item .etc_info em {
+  display: block;
+  text-align: center;
+}
+.section_cover_story .item .etc_info span {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  letter-spacing: 1px;
+}
+.section_cover_story .item .title {
+  margin-left: 3rem;
+  font-weight: 500;
+  font-size: 6.4rem;
+}
+.section_cover_story .item .title i {
+  font-size: 3.8rem;
+  display: block;
+  margin-top: 3rem;
+  line-height: 1;
+}
+.section_cover_story .line_group {
+  display: none;
+}
+
+.section_novel .item_list,
+.section_plan .item_list,
+.section_arco .item_list {
+  padding-bottom: 10rem;
+  margin: 0 -1.25rem;
+  flex: 0 1 calc(66.4% + 2.5rem);
+}
+.section_novel .item_list .swiper,
+.section_plan .item_list .swiper,
+.section_arco .item_list .swiper {
+  width: 100%;
+}
+.section_novel .item_list .swiper-slide,
+.section_plan .item_list .swiper-slide,
+.section_arco .item_list .swiper-slide {
+  flex: 0 0 25%;
+}
+.section_novel .item_list .item,
+.section_plan .item_list .item,
+.section_arco .item_list .item {
+  display: block;
+  padding: 0 1.25rem;
+}
+.section_novel .item_list .item .thumb,
+.section_plan .item_list .item .thumb,
+.section_arco .item_list .item .thumb {
+  margin-bottom: 2rem;
+}
+.section_novel .item_list .item .txt .etc_info,
+.section_plan .item_list .item .txt .etc_info,
+.section_arco .item_list .item .txt .etc_info {
+  font-size: 1.6rem;
+  color: var(--txt7);
+  margin-bottom: 1.5rem;
+}
+.section_novel .item_list .item .txt .etc_info .category,
+.section_plan .item_list .item .txt .etc_info .category,
+.section_arco .item_list .item .txt .etc_info .category {
+  margin-right: 1.7rem;
+}
+.section_novel .item_list .item .txt .title,
+.section_plan .item_list .item .txt .title,
+.section_arco .item_list .item .txt .title {
+  font-size: 2.4rem;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.section_poem {
+  position: relative;
+}
+.section_poem .item_list {
+  position: relative;
+}
+.section_poem .item_list .item {
+  height: auto;
+}
+.section_poem .item_list .thumb {
+  width: auto;
+  height: 100%;
+}
+.section_poem .txt {
+  position: absolute;
+  left: 4rem;
+  bottom: 4rem;
+  color: #fff;
+}
+.section_poem .txt .title {
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+.section_poem .txt .etc_info {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.section_plan .item_list {
+  padding-bottom: 0;
+  margin: 0 -5rem;
+  flex-basis: 66.4%;
+}
+.section_plan .item_list .swiper-slide {
+  flex: 0 0 33.33%;
+}
+.section_plan .item_list .item {
+  padding: 0 5rem;
+}
+.section_plan .swiper-button {
+  color: var(--txt1);
+  background: transparent;
+  -webkit-backdrop-filter: none;
+          backdrop-filter: none;
+}
+.section_plan .swiper-button-prev {
+  left: -3rem;
+}
+.section_plan .swiper-button-next {
+  right: -2rem;
+}
+
+.section_review .title_area,
+.section_partg .title_area {
+  flex-basis: 55.7%;
+}
+.section_review .item_list,
+.section_partg .item_list {
+  flex-basis: 44.3%;
+  display: grid;
+  grid: auto-flow/repeat(2, 1fr);
+  gap: 8rem 0;
+}
+.section_review .item_list .item,
+.section_partg .item_list .item {
+  padding-right: 4rem;
+}
+.section_review .writer,
+.section_partg .writer {
+  display: block;
+  color: var(--txt7);
+  margin-bottom: 1rem;
+}
+.section_review .title,
+.section_partg .title {
+  display: block;
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+.section_review .desc,
+.section_partg .desc {
+  margin-bottom: 1rem;
+}
+.section_review .etc_info,
+.section_partg .etc_info {
+  font-size: 1.6rem;
+  color: var(--txt6);
+}
+.section_review .etc_info i,
+.section_partg .etc_info i {
+  font-size: 1.8rem;
+  margin-right: 0.5rem;
+}
+.section_review .etc_info .like,
+.section_partg .etc_info .like {
+  margin-left: 1.3rem;
+}
+.section_review .etc_info .like i,
+.section_partg .etc_info .like i {
+  color: #E52674;
+}
+
+.section_partg {
+  padding-bottom: 15rem;
+}
+
+#modal_back_magazine,
+#modal_magazine_index {
+  background: none;
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: auto;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#modal_back_magazine .modal-popup,
+#modal_magazine_index .modal-popup {
+  height: 87rem;
+  border: 1px solid #E5EAEC;
+  position: static;
+  transform: none;
+}
+#modal_back_magazine .modal-popup .modal-cont,
+#modal_magazine_index .modal-popup .modal-cont {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+#modal_back_magazine .modal-popup .btn-close,
+#modal_magazine_index .modal-popup .btn-close {
+  top: 5rem;
+}
+#modal_back_magazine .modal-popup .magazine_list,
+#modal_magazine_index .modal-popup .magazine_list {
+  display: block;
+}
+
+.magazine_list .magazine_title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 7rem;
+}
+.magazine_list .magazine_title button {
+  font-size: 3rem;
+}
+.magazine_list .magazine_title strong {
+  font-size: 4.2rem;
+  display: inline-block;
+  margin: 0rem 5rem;
+}
+.magazine_list .item_list {
+  display: grid;
+  grid: repeat(4, auto)/repeat(3, 12.1rem);
+  gap: 2rem 4.7rem;
+}
+.magazine_list .item_list .btn_view img {
+  margin-bottom: 1rem;
+  border-radius: 0.4rem;
+  transition: 0.2s;
+}
+.magazine_list .item_list .btn_view .title {
+  display: block;
+}
+.magazine_list .item_list .btn_view:hover img, .magazine_list .item_list .btn_view:focus img {
+  border: 0.4rem solid #E34891;
+}
+
+.magazine_index {
+  text-align: left;
+}
+.magazine_index .magazine_title .btn_list {
+  display: block;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+.magazine_index .magazine_title .title {
+  display: block;
+  font-size: 3.6rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #707070;
+}
+.magazine_index .item_list {
+  overflow: auto;
+  height: 67rem;
+}
+.magazine_index .item_list::-webkit-scrollbar-track {
+  background-color: #F2F2F2;
+  border-radius: 0;
+}
+.magazine_index .item_list::-webkit-scrollbar {
+  width: 0.6rem;
+}
+.magazine_index .item_list::-webkit-scrollbar-thumb {
+  background-color: #E34891;
+  border-radius: 0;
+}
+.magazine_index .item_list strong {
+  display: block;
+  margin: 4rem 0 2rem;
+  font-size: 2.8rem;
+}
+.magazine_index .item_list a {
+  display: block;
+  margin: 1.5rem 0;
+  font-size: 2.4rem;
+}
+
+/* ==============================================================================================================
+커버스토리 
+============================================================================================================== */
+.cover_story {
+  text-align: center;
+}
+.cover_story .plan_word {
+  font-size: 2.2rem;
+  color: var(--txt3);
+  margin-bottom: 8rem;
+}
+.cover_story .plan_word .title_h3 {
+  font-size: 4rem;
+}
+.cover_story .plan_word .txt {
+  width: 44rem;
+  margin: 0 auto;
+  position: relative;
+}
+.cover_story .plan_word .txt::before, .cover_story .plan_word .txt::after {
+  content: "";
+  display: block;
+  width: 4rem;
+  height: 20.7rem;
+  background: url("../img/sub/bracket.png") 0 0/contain no-repeat;
+  position: absolute;
+  transform: translate(0, -50%);
+  left: -10rem;
+  top: 50%;
+}
+.cover_story .plan_word .txt::after {
+  transform: rotateY(180deg) translate(0, -50%);
+  left: inherit;
+  right: -10rem;
+}
+.cover_story .works_link {
+  display: block;
+  font-size: 3.2rem;
+  color: #1198BB;
+  margin-bottom: 6rem;
+}
+
+/* 기존 DB */
+.sub0101 .page_group {
+  text-align: center;
+}
+.sub0101 .page_breaking .txc-textbox > strong {
+  font-size: 4rem;
+}
+.sub0101 .page_breaking a {
+  display: block;
+  font-size: 3.2rem;
+  color: #1198BB;
+  margin-bottom: 6rem;
+}
+.sub0101 .page_breaking > table {
+  background: rgba(var(--white), 0.5);
+  border: 1px solid var(--color1);
+  border-radius: 5rem 0 0 0;
+  padding: 6rem 8rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.sub0101 .page_breaking > table img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 15rem;
+  height: 15rem;
+  overflow: hidden;
+  background: #68748B;
+  margin: 0 auto;
+}
+.sub0101 .page_breaking td {
+  width: 100%;
+}
+
+/* ==============================================================================================================
+반응형
+============================================================================================================== */
+@media (max-width: 1439.98px) {
+  .section h2 {
+    font-size: 6rem;
+  }
+  .section .title_area strong {
+    font-size: 3rem;
+  }
+  .section .title_area strong br {
+    display: none;
+  }
+  .section_plan .item_list {
+    margin-left: -2rem;
+    margin-right: -2rem;
+  }
+  .section_plan .item_list .item {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media (max-width: 1024.98px) {
+  .section {
+    display: block;
+  }
+  .line_group {
+    display: none;
+  }
+  .section .title_area {
+    margin-bottom: 5rem;
+  }
+  .side_left_util {
+    bottom: 12.6rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .section_cover_story .cover_title {
+    display: block;
+    margin-bottom: 4rem;
+  }
+  .section_cover_story .cover_title h2 {
+    margin-bottom: 4rem;
+  }
+  .section ~ .section {
+    padding-top: 8rem;
+  }
+  .section_novel .item_list .swiper-slide,
+  .section_plan .item_list .swiper-slide,
+  .section_arco .item_list .swiper-slide {
+    flex: 0 0 100%;
+  }
+  .section_review .item_list,
+  .section_partg .item_list {
+    display: block;
+  }
+  .section_review .item_list .item:nth-last-child(-n+3),
+  .section_partg .item_list .item:nth-last-child(-n+3) {
+    display: none;
+  }
+  .section_plan .swiper-button {
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    top: 14rem;
+  }
+  .section_plan .swiper-button-prev {
+    left: 3rem;
+  }
+  .section_plan .swiper-button-next {
+    right: 3rem;
+  }
+  .cover_story .plan_word .txt {
+    width: 100%;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .cover_story .plan_word .txt::before {
+    left: 0;
+  }
+  .cover_story .plan_word .txt::after {
+    right: 0;
+  }
+}/*# sourceMappingURL=sub01.css.map */

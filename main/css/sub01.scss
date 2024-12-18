@@ -1,0 +1,266 @@
+@charset "utf-8";
+@import "../../css/mixin";
+
+.gnb2 .sitemap_title a, 
+.header .logo .main_logo{ background-image: url(../img/common/logo_webzine.svg);}
+.header .logo .sub_logo{display: none;}	
+
+.topmenu > li.lnb1 > a > span::before{display: none;}
+
+.side_right_util .btn_back_magazine{display: block;}
+/* ==============================================================================================================
+서브메인
+============================================================================================================== */
+
+.line_group{
+	.line { content: ""; display: block; width: 1px; height: 100%; background: var(--txte); position: absolute;top: 0;z-index: -1;
+		@for $i from 0 through 2 {	 
+			&.line#{$i + 1} {left: calc(33.6% + 22.1% * #{$i})}
+		}
+	}		
+}
+.swiper-scrollbar{background: var(--txtc);}
+.swiper-scrollbar-drag{background: var(--black);}
+.section{display: flex; 	
+	~ .section{padding-top: 15rem;}	
+	&.container {max-width: $wide;}
+	h2{font-size: 8rem;margin-bottom: 3rem;}
+	.title_area{flex:0 1 33.6%; text-align: left;		
+		strong{font-size: 5rem;display: block;margin-bottom: 4rem;}
+		.more{font-size: 2.4rem;font-weight: 700;padding-bottom: 1rem;border-bottom: .4rem solid var(--txt1);}
+	}
+	.item_list{flex:0 1 66.4%;}
+	.webzine_list .thumb{ height: 27rem;
+		img{width:100%; height:100%; object-fit: cover;}
+	}
+	.desc{@include ellipsis2(5, 13.5rem)}
+
+	.swiper-button{position: absolute;top:50%; transform: translateY(-50%); background:rgba(0,0,0,.16);@include circle(7rem); opacity: 0.8;backdrop-filter: blur(32px);z-index: 1;@include flex;font-size: 2.4rem;color: #fff;}
+	.swiper-button-prev{left: 3rem;}
+	.swiper-button-next{right: 3rem;}
+	.swiper-button-disabled{display: none;}
+	.swiper-scrollbar{opacity:1!important;}
+}
+
+.section_cover_story{  margin-top: 10rem; position: relative; flex-direction: column;	
+	.cover_title{display: flex; align-items: center; 
+		h2{display: flex;align-items: flex-start;}
+		.vol{font-size: 3rem;margin-left: 2rem;}
+		.magazine_view{display: flex;margin-left: auto; font-size: 2.4rem;
+			button{border-bottom: .4rem solid var(--txt1); padding-bottom: 0.6rem;
+				~button{ margin-left: 2rem;}
+			}
+		}
+	}
+	.item{
+		.thumb{height: 57rem;
+			img{width: 100%;height: 100%;object-fit: cover;}
+		}
+		.txt{position: absolute;left: 6rem;bottom: 6rem;display: flex; align-items: flex-end; font-family: var(--font); color:#151515;}	
+		.etc_info {font-size: 3.1rem;font-weight: 700;
+			em{display: block;text-align: center;}
+			span{writing-mode: vertical-lr;text-orientation: upright; letter-spacing: 1px; }
+		}
+		.title{margin-left: 3rem;font-weight: 500; font-size: 6.4rem;
+			i{font-size: 3.8rem;display: block;margin-top: 3rem; line-height: 1;}
+		}
+	}	
+	.line_group{display: none;}
+}
+
+.section_novel,
+.section_plan,
+.section_arco{
+	.item_list{padding-bottom: 10rem; margin:0 -1.25rem; flex:0 1 calc(66.4% + 2.5rem);
+		.swiper{width: 100%;}
+		.swiper-slide{ flex:0 0 25%; }
+		.item{display: block;padding:0 1.25rem;
+			.thumb{margin-bottom: 2rem;}
+			.txt{
+				.etc_info{font-size: 1.6rem;color: var(--txt7); margin-bottom: 1.5rem;
+					.category{margin-right: 1.7rem;}
+				}
+				.title{font-size: 2.4rem;display: block;margin-bottom: 2rem;}
+			}
+		}
+	}		
+}
+.section_poem{position: relative;
+	.item_list{position: relative;
+		.item{height: auto;}
+		.thumb{width: auto; height: 100%;}
+	}	
+	.txt{position: absolute;left: 4rem;bottom: 4rem;color: #fff;
+		.title{font-size: 2.4rem;margin-bottom: 1.5rem;display: block;}
+		.etc_info{font-size: 2rem;font-weight: 500;}
+	}	
+}
+.section_plan{
+	.item_list{padding-bottom: 0;margin: 0 -5rem;flex-basis:66.4%;
+		.swiper-slide{flex:0 0 33.33%;}
+		.item{padding:0 5rem;}
+	}
+	.swiper-button{color: var(--txt1);background: transparent; backdrop-filter:none;}
+	.swiper-button-prev{left:-3rem}
+	.swiper-button-next{right:-2rem}
+}
+
+.section_review, 
+.section_partg{
+	.title_area{flex-basis:55.7%;}
+	.item_list{flex-basis:44.3%; display: grid; grid: auto-flow/repeat(2, 1fr); gap: 8rem 0;
+		.item{padding-right: 4rem;}
+	}
+	.writer{display: block; color: var(--txt7);margin-bottom: 1rem;}
+	.title{display: block;font-size: 2.4rem;margin-bottom: 2rem;}
+	.desc{margin-bottom: 1rem;}
+	.etc_info{font-size: 1.6rem; color:var(--txt6);
+		i{font-size: 1.8rem;margin-right: 0.5rem;}
+		.like{margin-left: 1.3rem;
+			i{color: #E52674;}
+		}
+	}	
+}
+.section_partg{ padding-bottom: 15rem;}
+
+//과월호 
+#modal_back_magazine,
+#modal_magazine_index {background: none;width: auto;height: auto;position: absolute;left: auto; right:0; top: 50%;transform: translateY(-50%);
+	.modal-popup{height: 87rem;border: 1px solid #E5EAEC; position: static; transform: none;
+		.modal-cont{padding-top: 4rem;padding-bottom: 4rem;}
+		.btn-close{top: 5rem;}
+		.magazine_list{display: block;}
+	}
+}
+
+.magazine_list{
+	.magazine_title { display: flex; align-items:center; margin-bottom: 7rem; 
+		button{font-size: 3rem;}
+		strong{font-size: 4.2rem;display: inline-block;margin: 0rem 5rem;}
+
+	}
+	.item_list{display: grid; grid: repeat(4, auto) / repeat(3, 12.1rem); gap:2rem 4.7rem;
+		.btn_view{
+			img{margin-bottom: 1rem;border-radius: 0.4rem;transition:.2s;}
+			.title{display: block;}
+			&:hover, &:focus{
+				img{border: .4rem solid #E34891;}
+			}
+		}
+	}	
+}
+.magazine_index{text-align: left;
+	.magazine_title{
+		.btn_list{display: block;font-size: 3rem;margin-bottom: 1.5rem;}
+		.title{display: block;font-size: 3.6rem; padding-bottom: 2rem; border-bottom: 1px solid #707070;}
+	}
+	.item_list{overflow:auto; height:67rem; @include scrollbar(#E34891,#F2F2F2, .6rem);
+		strong{display: block;margin:4rem 0 2rem;font-size: 2.8rem;}
+		a{display: block;margin:1.5rem 0;font-size: 2.4rem;}
+	}
+}
+
+/* ==============================================================================================================
+커버스토리 
+============================================================================================================== */
+.cover_story{text-align: center;
+	.plan_word{font-size: 2.2rem;color: var(--txt3); margin-bottom: 8rem; 
+		.title_h3{font-size: 4rem;}
+		.txt{width: 44rem; margin:0 auto; position: relative;
+			&::before,
+			&::after{content:"";display: block;width: 4rem;height: 20.7rem;background: url('../img/sub/bracket.png') 0 0/contain no-repeat;@include pos(lt, -10rem, 50%, 0, -50%)}
+			&::after{transform:rotateY(180deg) translate(0, -50%);left:inherit;right:-10rem;}
+		}
+	}
+	
+	.works_link{display:block; font-size: 3.2rem;color: #1198BB;margin-bottom: 6rem;} 	
+}
+
+/* 기존 DB */
+.sub0101{
+	.page_group{text-align: center;}	
+	.page_breaking{
+		.txc-textbox{
+			>strong{font-size: 4rem;}
+		}
+		a{display: block; font-size: 3.2rem; color: #1198BB; margin-bottom: 6rem;}
+		>table{background: rgba(var(--white), 0.5);border: 1px solid var(--color1);    border-radius: 5rem 0 0 0;    padding: 6rem 8rem;    display: flex; align-items: center; margin-bottom: 4rem;
+			img{ display: flex; justify-content: center; align-items: center; border-radius: 50%; width: 15rem; height: 15rem; overflow: hidden; background: #68748B; margin:0 auto;}
+		}
+		td{width: 100%;}
+	}
+}
+
+
+
+/* ==============================================================================================================
+반응형
+============================================================================================================== */
+
+@include media($container){
+	//서브메인
+	.section {
+		h2{font-size: 6rem;}
+		.title_area strong {font-size: 3rem;}
+		.title_area strong br{display: none;}
+	}
+	.section_plan {
+		.item_list{margin-left: -2rem;margin-right: -2rem;}
+		.item_list .item{padding-left: 2rem;padding-right: 2rem;}
+	}    
+}
+
+@include media($web){	
+	//서브메인
+	.section{display: block;}
+	.line_group{display: none;}
+	.section .title_area{margin-bottom: 5rem;}
+	.side_left_util{bottom: 12.6rem;}
+}
+
+@include media($pad){	
+	//서브메인	
+	.section_cover_story {
+		.cover_title{display: block;margin-bottom: 4rem;
+			h2{margin-bottom: 4rem;}
+		}
+	}
+	.section ~ .section{padding-top: 8rem;}
+	.section_novel,
+	.section_plan,
+	.section_arco{
+		.item_list{
+			.swiper-slide{ flex:0 0 100%; }
+		}
+	}
+	.section_review .item_list,
+	.section_partg .item_list{
+		display: block;
+		.item:nth-last-child(-n+3){display: none;}
+	}
+	.section_plan .swiper-button{background: rgba(0, 0, 0, 0.3); color: #fff; top:14rem;}
+	.section_plan .swiper-button-prev{left:3rem;}
+	.section_plan .swiper-button-next{right: 3rem;}
+
+
+	//커버스토리
+	.cover_story .plan_word .txt{width: 100%;padding-left: 5rem;padding-right: 5rem;}
+	.cover_story .plan_word .txt::before{left: 0;} 
+	.cover_story .plan_word .txt::after{right: 0;}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

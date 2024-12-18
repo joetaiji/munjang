@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+@font-face {
+  font-family:'Play';
+  font-style:normal;
+  font-weight:300;
+  src:url(./Play/Play/Play-Regular.eot);
+  src:local('Play-Regular'), 
+  url(./Play/Play-Regular.eot?#iefix) format('embedded-opentype'), 
+  url(./Play/Play-Regular.woff2) format('woff2'), 
+  url(./Play/Play-Regular.woff) format('woff'),
+  url(./Play/Play-Regular.ttf) format('truetype'), 
+  url(./Play/Play-Regular.svg#Play-Bold) format('svg');
+}
+@font-face {
+  font-family:'Play';
+  font-style:normal;
+  font-weight:700;
+  src:url(./Play/Play/Play-Bold.eot);
+  src:local('Play-Bold'), 
+  url(./Play/Play-Bold.eot?#iefix) format('embedded-opentype'), 
+  url(./Play/Play-Bold.woff2) format('woff2'), 
+  url(./Play/Play-Bold.woff) format('woff'),
+  url(./Play/Play-Bold.ttf) format('truetype'), 
+  url(./Play/Play-Bold.svg#Play-Bold) format('svg');
+}

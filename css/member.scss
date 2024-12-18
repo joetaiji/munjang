@@ -1,0 +1,312 @@
+@charset "utf-8";
+@import "mixin";
+
+.member_section{
+	&.container{width: 1154px; max-width:100%;}
+	>.title{font-size: 3.6rem;font-weight: 600;color: #000; margin: 8rem 0 6rem; text-align: center;}
+	.depth4{position: relative;z-index: 2; margin-top: 6rem;margin-bottom: 6rem;
+		ul{@include flex; transform:translateY(1px);
+			li{
+				a{display: block;text-align: center; font-size: 2.2rem; padding: 1.7rem; 
+					span{border-bottom: 4px solid transparent;}
+				}
+				&.active a{font-weight: 700;
+					span{border-color: #202020;}
+				}
+				~ li{margin-left: 5rem;}
+			}
+		}
+	}
+	.basic_note{font-size: 1.6rem;margin-top: 1rem;color: #555;}
+	.invalid_note{font-size: 1.6rem;margin-top: 1rem;color:#F13131;
+		&::before{color:inherit;}
+	}
+}
+
+.icon_bracket{ @include flex; font-size: 3.6rem; margin:0 auto 4rem; 
+	&::before{content:"(";margin-right: 1rem; font-size: 4.4rem;}
+	&::after{content:")";margin-left: 1rem; font-size: 4.4rem;}
+}
+%circleIcon{@include flex;width: 4.4rem;height: 4.4rem;border-radius: 50%; flex-shrink:0;
+	&::before{content:""; display: block; background:  0 0/100% 100% no-repeat;}
+}
+.icon-naver{@extend %circleIcon; background: #1EC922;
+	&::before{ width:1.5rem; height:1.5rem; background-image: url('../img/icon_naver.svg');}
+}
+.icon-kakaotalk{ @extend %circleIcon; background: #FAE332 ;
+	&::before{ width:2.5rem; height:2.25rem; background-image:url('../img/icon_kakao.svg');}
+}
+.icon-onepass{@extend %circleIcon; background: #1C2674;
+	&::before{ width:2.6rem; height:2.3rem; background-image: url('../img/icon_onepass.svg');}
+}
+
+/*
+=======================================================================================
+로그인
+======================================================================================= */
+.sub1002 {
+	.breadcrumbs,
+	.title_area .title_h1{display: none;}
+}
+.login_cont{ background: #F4F5F8; border-radius: 0.8rem; width: 57.6rem;margin:0 auto; padding: 4.8rem 3.8rem;
+	.id_login{
+		.title_h2{text-align: center;}
+		.login_form{
+			.login_input{flex:1 1 auto;border-bottom: 1px solid #ddd;margin-bottom: 3rem;
+					input{padding-top:1.1rem;padding-bottom:1.1rem;}
+					span~span{margin-top: 1rem;}
+			}
+			.check_save{margin-top: 3rem;margin-bottom: 3rem;}
+			.btn_login{display: block; width:100%; background:linear-gradient(to right, #E34891, #1877F2); color:#fff; border: 0; padding: 2rem 2.5rem; font-size: 2rem;border-radius: 1.5rem; overflow: hidden; position: relative; transition:.2s; z-index: 0;
+				&::before{content:"";display: block;position: absolute;left: 0;top: 0;width: 100%;height: 100%;background:linear-gradient(to left, #E34891, #1877F2);opacity: 0;transition: 0.2s;z-index: -1;}
+				&:hover::before{opacity: 1;}
+			}
+			.etc_btn{text-align: center;margin-top: 2rem;font-size: 1.6rem;color: #555555;
+				a{
+					&:hover{text-decoration:underline; color: #000;}
+					~a{@include vbar(1px, 1rem, #ddd, 1rem);}
+				}
+			}
+		}		
+	}
+	.one_pass_login{ text-align: center;
+		.btn{background: #2D313B; color: #fff;border: 0; @include flex;width:100%;margin-top: 2rem; padding: 1.7rem; border-radius: 1.5rem;
+			.icon{display: inline-block;width: 2.8rem;height: 2.6rem;background: url('../img/icon_onepass.svg') 0 0/cover no-repeat; margin-right: 2rem;}			
+			span{font-size: 2rem;font-weight: 500;}
+		}
+		.cont{
+			p{@include flex(space-between);
+			&::before{content:"["; font-size: 4.8rem;}
+			&::after{content:"]"; font-size: 4.8rem; }
+			}
+		}
+	}	
+	.sns_login{ text-align: center;}
+	.sns_login_list{display: flex;justify-content: center;
+		li{
+			a{display: flex; align-items:center;}
+			~li{margin-left: 5.7rem;}
+			.icon{width: 6.8rem;height: 6.8rem; margin-right: 2rem;}	
+			.icon-naver::before{width:2.5rem; height:2.5rem; }
+			.icon-kakaotalk::before{width:3.8rem; height:3.5rem; }			
+			strong{color: #333333;}
+		}
+	}
+}
+
+
+//비밀번호 변경
+.pw_change_pop{
+	.modal_popup{width:70rem;}
+	.major_txt{margin-bottom: 3.3rem; 
+		em{color: var(--color2);}
+	}
+	.pw_tip{
+		.tip_title{ position: relative;margin-bottom: 3rem;
+			span{background: #0097E0;color: #fff; border-radius: 2.5rem; display: inline-block; padding: 0.65rem 2rem;position: relative; }
+			&::before{content: '';display: block;width: 100%;height: 1px;background: #C2E7F9; @include pos(lt, 0, 50%, 0, -50%); }
+		}
+		.tip_list{@include flex(space-evenly);
+			.icon{margin:0 auto 2rem;}
+			.item1 .icon{display: block;background: url('../img/sub/pw_tip_icon1.svg') 0 0/cover no-repeat;width: 6.6rem;height: 6rem;}
+			.item2 .icon{display: block;background: url('../img/sub/pw_tip_icon2.svg') 0 0/cover no-repeat;width: 18.3rem;height: 4.3rem;}
+			.item3 .icon{display: block;background: url('../img/sub/pw_tip_icon3.svg') 0 0/cover no-repeat;width: 5.1rem;height: 5.1rem;}
+			.txt{font-size: 1.6rem;}
+		}
+	}	
+}
+
+//비밀번호 입력
+.pw_input{		
+	.form-group,
+	.form-row{position: relative;}
+	.btn_pw_view{@include pos(rt, 1rem, 50%, 0, -50%);
+		i::before{color: #9e9e9e;}
+		&.active i::before{content: '\ecb5';color:inherit;}
+	}	
+	.combi_step{
+		.icon{display: inline-block;background: #aaaaaa;width: 6rem;height: 2px;
+			~.icon{margin-left: 1.3rem;}
+		}
+		&.level_1 .icon:nth-child(1),
+		&.level_2 .icon:nth-child(-n+2),
+		&.level_3 .icon:nth-child(-n+3){background: #F13131;}		
+		&.level_4{
+			.icon:nth-child(-n+4){background: var(--color1);}
+			+ .invalid_note{color:var(--color1);}
+		}
+		&.level_5{
+			.icon{background: var(--color1);}
+			+ .invalid_note{color:var(--color1);}
+		}		
+	}
+
+}
+/*
+=======================================================================================
+아이디/비밀번호 찾기
+======================================================================================= */
+
+.id_pw_search_result_cont{/* margin-top: 7rem; */
+	.box{@include flex; padding: 8rem;}
+	.major_txt{font-size: 3.2rem;font-weight: 400; position: relative; width: 50rem; margin:0 auto 5rem;
+		.icon{position: absolute;top:50%; transform: translate(-150%, -50%);}
+	}
+	.list li{line-height:1.8;}
+	.pw_input{
+		.form-label{width: 18rem; }
+		.form-control{width: 68rem;}
+		.note{margin-left: 18rem;}
+		.invalid_note{}
+	}
+}
+.select_cert{margin-bottom: 5rem;
+	/* button{@include flex; transition:.15s;
+		&:hover{border:2px solid #2E2F31; box-shadow: 2px 1px 7px rgba(178, 178, 185, 0.25);}		
+	} */
+	.item{width:100%; height: 100%; padding: 5rem 10rem; border: 1px solid #DDDDDD; text-align: center;
+		i{display: block;margin:0 auto;}
+		span{display: block;font-size: 2rem;margin:2rem 0 5rem;}
+	}
+	.phone_cert{
+		.icon{width: 7.2rem;height: 7rem;background: url('../img/id_pw_sch_icon1.svg') 0 0/cover no-repeat; }
+	}
+	.ipin_cert{
+		.icon{width: 7.4rem;height: 7rem;background: url('../img/id_pw_sch_icon2.svg') 0 0/cover no-repeat; }
+	}	
+}
+/*
+=======================================================================================
+통합회원가입
+======================================================================================= */
+
+.note.info{font-size: 1.6rem;margin-top: 0.5rem;
+	i{font-size: 2rem;color: #666666;margin-right: .5rem;}
+}
+
+.join_intro_cont{	
+	.major_txt{text-align: center; margin-bottom: 8rem;}
+	.member_type_select{ display: flex; justify-content: center; margin-bottom: 8rem;
+		.member_type{ border-radius: 50%; color:#fff; width: 31.5rem; height: 31.5rem; @include flex; flex-direction: column;
+			&.type1{background: var(--color1);}
+			&.type2{background: var(--color2);margin-left: 10rem;}
+			strong{font-size: 2.8rem; margin-bottom: 1.5rem;}			
+			small{font-size: 1.6rem; margin-bottom: 4rem;}
+			span{font-size: 1.6rem;font-weight: 700; line-height: 3.9rem;
+				i{font-size: 2.4rem;margin-left: 1rem;font-weight: 400;}
+			}
+		}
+	}
+}
+
+.join_step{@include flex; font-size: 2.4rem; margin-top: 4rem;margin-bottom: 3rem; padding-bottom: 5rem;
+	li{display: flex;align-items:center; 
+		.item{display: flex;flex-direction:column; justify-content: center; min-width:13rem; height: 13rem;border-radius: 7rem;border: 1px solid #B8BFC9; padding: 3rem; position: relative;
+			em{display: block;font-size: 1.6rem;font-weight: 700;margin-bottom: .5rem;}
+			strong{font-size: 2rem;font-weight: 600;}
+		}
+		~ li{margin-left: 9%;
+			.item::before{content:"\ea6c";font-family: var(--icon);color: #ACACAC; @include pos(lt, 0, 50%, -310%, -50%);}
+		}
+	}
+	.active{
+		.item{color: #fff;background: transparent linear-gradient(180deg, #F13131 0%, #3636A8 100%) 0% 0% no-repeat padding-box;border: 0;}
+	}
+}
+.join_step_cont{border-top: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; padding: 4.5rem 0;
+	.box{background: #fff;}
+	>.box {position: relative;
+		.box{height: 38rem; overflow:auto; @include scrollbar;}
+	}		
+}
+
+.regist_complete_cont{ text-align: center;
+	
+	.box{border-color: #CFEBE7;padding: 8rem 0;}
+	.regist_member{
+		.icon_bracket{}
+		.major_txt{			
+			strong{font-size: 4.4rem;font-weight: 600;display: block;margin-bottom: 3rem;}
+			.desc{font-size: 2.4rem;font-weight: 500;margin-bottom: 2rem;}
+		}
+	}
+	
+}
+ 
+.write_form {margin-bottom:3rem; position: relative;
+	.th{padding-left: 4rem; padding-top: 1.5rem;}
+	.form-label{align-items:inherit;}
+	.td{padding-top: 1rem;padding-bottom: 1rem;}
+	.noinput{padding-top: 1.5rem;padding-bottom: 1.5rem;}	
+}
+
+.guardian_consent .row{border-bottom: 1px dotted #ddd; padding: 3rem 0;align-items:center;
+	.title{display: block;margin-bottom: 1rem;
+		i{margin-right: 1rem;}
+	}
+}
+.sns_cert {
+	.inline_box{
+		.icon{margin:0 auto;}
+	}
+}
+.icon_warning{border-radius: 50%;background: #FFD500; width: 10rem;height: 10rem;margin:0 auto 3rem; @include flex;font-size: 6rem;font-weight: 700;}
+
+.interest_area{
+	.interest_list li{margin:1rem 0;}
+}
+
+//회원정보 업데이트
+.mbr_info_confirm{
+	//position: absolute;right: 10rem;top: 50%;transform: translateY(-50%);
+}
+.mbr_update_step1{
+	.select_cert_wrap{width:50%; margin: 0 auto;}
+	.account_list{
+		.row~.row{margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #eee;}
+	}
+}
+
+
+/* 이메일무단수집거부  */
+.mail_reject{display: flex;flex-direction:column; align-items: center; padding: 7rem 0!important;
+	i.picto{display: block;margin-bottom: 3rem;}
+	.major_txt{display: block;font-size: 2.2rem;margin-bottom: 2rem;}
+	.desc{text-align: center;}
+}
+
+@include media($web){	
+	
+}
+
+@include media($pad){
+	.id_pw_search_result_cont .box{padding-left: 3rem; padding-right: 3rem;}
+	.id_pw_search_result_cont .major_txt,
+	.id_pw_search_result_cont .pw_input .form-control{width: auto;}
+	.id_pw_search_result_cont .pw_input .note{margin-left: 0;}
+	.login_cont{width: 100%; padding-left: 2rem;padding-right: 2rem;}
+	.join_intro_cont .member_type_select{flex-direction: column; align-items: center;}
+	.join_intro_cont .member_type_select .member_type.type2{margin-left: 0;margin-top: 2rem;}
+	.join_step li{display: none;}
+	.join_step li.active{display: block;margin-left: 0;}
+	.join_step li.active .item::before{display: none;}
+	.join_step li ~ li .item::before{transform: translate(-140%, -50%);}
+	.join_step li.active + li{display: block;}
+	.select_cert> .col-sm-6~.col-sm-6{margin-top: 2rem;}
+	.write_form .th{padding-left: 0.5rem;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

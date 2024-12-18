@@ -1,0 +1,374 @@
+@charset "UTF-8";
+.gnb2 .sitemap_title a,
+.header .logo .main_logo {
+  width: 10.4rem;
+  background-image: url(../img/common/logo_teen.svg);
+}
+
+.header .logo .sub_logo {
+  display: none;
+}
+
+.topmenu > li.lnb2 > a > span::before {
+  display: none;
+}
+
+/* ==============================================================================================================
+서브메인
+============================================================================================================== */
+.swiper-autoplay {
+  position: relative;
+  z-index: 3;
+}
+.swiper-autoplay button {
+  display: none;
+}
+.swiper-autoplay button.active {
+  display: block;
+}
+
+.section_glteen {
+  margin-top: 5.5rem;
+  margin-bottom: 8rem;
+  color: #fff;
+}
+.section_glteen .item_list .bg {
+  display: block;
+  height: 41.5rem;
+}
+.section_glteen .item_list .item img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section_glteen .txt {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.section_glteen .txt .date {
+  display: block;
+  margin-bottom: 6rem;
+}
+.section_glteen .txt .major_txt {
+  font-size: 3.6rem;
+}
+.section_glteen .swiper-controls {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: 4rem;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+.section_glteen .swiper-controls i {
+  font-size: 2.8rem;
+}
+.section_glteen .swiper-pagination {
+  display: flex;
+  position: static;
+  margin: 0 2rem;
+}
+.section_glteen .swiper-pagination-bullet {
+  width: 1rem;
+  height: 1rem;
+  background: transparent;
+  border: 1px solid #fff;
+  margin: 0 0.5rem;
+}
+.section_glteen .swiper-pagination-bullet-active {
+  background: #fff;
+}
+
+.section_glteen_list {
+  margin-bottom: 13rem;
+}
+.section_glteen_list.title_area {
+  text-align: left;
+}
+.section_glteen_list .category_wrap {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--txtd);
+}
+.section_glteen_list .category_wrap i {
+  font-size: 3rem;
+}
+.section_glteen_list .category_wrap .depth3,
+.section_glteen_list .category_wrap .depth4 {
+  margin-bottom: 0;
+}
+.section_glteen_list .category_wrap .depth3 button::after,
+.section_glteen_list .category_wrap .depth4 button::after {
+  margin-top: 2rem;
+}
+.section_glteen_list .more {
+  display: block;
+  border-radius: 0.4rem;
+  border: 1px solid #707070;
+  background: #353540;
+  padding: 1rem 9rem;
+  margin: 6rem auto;
+  transition: 0.2s;
+  color: #fff;
+}
+.section_glteen_list .more i {
+  font-size: 2.4rem;
+  margin-left: 1rem;
+}
+.section_glteen_list .more:hover {
+  background: black;
+  border-color: transparent;
+}
+
+.section_glteen_news {
+  display: grid;
+  grid: auto/1fr 1fr;
+  gap: 11rem;
+  margin-bottom: 13rem;
+}
+.section_glteen_news article {
+  display: flex;
+  position: relative;
+}
+.section_glteen_news article h2 {
+  flex: 0 0 16rem;
+}
+.section_glteen_news article .item_list {
+  padding-right: 10rem;
+  height: 10rem;
+}
+.section_glteen_news article .item a {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.4;
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  height: 5.6rem;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  word-wrap: break-word;
+  word-break: keep-all;
+  margin-bottom: 2rem;
+}
+.section_glteen_news article .item .date {
+  font-size: 1.6rem;
+  color: var(--txt6);
+}
+.section_glteen_news article .more {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: var(--txt7);
+}
+.section_glteen_news article .more i {
+  margin-left: 1rem;
+}
+.section_glteen_news .swiper-controls {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.section_glteen_news .swiper-controls .swiper-button {
+  font-size: 2.4rem;
+}
+.section_glteen_news .swiper-button.swiper-button-prev:hover i {
+  transform: translate(0, -20%);
+}
+.section_glteen_news .swiper-button.swiper-button-next:hover i {
+  transform: translate(0, 20%);
+}
+
+/* ==============================================================================================================
+콘텐츠
+============================================================================================================== */
+.cont_visual {
+  background-image: url("../img/sub/s3_visual.jpg");
+}
+
+.s3_glteen .row ~ .row {
+  margin-top: 8rem;
+}
+.s3_glteen .intro_major_txt {
+  width: 50%;
+  font-family: var(--font);
+  font-size: 2.4rem;
+  text-align: center;
+  margin: 0 auto 12rem;
+}
+.s3_glteen .intro_major_txt strong {
+  text-decoration: underline;
+}
+.s3_glteen .title_group {
+  margin-top: 0;
+  text-align: left;
+}
+.s3_glteen .title_group .title_h1_s {
+  margin-top: 0;
+}
+.s3_glteen .txt_bg {
+  font-family: var(--font);
+  font-size: 22rem;
+  color: var(--txte);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+  transform: rotate(180deg);
+  line-height: 1;
+}
+.s3_glteen .works_group {
+  display: grid;
+  grid: auto/repeat(3, 1fr);
+  gap: 9rem 3.2rem;
+}
+.s3_glteen .works_group .item {
+  border: 1px solid var(--txte);
+  border-radius: 0.7rem; /* height: 45rem; */
+  padding: 5rem 3rem;
+  position: relative;
+}
+.s3_glteen .works_group .item .category {
+  font-size: 3.4rem;
+  display: block;
+  margin-bottom: 6rem;
+  font-weight: 500;
+}
+.s3_glteen .works_group .item img {
+  margin: 0 auto 6rem;
+  display: block;
+}
+.s3_glteen .works_group .item .title {
+  display: block;
+  text-align: center;
+  font-family: var(--font);
+  font-size: 3rem;
+}
+.s3_glteen .works_group .item::before {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+}
+.s3_glteen .works_group .item.type1::before {
+  background: var(--category1);
+}
+.s3_glteen .works_group .item.type2::before {
+  background: var(--category2);
+}
+.s3_glteen .works_group .item.type3::before {
+  background: var(--category3);
+}
+.s3_glteen .works_group .item.type4::before {
+  background: var(--category4);
+}
+.s3_glteen .works_group .item.type1::before {
+  left: 20%;
+  top: 13rem;
+}
+.s3_glteen .works_group .item.type2::before {
+  left: 20%;
+  top: 28rem;
+}
+.s3_glteen .works_group .item.type3::before {
+  right: 20%;
+  top: 13rem;
+}
+.s3_glteen .works_group .item.type4::before {
+  right: 20%;
+  top: 28rem;
+}
+.s3_glteen .works_group .item:nth-child(1) {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+@media (max-width: 1024.98px) {
+  .section_glteen_news {
+    display: block;
+  }
+  .glteen_camp {
+    margin-bottom: 6rem;
+  }
+  .section_glteen_list .category_wrap {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .section_glteen_list .category_wrap .btn-prev,
+  .section_glteen_list .category_wrap .btn-next {
+    display: none;
+  }
+  .section_glteen_list .category_wrap .depth3 button span,
+  .section_glteen_list .category_wrap .depth4 button span {
+    white-space: nowrap;
+  }
+  .section_glteen_list .category_wrap .depth3 ul li ~ li,
+  .section_glteen_list .category_wrap .depth4 ul li ~ li {
+    margin: 0;
+  }
+  .s3_glteen .intro_major_txt {
+    width: 100%;
+  }
+  .s3_glteen .works_area .item {
+    padding: 2.5rem 1.5rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .s3_glteen .title_group {
+    margin-bottom: 3rem;
+  }
+  .s3_glteen .txt_bg {
+    display: none;
+  }
+  .s3_glteen .works_group {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4.5rem 1.6rem;
+  }
+  .s3_glteen .works_group .item:nth-child(1) {
+    grid-column: inherit;
+  }
+  .s3_glteen .award {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .section_glteen {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+  }
+  .section_glteen_list {
+    margin-top: 4rem;
+    margin-bottom: 7rem;
+  }
+  .section_glteen_list .more {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .section_glteen_list .category_wrap .depth3,
+  .section_glteen_list .category_wrap .depth4 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section_glteen_news {
+    margin-bottom: 7rem;
+  }
+}/*# sourceMappingURL=sub03.css.map */

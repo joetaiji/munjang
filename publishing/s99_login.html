@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<title>문학광장 – 생활 속 작은 여유로움 "문장"</title>
+	<meta name="keywords" content="문학광장, 문장">
+	<meta name="description" content="생활 속 작은 여유로움 '문장'">
+	<meta name="copyright" content="문학광장">
+	<meta name="author" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="shortcut icon" href="../main/img/common/favicon.png">
+	<link rel="stylesheet" href="../css/slick.css">
+	
+	<link rel="stylesheet" href="../css/font.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/board.css">
+	<link rel="stylesheet" href="../css/member.css">
+	<link rel="stylesheet" href="../main/css/layout.css">
+	<link rel="stylesheet" href="../main/css/contents.css">
+	<script src="../js/jquery-3.2.1.min.js "></script>		
+	<script src="../js/slick.min.js"></script>	
+	<script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+<script src="../js/letterfx.min.js"></script> <!-- 리스트 비주얼 타이포애니 -->
+<link rel="stylesheet" href="../js/letterfx.css"> <!-- 리스트 비주얼 타이포애니 -->		
+	
+</head>
+
+<body>
+	<!--/*  skipNavigation*/-->
+	<div id="skipNav">
+		<a href="#contents">본문으로 바로가기</a>
+		<a href="#gnb1">주메뉴 바로가기</a>
+	</div>
+	<!--/*  //skipNavigation */-->
+	
+	<div id="wrap">		
+		<header id="header" class="header" data-include="include/header.html" data-id="9"></header>
+		<!--/*  //header */-->
+		
+
+		<!--/*  Main */-->
+		<main id="main" class="main">
+			
+			<div id="contents" class="contents">
+
+				<div class="title_area">
+					<h3 class="title_h1 sr-only">로그인</h3>
+				</div>
+				<!--/*  //title_area */-->
+				
+				<section class="member_section container">
+					
+					<div class="login_cont">
+						<div class="login id_login">
+							<h3 class="title_h2 mt0">ID로그인</h3>
+							<div class="cont login_form">
+								<div class="login_input pw_input">
+									<div class="form-row">
+										<input type="text" class="form-control mb10" placeholder="아이디" title="아이디를 입력해주세요">	
+									</div>
+									<div class="form-row">
+										<input type="password" class="form-control" placeholder="비밀번호" title="비밀번호를 입력해주세요.">
+										<button type="button" class="btn_pw_view"><span class="sr-only">비밀번호보기</span><i class="ri-eye-off-line"></i></button>
+									</div>
+									<div class="check_save">
+										<span class="custom-input"><input type="checkbox" id="loginChkIdSave"><label for="loginChkIdSave">아이디 저장</label></span> 
+										<!--/*  <span class="custom-input"><input type="checkbox" id="loginChkPwSave"><label for="loginChkPwSave">비밀번호 저장</label></span>   */-->
+									</div><!--/*  //check_save */-->   
+								</div>   
+								<!--/*  //login_input */-->
+								
+								<button type="submit" class="btn btn_login">로그인</button> 
+								<div class="etc_btn">
+									<a href="">아이디찾기</a>
+									<a href="">비밀번호찾기</a>
+									<a href="">회원가입</a>
+								</div>
+							</div>
+							<!--/*  //login_form */-->
+						</div>
+						<!--/*  //id_login */-->
+						
+						<div class="one_pass_login">
+							<h3 class="title_h2">디지털원패스 로그인</h3>
+							<div class="cont">
+								<p>하나의 아이디로 안전하고 편리하게<br> 여러 전자정부 서비스를 이용할 수 있는 서비스입니다.</p>
+								<button type="button" class="btn"><i class="icon" aria-hidden="true"></i><span>디지털원패스로 로그인</span></button>
+							</div>
+						</div>
+						<!--/*  //one_pass_login */-->
+						<div class="sns_login">
+							<h3 class="title_h2">SNS 간편로그인</h3>
+							<div class="cont">    
+								<ul class="sns_login_list">
+									<li><a href=""><i class="icon icon-naver" aria-hidden="true"></i><strong>네이버<br> 로그인</strong></a></li>
+									<li><a href=""><i class="icon icon-kakaotalk" aria-hidden="true"></i><strong>카카오<br> 로그인</strong></a></li>
+								</ul>
+							</div>
+						</div>
+						<!--/*  //sns_login */-->
+					</div>
+					<!--/*  //login_cont */-->
+				</section>
+				<!--/*  //member_section */-->
+
+				
+
+				<!--/*  팝업 열리게 하려면
+					class추가 : ".opended-layer"
+					인라인스타일추가 : "display:block" */-->				
+				<div class="modal-popup-wrap opened-layer" id="modal_new_password" style="display:block;">
+					<div class="modal-popup">
+						<div class="modal-title">
+							<strong class="sr-only">비밀번호 변경</strong>
+						</div>
+						<div class="modal-cont">	
+							<i class="icon_bracket"><i class="ri-lock-password-line"></i></i>	
+							<strong class="title mb20">새로운 비밀번호로 변경해 주세요.</strong>
+							<p>회원님은 90일 이상 같은 비밀번호를 사용하고 계십니다.<br> 비밀번호를 주기적으로 변경해 주세요.</p>
+						</div>
+						<div class="modal-foot">
+							<button class="btn type1">30일후 변경하기</button>
+							<button class="btn type2">비밀번호 변경하기</button>
+						</div>				
+						<button type="button" class="btn-close layer-close"><i class="ri-close-line"></i><span class="sr-only">팝업닫기</span></button>
+					</div>					
+				</div>
+				<!--/*  //modal-popup */-->
+
+				<!--/*  통합회원 연동정보없음 */-->		
+				<div class="modal-popup-wrap" id="modal_no_id">
+					<div class="modal-popup">
+						<div class="modal-title">
+							<strong class="sr-only">아이디정보</strong>
+						</div>
+						<div class="modal-cont">		
+							<i class="icon_bracket"><i class="ri-spam-line"></i></i>
+							<strong class="title mb20">통합회원 아이디와 연동된 정보가 없습니다.</strong>
+							<p class="mb20">기존 회원 아이디와 비밀번호로 로그인하시는 고객님 계정을<br>카카오/네이버 계정과 연동하여 간편하게 로그인하실 수 있도록<br> 통합회원 아이디와 연동하는 서비스 입니다.</p>
+							<p>연동을 원하시면 홈페이지 로그인 후<br> 마이페이지에서 SNS 연동하기를 이용해 주세요.</p>
+						</div>
+						<div class="modal-foot">
+							<button class="btn type1">확인</button>
+						</div>				
+						<button type="button" class="btn-close layer-close"><i class="ri-close-line"></i><span class="sr-only">팝업닫기</span></button>
+					</div>					
+				</div>
+				<!--/*  //modal-popup */-->
+
+
+				<!--/*  약관 재동의 */-->
+				<div class="modal-popup-wrap opened-layer" id="modal_terms_realign" style="display:block;">
+					<div class="modal-popup">
+						<div class="modal-title">
+							<strong class="sr-only">약관 재동의</strong>
+						</div>
+						<div class="modal-cont">	
+							<i class="icon_bracket"><i class="ri-spam-line"></i></i>	
+							<strong class="title mb20">약관 재동의를 해주세요.</strong>
+							<p>회원님의 개인정보 수집기간인 2년이 되어<br> 약관 재동의 절차가 필요합니다.</p>
+						</div>
+						<div class="modal-foot">
+							<button class="btn type1">나중에 하기</button>
+							<button class="btn type2">지금 동의하러가기</button>
+						</div>				
+						<button type="button" class="btn-close layer-close"><i class="ri-close-line"></i><span class="sr-only">팝업닫기</span></button>
+					</div>					
+				</div>
+				<!--/*  //modal-popup */-->
+				
+			</div>
+			<!--/*  //contents */-->
+			
+			
+		</main>
+		<!--/*  //Main */-->
+		
+		<div class="side_right_util" data-include="include/side_right.html"></div>
+		<!--/*  //side_right_util */-->
+
+		<footer id="footer" class="footer" data-include="include/footer.html"></footer>
+		<!--/*  //footer */-->
+		
+
+	</div>
+	<!--/*  //wrap */-->
+	<script src="../main/js/include.js"></script><!--/*  //local에서 include하기 위한 임시파일로 개발에 입힐때는 필요없는 파일입니다.  */-->
+	
+	<script src="../main/js/func.js"></script>
+	<script src="../main/js/layout.js" defer></script>
+	<script src="../main/js/sub.js" defer></script>
+</body>
+
+</html>

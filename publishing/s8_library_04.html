@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<title>문학광장 – 생활 속 작은 여유로움 "문장"</title>
+	<meta name="keywords" content="문학광장, 문장">
+	<meta name="description" content="생활 속 작은 여유로움 '문장'">
+	<meta name="copyright" content="문학광장">
+	<meta name="author" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="shortcut icon" href="../main/img/common/favicon.png">
+	<link rel="stylesheet" href="../css/slick.css">
+	
+	<link rel="stylesheet" href="../css/font.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/board.css">
+	<link rel="stylesheet" href="../css/member.css">
+	<link rel="stylesheet" href="../main/css/layout.css">
+	<link rel="stylesheet" href="../main/css/contents.css">
+	<link rel="stylesheet" href="../main/css/sub08.css"><!--/* 대카테고리별 css파일*/-->
+	<script src="../js/jquery-3.2.1.min.js "></script>		
+	<script src="../js/slick.min.js"></script>	
+	<script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+<script src="../js/letterfx.min.js"></script> <!-- 리스트 비주얼 타이포애니 -->
+<link rel="stylesheet" href="../js/letterfx.css"> <!-- 리스트 비주얼 타이포애니 -->		
+	
+</head>
+
+<body>
+	<!--/*  skipNavigation*/-->
+	<div id="skipNav">
+		<a href="#contents">본문으로 바로가기</a>
+		<a href="#gnb1">주메뉴 바로가기</a>
+	</div>
+	<!--/*  //skipNavigation */-->
+	
+	<div id="wrap">
+		<header id="header" class="header" data-include="include/header.html" data-id="8"></header>
+		<!--/*  //header */-->
+
+		<!--/*  Main */-->
+		<main id="main" class="main my_munjang">
+			<section class="custom_visual" style="background: url(../main/img/sub/sample_img7.jpg) 50% 50% / cover no-repeat;">
+				<div class="container">
+					<h2 class="sr-only">나의문장</h2>	
+					
+					<div class="item author_profile other">
+						<div class="thumb">
+							<!--/*  이미지 없을때 아이콘 */-->
+							<span><i class="ri-user-line"></i></span>
+							<!--/*  이미지 있을때 
+							<span><img src="../main/img/sub/mento_sample1.jpg" alt=""></span>*/-->
+						</div>
+						<div class="txt">
+							<strong class="name"><em>멘토</em>김애리사 작가</strong>
+							<small class="mail eng">kims@kakao.com</small>
+						</div>
+						<div class="detail_txt">
+							<p class="desc">주로 텍스트를 그림으로 옮기는 작업을 하고 있습니다. 안주하지 못하는 이미지들을 생각합니다. 점점 지불하지 않아도 재료가 될 수 있는 것들이 그림이 되었으면 좋겠습니다. 어쩔 수 없이 혼자된 것들이 할 수 있는 기억을 그립니다. 가끔 우연을 이용합니다.</p>
+							<ul class="etc_txt">
+								<li><a href="s8_your_main_03.html"><span>작성한 글</span><strong class="num">150</strong></a></li>
+								<li><button data-id="modal_follower"><span>팔로워</span><strong class="num">150</strong></button></li>
+								<li><button data-id="modal_following"><span>팔로잉</span><strong class="num">150</strong></button></li>
+								<li><button data-id="modal_like_author"><span>관심작가</span><strong class="num">150</strong></button></li>
+							</ul>							
+						</div>
+						<a href="s8_my_main_01.html" class="btn_mymain"><span>나의 문장으로</span><i class="ri-arrow-right-line"></i></a>					
+					</div>
+					
+				</div>
+				<!--/*  //container */-->
+			</section>
+			<!-- /* //custom_visual */ -->
+
+			<div id="contents" class="contents">
+				
+				<div class="snb_wrap container">
+					<section class="snb_section">
+						<h2 class="title">나의 글방</h2>						
+						<div class="snb">
+							<nav class="nav">
+								<ul id="left_menu_top" class="depth2">								
+									<li><a href="">담은 글</a></li>
+									<li><a href="">작성한 글</a></li>
+									<li><a href="">다 읽은 글</a></li>
+									<li><a href="" class="active">읽고 있는 글</a></li>
+									<li><a href="">작성한 댓글</a></li>
+								</ul>
+							</nav>
+						</div>
+					</section>
+					<!-- /* //snb_section */ -->
+					<section class="contents_section">
+						<div class="title_area">
+							<h3 class="title_h1">읽고 있는 글</h3>
+						</div>
+						<!--/*  //title_area */-->
+						<section class="my_cont_section">
+							<div class="gradient_notice">회원님은 1500편의 글을 읽는 중입니다.</div>
+							<form id="srhForm" name="srhForm" method="GET" action="" class="board_search board_detail_search">
+								<div class="form-inline">	
+									<select class="form-select select_type arr" id="searchType2" name="searchType2" title="검색분류선택">
+										<option >전체</option>
+										<option >제목</option>
+										<option >내용</option>
+										<option >작성자</option>
+									</select>
+									<input type="text" class="form-control input_keyword"  id="searchKeyword1" name="searchKeyword1" placeholder="검색어를 입력해 주세요." title="검색어를 입력해 주세요.">
+									<button type="button" onclick="" class="search_btn"><i class="ri-search-line"></i><span class="sr-only">검색</span></button>
+								</div>
+							</form>
+							
+							<h4 class="title_h2">문장웹진</h4>
+							<div class="board_list book_list col3">
+								<ul class="list_ul">
+									<li class="list_li">					
+										<!--/*  
+										카테고리별 클래스명
+										커버스토리 : type0
+										감상&비평 : type1
+										소설 : type2
+										수필 : type3
+										시 : type4
+										기획 : type5
+										Part.g : type6
+										*/-->				
+										<a href="board_view.html" class="item type4">
+											<div class="thumb">
+												<img src="../main/img/sub/list_thumb_sample1.jpg" alt="">
+											</div>										
+											<div class="txt">
+												<span class="category">시</span>
+												<strong class="title">롤리팝</strong>
+											</div>
+										</a>
+										<div class="thumb_hover">
+											<div class="link_wrap">
+												<button class="btn_like mr10">
+													<i class="ri-heart-line"></i>
+													<span class="sr-only">좋아요</span>
+													<em class="num">23</em>
+												</button>
+												<button class="btn_share mr10" data-id="modal_share">
+													<i class="ri-share-line"></i>
+													<span class="sr-only">공유하기</span>
+													<em class="num">23</em>
+												</button>
+												<a href="" class="btn_view"><i class="ri-arrow-right-line"></i><span class="sr-only">상세보기</span></a>
+											</div>
+										</div>	
+										<div class="reading_info">
+											<div class="progress_bar">
+												<span style="width:30%;"><span class="sr-only">30%</span></span>
+											</div>
+											<span class="num">2022-09-16</span>
+										</div>
+									</li>
+									<li class="list_li">
+										<a href="board_view.html" class="item type0">
+											<div class="thumb">
+												<img src="../main/img/sub/list_thumb_sample2.jpg" alt="">
+											</div>										
+											<div class="txt">
+												<span class="category">커버스토리</span>
+												<strong class="title">11월호 커버스토리 / 이나헌</strong>
+											</div>
+										</a>
+										<div class="thumb_hover">
+											<div class="link_wrap">
+												<button class="btn_like mr10">
+													<i class="ri-heart-line"></i>
+													<span class="sr-only">좋아요</span>
+													<em class="num">23</em>
+												</button>
+												<button class="btn_share mr10" data-id="modal_share">
+													<i class="ri-share-line"></i>
+													<span class="sr-only">공유하기</span>
+													<em class="num">23</em>
+												</button>
+												<a href="" class="btn_view"><i class="ri-arrow-right-line"></i><span class="sr-only">상세보기</span></a>
+											</div>
+										</div>
+										<div class="reading_info">
+											<div class="progress_bar">
+												<span style="width:99%;"><span class="sr-only">99%</span></span>
+											</div>
+											<span class="num">2022-09-16</span>
+										</div>
+										
+									</li>
+									<li class="list_li">	
+										<a href="board_view.html" class="item type2">
+											<div class="thumb">
+												<!--/*  //등록된 이미지가 없을때 */-->
+											</div>
+											<div class="txt">
+												<span class="category">소설</span>
+												<strong class="title">모든 키보드에서 쉼표가 삭제되었다</strong>
+											</div>							
+										</a>
+										<div class="thumb_hover">
+											<div class="link_wrap">
+												<button class="btn_like mr10">
+													<i class="ri-heart-line"></i>
+													<span class="sr-only">좋아요</span>
+													<em class="num">23</em>
+												</button>
+												<button class="btn_share mr10" data-id="modal_share">
+													<i class="ri-share-line"></i>
+													<span class="sr-only">공유하기</span>
+													<em class="num">23</em>
+												</button>
+												<a href="" class="btn_view"><i class="ri-arrow-right-line"></i><span class="sr-only">상세보기</span></a>
+											</div>
+										</div>
+										<div class="reading_info">
+											<div class="progress_bar">
+												<span style="width:1%;"><span class="sr-only">1%</span></span>
+											</div>
+											<span class="num">2022-09-16</span>
+										</div>
+									</li>
+									<li class="list_li">									
+										<a href="board_view.html" class="item type3">
+											<div class="thumb"></div>
+											<div class="txt">
+												<span class="category">수필</span>
+												<strong class="title">성장한다는 것 (퇴고:20221124)</strong>
+											</div>	
+										</a>
+										<div class="thumb_hover">
+											<div class="link_wrap">
+												<button class="btn_like mr10">
+													<i class="ri-heart-line"></i>
+													<span class="sr-only">좋아요</span>
+													<em class="num">23</em>
+												</button>
+												<button class="btn_share mr10" data-id="modal_share">
+													<i class="ri-share-line"></i>
+													<span class="sr-only">공유하기</span>
+													<em class="num">23</em>
+												</button>
+												<a href="" class="btn_view"><i class="ri-arrow-right-line"></i><span class="sr-only">상세보기</span></a>
+											</div>
+										</div>
+										<div class="reading_info">
+											<div class="progress_bar">
+												<span style="width:15%;"><span class="sr-only">15%</span></span>
+											</div>
+											<span class="num">2022-09-16</span>
+										</div>
+									</li>	
+									<li class="list_li">	
+										<a href="board_view.html" class="item type4">
+											<div class="thumb">
+												<img src="../main/img/sub/list_thumb_sample1.jpg" alt="">
+											</div>										
+											<div class="txt">
+												<span class="category">시</span>
+												<strong class="title">롤리팝</strong>
+											</div>
+										</a>
+										<div class="thumb_hover">
+											<div class="link_wrap">
+												<button class="btn_like mr10">
+													<i class="ri-heart-line"></i>
+													<span class="sr-only">좋아요</span>
+													<em class="num">23</em>
+												</button>
+												<button class="btn_share mr10" data-id="modal_share">
+													<i class="ri-share-line"></i>
+													<span class="sr-only">공유하기</span>
+													<em class="num">23</em>
+												</button>
+												<a href="" class="btn_view"><i class="ri-arrow-right-line"></i><span class="sr-only">상세보기</span></a>
+											</div>
+										</div>
+										<div class="reading_info">
+											<div class="progress_bar">
+												<span style="width:55%;"><span class="sr-only">55%</span></span>
+											</div>
+											<span class="num">2022-09-16</span>
+										</div>
+									</li>
+									<li class="list_li">	
+										<a href="board_view.html" class="item type1">
+											<div class="thumb">
+												<!--/*  //등록된 이미지가 없을때 */-->
+											</div>
+																				
+											<div class="txt">
+												<span class="category">감상&amp;비평</span>
+												<strong class="title">이상과 현실, 낭만과 한숨 사이. (QM 3집 [돈숨]과 we can love again)</strong>
+											</div>
+										</a>
+										<div class="thumb_hover">
+											<div class="link_wrap">
+												<button class="btn_like mr10">
+													<i class="ri-heart-line"></i>
+													<span class="sr-only">좋아요</span>
+													<em class="num">23</em>
+												</button>
+												<button class="btn_share mr10" data-id="modal_share">
+													<i class="ri-share-line"></i>
+													<span class="sr-only">공유하기</span>
+													<em class="num">23</em>
+												</button>
+												<a href="" class="btn_view"><i class="ri-arrow-right-line"></i><span class="sr-only">상세보기</span></a>
+											</div>
+										</div>
+										<div class="reading_info">
+											<div class="progress_bar">
+												<span style="width:55%;"><span class="sr-only">55%</span></span>
+											</div>
+											<span class="num">2022-09-16</span>
+										</div>
+									</li>
+								</ul>
+								<a href="" class="more"><span class="sr-only">문장웹진</span>모두보기<i class="ri-add-line ml10"></i></a>
+							</div>
+							<!--/*  //board_list */-->
+							<h4 class="title_h2">Ch.문장</h4>
+							<div class="board_list book_list col3">
+								<ul class="list_ul">
+									<li class="list_li">
+										<a href="board_view.html" class="item">
+											<div class="thumb">
+												<img src="../main/img/sub/list_thumb_sample1.jpg" alt="">
+											</div>										
+											<div class="txt">
+												<span class="category">Ch.문장</span>
+												<strong class="title">11월호 커버스토리/이나헌</strong>
+											</div>
+										</a>
+										<div class="thumb_hover">
+											<div class="link_wrap">
+												<button class="btn_like mr10">
+													<i class="ri-heart-line"></i>
+													<span class="sr-only">좋아요</span>
+													<em class="num">23</em>
+												</button>
+												<button class="btn_share mr10" data-id="modal_share">
+													<i class="ri-share-line"></i>
+													<span class="sr-only">공유하기</span>
+													<em class="num">23</em>
+												</button>
+												<a href="" class="btn_view"><i class="ri-arrow-right-line"></i><span class="sr-only">상세보기</span></a>
+											</div>
+										</div>								
+										<div class="reading_info">
+											<div class="progress_bar">
+												<span style="width:55%;"><span class="sr-only">55%</span></span>
+											</div>
+											<span class="num">2022-09-16</span>
+										</div>
+									</li>
+									<li class="list_li">
+										<a href="board_view.html" class="item">
+											<div class="thumb">
+												<img src="../main/img/sub/list_thumb_sample2.jpg" alt="">
+											</div>										
+											<div class="txt">
+												<span class="category">문학집배원</span>
+												<strong class="title">걸어놓은 고기 외 1편 / 송재학</strong>
+											</div>
+										</a>
+										<div class="thumb_hover">
+											<div class="link_wrap">
+												<button class="btn_like mr10">
+													<i class="ri-heart-line"></i>
+													<span class="sr-only">좋아요</span>
+													<em class="num">23</em>
+												</button>
+												<button class="btn_share mr10" data-id="modal_share">
+													<i class="ri-share-line"></i>
+													<span class="sr-only">공유하기</span>
+													<em class="num">23</em>
+												</button>
+												<a href="" class="btn_view"><i class="ri-arrow-right-line"></i><span class="sr-only">상세보기</span></a>
+											</div>
+										</div>
+										<div class="reading_info">
+											<div class="progress_bar">
+												<span style="width:55%;"><span class="sr-only">55%</span></span>
+											</div>
+											<span class="num">2022-09-16</span>
+										</div>
+									</li>
+									<li class="list_li">
+										<a href="board_view.html" class="item">
+											<div class="thumb">
+												<!--/*  //등록된 이미지가 없을때 */-->
+											</div>
+											<div class="txt">
+												<span class="category">문학집배원</span>
+												<strong class="title">모든 키보드에서 쉼표가 삭제되었다</strong>
+											</div>							
+										</a>
+										<div class="thumb_hover">
+											<div class="link_wrap">
+												<button class="btn_like mr10">
+													<i class="ri-heart-line"></i>
+													<span class="sr-only">좋아요</span>
+													<em class="num">23</em>
+												</button>
+												<button class="btn_share mr10" data-id="modal_share">
+													<i class="ri-share-line"></i>
+													<span class="sr-only">공유하기</span>
+													<em class="num">23</em>
+												</button>
+												<a href="" class="btn_view"><i class="ri-arrow-right-line"></i><span class="sr-only">상세보기</span></a>
+											</div>
+										</div>
+										<div class="reading_info">
+											<div class="progress_bar">
+												<span style="width:55%;"><span class="sr-only">55%</span></span>
+											</div>
+											<span class="num">2022-09-16</span>
+										</div>
+									</li>
+									<li class="list_li">
+										<a href="board_view.html" class="item">
+											<div class="thumb"></div>
+											<div class="txt">
+												<span class="category">문학집배원</span>
+												<strong class="title">성장한다는 것 (퇴고:20221124)</strong>
+											</div>											
+										</a>
+										<div class="thumb_hover">
+											<div class="link_wrap">
+												<button class="btn_like mr10">
+													<i class="ri-heart-line"></i>
+													<span class="sr-only">좋아요</span>
+													<em class="num">23</em>
+												</button>
+												<button class="btn_share mr10" data-id="modal_share">
+													<i class="ri-share-line"></i>
+													<span class="sr-only">공유하기</span>
+													<em class="num">23</em>
+												</button>
+												<a href="" class="btn_view"><i class="ri-arrow-right-line"></i><span class="sr-only">상세보기</span></a>
+											</div>
+										</div>
+									</li>	
+									<li class="list_li">	
+										<a href="board_view.html" class="item">
+											<div class="thumb">
+												<img src="../main/img/sub/list_thumb_sample1.jpg" alt="">
+											</div>										
+											<div class="txt">
+												<span class="category">문학집배원</span>
+												<strong class="title">롤리팝</strong>
+											</div>
+										</a>
+										<div class="thumb_hover">
+											<div class="link_wrap">
+												<button class="btn_like mr10">
+													<i class="ri-heart-line"></i>
+													<span class="sr-only">좋아요</span>
+													<em class="num">23</em>
+												</button>
+												<button class="btn_share mr10" data-id="modal_share">
+													<i class="ri-share-line"></i>
+													<span class="sr-only">공유하기</span>
+													<em class="num">23</em>
+												</button>
+												<a href="" class="btn_view"><i class="ri-arrow-right-line"></i><span class="sr-only">상세보기</span></a>
+											</div>
+										</div>								
+										
+									</li>
+									<li class="list_li">
+										<a href="board_view.html" class="item">
+											<div class="thumb">
+												<!--/*  //등록된 이미지가 없을때 */-->
+											</div>
+																				
+											<div class="txt">
+												<span class="category">문학집배원</span>
+												<strong class="title">이상과 현실, 낭만과 한숨 사이. (QM 3집 [돈숨]과 we can love again)</strong>
+											</div>
+										</a>
+										<div class="thumb_hover">
+											<div class="link_wrap">
+												<button class="btn_like mr10">
+													<i class="ri-heart-line"></i>
+													<span class="sr-only">좋아요</span>
+													<em class="num">23</em>
+												</button>
+												<button class="btn_share mr10" data-id="modal_share">
+													<i class="ri-share-line"></i>
+													<span class="sr-only">공유하기</span>
+													<em class="num">23</em>
+												</button>
+												<a href="" class="btn_view"><i class="ri-arrow-right-line"></i><span class="sr-only">상세보기</span></a>
+											</div>
+										</div>
+										
+									</li>
+								</ul>
+								<a href="" class="more"><span class="sr-only">Ch.문장</span>모두보기<i class="ri-add-line ml10"></i></a>
+							</div>
+							<!--/*  //board_list */-->
+							
+							<h4 class="title_h2">글틴</h4>
+							<div class="board_list book_list col3">
+								<ul class="list_ul">
+									<li class="list_li">					
+										<!--/*  
+										카테고리별 클래스명
+										감상&비평 : type1
+										소설 : type2
+										수필 : type3
+										시 : type4
+										*/-->				
+										<a href="board_view.html" class="item type4">
+											<div class="thumb">
+												<img src="../main/img/sub/list_thumb_sample1.jpg" alt="">
+											</div>										
+											<div class="txt">
+												<span class="category">시</span>
+												<strong class="title">롤리팝</strong>
+											</div>
+										</a>
+										<div class="thumb_hover">
+											<div class="link_wrap">
+												<button class="btn_like mr10">
+													<i class="ri-heart-line"></i>
+													<span class="sr-only">좋아요</span>
+													<em class="num">23</em>
+												</button>
+												<button class="btn_share mr10" data-id="modal_share">
+													<i class="ri-share-line"></i>
+													<span class="sr-only">공유하기</span>
+													<em class="num">23</em>
+												</button>
+												<a href="" class="btn_view"><i class="ri-arrow-right-line"></i><span class="sr-only">상세보기</span></a>
+											</div>
+										</div>								
+										
+									</li>
+									<li class="list_li">
+										<a href="board_view.html" class="item type1">
+											<div class="thumb">
+												<img src="../main/img/sub/list_thumb_sample2.jpg" alt="">
+											</div>										
+											<div class="txt">
+												<span class="category">감상&amp;비평</span>
+												<strong class="title">이상과 현실, 낭만과 한숨 사이. (QM 3집 [돈숨]과 we can love again)</strong>
+											</div>
+										</a>
+										<div class="thumb_hover">
+											<div class="link_wrap">
+												<button class="btn_like mr10">
+													<i class="ri-heart-line"></i>
+													<span class="sr-only">좋아요</span>
+													<em class="num">23</em>
+												</button>
+												<button class="btn_share mr10" data-id="modal_share">
+													<i class="ri-share-line"></i>
+													<span class="sr-only">공유하기</span>
+													<em class="num">23</em>
+												</button>
+												<a href="" class="btn_view"><i class="ri-arrow-right-line"></i><span class="sr-only">상세보기</span></a>
+											</div>
+										</div>
+										
+									</li>
+									<li class="list_li">
+										<a href="board_view.html" class="item type2">
+											<div class="thumb">
+												<!--/*  //등록된 이미지가 없을때 */-->
+											</div>
+											<div class="txt">
+												<span class="category">소설</span>
+												<strong class="title">모든 키보드에서 쉼표가 삭제되었다</strong>
+											</div>							
+										</a>
+										<div class="thumb_hover">
+											<div class="link_wrap">
+												<button class="btn_like mr10">
+													<i class="ri-heart-line"></i>
+													<span class="sr-only">좋아요</span>
+													<em class="num">23</em>
+												</button>
+												<button class="btn_share mr10" data-id="modal_share">
+													<i class="ri-share-line"></i>
+													<span class="sr-only">공유하기</span>
+													<em class="num">23</em>
+												</button>
+												<a href="" class="btn_view"><i class="ri-arrow-right-line"></i><span class="sr-only">상세보기</span></a>
+											</div>
+										</div>
+									</li>
+									<li class="list_li">									
+										<a href="board_view.html" class="item type3">
+											<div class="thumb"></div>
+											<div class="txt">
+												<span class="category">수필</span>
+												<strong class="title">성장한다는 것 (퇴고:20221124)</strong>
+											</div>	
+										</a>
+										<div class="thumb_hover">
+											<div class="link_wrap">
+												<button class="btn_like mr10">
+													<i class="ri-heart-line"></i>
+													<span class="sr-only">좋아요</span>
+													<em class="num">23</em>
+												</button>
+												<button class="btn_share mr10" data-id="modal_share">
+													<i class="ri-share-line"></i>
+													<span class="sr-only">공유하기</span>
+													<em class="num">23</em>
+												</button>
+												<a href="" class="btn_view"><i class="ri-arrow-right-line"></i><span class="sr-only">상세보기</span></a>
+											</div>
+										</div>
+									</li>	
+									<li class="list_li">	
+										<a href="board_view.html" class="item type4">
+											<div class="thumb">
+												<img src="../main/img/sub/list_thumb_sample1.jpg" alt="">
+											</div>										
+											<div class="txt">
+												<span class="category">시</span>
+												<strong class="title">롤리팝</strong>
+											</div>
+										</a>
+										<div class="thumb_hover">
+											<div class="link_wrap">
+												<button class="btn_like mr10">
+													<i class="ri-heart-line"></i>
+													<span class="sr-only">좋아요</span>
+													<em class="num">23</em>
+												</button>
+												<button class="btn_share mr10" data-id="modal_share">
+													<i class="ri-share-line"></i>
+													<span class="sr-only">공유하기</span>
+													<em class="num">23</em>
+												</button>
+												<a href="" class="btn_view"><i class="ri-arrow-right-line"></i><span class="sr-only">상세보기</span></a>
+											</div>
+										</div>								
+										
+									</li>
+									<li class="list_li">
+										<a href="board_view.html" class="item type1">
+											<div class="thumb">
+												<!--/*  //등록된 이미지가 없을때 */-->
+											</div>
+																				
+											<div class="txt">
+												<span class="category">감상&amp;비평</span>
+												<strong class="title">이상과 현실, 낭만과 한숨 사이. (QM 3집 [돈숨]과 we can love again)</strong>
+											</div>
+										</a>
+										<div class="thumb_hover">
+											<div class="link_wrap">
+												<button class="btn_like mr10">
+													<i class="ri-heart-line"></i>
+													<span class="sr-only">좋아요</span>
+													<em class="num">23</em>
+												</button>
+												<button class="btn_share mr10" data-id="modal_share">
+													<i class="ri-share-line"></i>
+													<span class="sr-only">공유하기</span>
+													<em class="num">23</em>
+												</button>
+												<a href="" class="btn_view"><i class="ri-arrow-right-line"></i><span class="sr-only">상세보기</span></a>
+											</div>
+										</div>
+										
+									</li>								
+								</ul>
+								<a href="" class="more"><span class="sr-only">글틴</span>모두보기<i class="ri-add-line ml10"></i></a>
+							</div>
+							<!--/*  //board_list */-->
+
+							
+						</section>
+						<!--/*  //my_cont_section */-->
+					</section>
+					<!-- /* //contents_section */ -->
+
+				</div>
+				<!--/*  //snb_wrap */-->
+				
+				
+			</div>
+			<!--/*  //contents */-->
+			
+			
+		</main>
+		<!--/*  //Main */-->
+		
+		<div class="side_right_util" data-include="include/side_right.html"></div>
+		<!--/*  //side_right_util */-->
+
+		<footer id="footer" class="footer" data-include="include/footer.html"></footer>
+		<!--/*  //footer */-->
+		
+
+	</div>
+	<!--/*  //wrap */-->
+	<script src="../main/js/include.js"></script><!--/*  //local에서 include하기 위한 임시파일로 개발에 입힐때는 필요없는 파일입니다.  */-->
+	
+	<script src="../main/js/func.js"></script>
+	<script src="../main/js/layout.js" defer></script>
+	<script src="../main/js/sub.js" defer></script>
+</body>
+
+</html>

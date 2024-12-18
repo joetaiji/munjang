@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<title>문학광장 – 생활 속 작은 여유로움 "문장"</title>
+	<meta name="keywords" content="문학광장, 문장">
+	<meta name="description" content="생활 속 작은 여유로움 '문장'">
+	<meta name="copyright" content="문학광장">
+	<meta name="author" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="shortcut icon" href="../main/img/common/favicon.png">
+	<link rel="stylesheet" href="../css/slick.css">
+	<link rel="stylesheet" href="../css/font.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/board.css">
+	<link rel="stylesheet" href="../main/css/layout.css">
+	<link rel="stylesheet" href="../main/css/contents.css">
+	<link rel="stylesheet" href="../main/css/sub06.css"><!--/* 대카테고리별 css파일*/-->
+	<script src="../js/jquery-3.2.1.min.js "></script>		
+	<script src="../js/slick.min.js"></script>	
+	<script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+<script src="../js/letterfx.min.js"></script> <!-- 리스트 비주얼 타이포애니 -->
+<link rel="stylesheet" href="../js/letterfx.css"> <!-- 리스트 비주얼 타이포애니 -->		
+</head>
+
+<body>
+<!--/*  skipNavigation*/-->
+	<div id="skipNav">
+		<a href="#contents">본문으로 바로가기</a>
+		<a href="#gnb1">주메뉴 바로가기</a>
+	</div>
+	<!--/*  //skipNavigation */-->
+	
+	<div id="wrap">
+		<header id="header" class="header" data-include="include/header.html" data-id="4"></header>
+		<!--/*  //header */-->
+		
+		<!--/*  Main */-->
+		<main id="main" class="main">
+			
+			<div id="contents" class="contents">
+				
+				<section class="view_section">
+					
+					<div class="title_area">
+						<h2 class="title_h1">문장수다에 써볼까요!</h2>						
+					</div>
+					<!--/*  //title_area */-->
+					<div class="form_cont container">
+						<div class="tstyle mb50">
+							<ul class="dbody">								
+								<li>
+									<div class="row">
+										<span class="form-label col-sm-2"><span>작성자</span></span>
+										<div class="col-sm-10">
+											<div class="form-row noinput">
+												홍길동(닉네임)
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="row">
+										<label for="form2_2_select" class="form-label col-sm-2"><span>분류</span></label>
+										<div class="col-sm-10">
+											<div class="form-inline">
+												<select class="form-select mr10" id="form2_2_select">
+													<option >홍보</option>
+													<option >지역</option>
+													<option >기타</option>
+												</select>
+												<select class="form-select" title="두번째 분류선택">
+													<option >선택</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="row">
+										<label for="form2_1_input" class="form-label col-sm-2"><span>제목</span></label>
+										<div class="col-sm-10">
+											<div class="form-row">
+												<input class="form-control" type="text"  id="form2_1_input"  placeholder="제목을 입력하세요.">
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="row">
+										<label for="form2_3_input" class="form-label col-sm-2"><span>키워드</span></label>
+										<div class="col-sm-10">
+											<div class="form-row">
+												<input class="form-control" type="text"  id="form2_3_input"  placeholder="키워드를 ,로 구분해서 작성해 주세요.">
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="row">
+									<label for="formTextarea" class="form-label col-sm-12 mb20">내용</label>
+									<div class="form-row col-sm-12">
+										<textarea rows="10" id="formTextarea" class="form-control" placeholder="내용을 작성해 주세요."></textarea>
+									</div>
+									</div>
+								</li>
+								<li>
+									<div class="row">
+										<span class="form-label col-sm-2">파일첨부</span>
+										<div class="col-sm-10">
+											<div class="attach_file">
+												<div class="input-file">
+													<!--/*  <input type="text" class="file-name form-control" readonly=""> */-->
+													<label for="form1Upload1" class="file-label btn"><i class="ri-upload-line mr5"></i>파일첨부</label>
+													<input type="file" id="form1Upload1" class="file-upload">
+													<p class="help_note">첨부파일은 5.0 MB 미만의 1개의 파일만 업로드 가능 합니다.</p>
+													
+												</div>
+												
+												<ul class="add_file">
+													<li>
+														<a href="#" class="file_down">
+															<span class="text">첨부파일명마우스오버 시.doc</span>
+															<span class="file_size num">(6KB)</span>
+														</a>
+														<button class="file_delete"><span>삭제하기</span><i class="ri-close-fill ml5"></i></button>
+													</li>	
+												</ul>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!--/*  //tstyle */-->
+						 
+						<div class="btn_area">
+							<button type="button" class="btn">취소</button>
+							<button type="button" class="btn type2">등록하기</button>
+						</div>
+
+					</div>
+					<!--/*  //form_cont */-->
+
+					
+
+				</section>
+				<!--/*  //view_section */-->
+			</div>
+			<!--/*  //contents */-->
+			
+			
+		</main>
+		<!--/*  //Main */-->
+		<div class="side_left_util active" data-include="include/side_left.html"></div>
+		<!--/*  //side_left_util */-->
+
+		<div class="side_right_util" data-include="include/side_right.html"></div>
+		<!--/*  //side_right_util */-->
+
+		<footer id="footer" class="footer" data-include="include/footer.html"></footer>
+		<!--/*  //footer */-->
+	</div>
+	<!--/*  //wrap */-->
+	
+	<script src="../main/js/include.js"></script><!--/*  //local에서 include하기 위한 임시파일로 개발에 입힐때는 필요없는 파일입니다.  */-->
+	
+	<script src="../main/js/func.js"></script>
+	<script src="../main/js/layout.js" defer></script>
+	<script src="../main/js/sub.js" defer></script>
+</body>
+
+</html>

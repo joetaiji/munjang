@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<title>문학광장 – 생활 속 작은 여유로움 "문장"</title>
+	<meta name="keywords" content="문학광장, 문장">
+	<meta name="description" content="생활 속 작은 여유로움 '문장'">
+	<meta name="copyright" content="문학광장">
+	<meta name="author" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="shortcut icon" href="../main/img/common/favicon.png">
+	
+	<link rel="stylesheet" href="../css/font.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../main/css/layout.css">
+	<link rel="stylesheet" href="../main/css/contents.css">
+	<link rel="stylesheet" href="../main/css/editor.css">
+	<script src="../js/jquery-3.2.1.min.js "></script>		
+	<script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+<script src="../js/letterfx.min.js"></script> <!-- 리스트 비주얼 타이포애니 -->
+<link rel="stylesheet" href="../js/letterfx.css"> <!-- 리스트 비주얼 타이포애니 -->
+	<script src="../main/js/editor.js "></script>		
+	
+</head>
+
+<body>
+	<!--/*  skipNavigation*/-->
+	<div id="skipNav">
+		<a href="#contents">본문으로 바로가기</a>
+		<a href="#gnb">주메뉴 바로가기</a>
+	</div>
+	<!--/*  //skipNavigation */-->
+	
+	<div id="wrap">
+		<header id="header" class="header">	
+			<div id="gnb" class="gnb_wrap container">
+				<h1 class="logo"><a href=""><i class="main_logo"><span class="sr-only">문학광장</span></i></a></h1>
+				<div class="util_btn">
+					<a href="" class="btn preview"><span>모바일 미리보기</span><i class="ri-tablet-line ml20"></i></a>
+					<button class="btn spelling"><span>맞춤법검사</span><i class="ri-search-line ml20"></i></button>					
+					<button class="btn type1"><span>취소</span></button>
+					<button class="btn type2"><span>저장</span></button>
+				</div>
+			</div>			
+		</header>
+		<main class="main">
+			<div id="contents" class="contents">
+				<section class="view_section">
+					<div class="custom_visual title_area">
+						<div class="container">
+							<h1 class="title_h1">제목을 입력하세요</h1>
+							<ul class="etc_info"><li>여기는 날짜,글쓴이 기타정보가 표기됩니다.</li></ul>
+							<div class="btn_area">
+								<button class="btn icon-end btn_bgimg"><span>배경이미지 선택</span><i class="ri-image-line"></i></button>
+								<button class="btn icon-end btn_bgcolor"><span>배경컬러 선택</span><i class="ri-contrast-drop-fill"></i></button>
+							</div>
+						</div>															
+					</div>
+					<!--/*  //title_area */-->
+					<div class="view_cont">
+						<div class="detail_area container">							
+							<div class="detail_cont">
+								<!--/*  에디터 영역 시작 */-->
+								<div class="editor">
+									<img src="../main/img/sub/s3_editor_sample.png" alt="">
+								</div>
+								<!--/*  //에디터 영역 끝 */-->	
+							</div>
+						</div>
+						<!--/*  //detail_area */-->
+					</div> 	
+					<!--/*  //view_cont  */-->
+				</section>
+				<!--/*  //view_section */-->
+			</div>
+			<!--/*  //contents */-->
+			<div class="deco_layout bg_img">
+				<h2 class="title_h2 mt0">이미지 선택</h2>
+				
+				<strong class="title">직접입력</strong>
+				<div class="input-file mb20">
+					<input type="text" class="file-name form-control" placeholder="파일선택" readonly>
+					<input type="file" id="form1Upload1" class="file-upload">
+					<label for="form1Upload1" class="btn file-label">찾아보기</label>
+				</div>
+				<div class="btn_area ">
+					<button class="btn type1">적용</button>
+				</div>					
+				
+				<strong class="title">제목 타이틀색</strong>
+				<div class="color_picker_set">
+					<input type="text" class="color_value form-control" title="글씨색 코드값 출력" readonly>
+					<input type="color" id="textColor1" class="color_picker">
+					<label for="textColor1"><span class="sr-only">제목 타이틀색 선택</span><i class="ri-sip-line"></i></label>
+				</div>
+
+				<div class="sample_set">
+					<strong class="title">샘플이미지</strong>
+					<ul class="item_list img_list">
+						<li><input type="radio" name="sampleImg" id="sampleImg1" value="1"><label for="sampleImg1"><img src="../main/img/sub/s3_editor_sample_img1.png" alt="샘플이미지1"></label></li>
+						<li><input type="radio" name="sampleImg" id="sampleImg2" value="2"><label for="sampleImg2"><img src="../main/img/sub/s3_editor_sample_img2.png" alt="샘플이미지2"></label></li>
+						<li><input type="radio" name="sampleImg" id="sampleImg3" value="3"><label for="sampleImg3"><img src="../main/img/sub/s3_editor_sample_img3.png" alt="샘플이미지3"></label></li>
+						<li><input type="radio" name="sampleImg" id="sampleImg4" value="4"><label for="sampleImg4"><img src="../main/img/sub/s3_editor_sample_img4.png" alt="샘플이미지4"></label></li>
+						<li><input type="radio" name="sampleImg" id="sampleImg5" value="5"><label for="sampleImg5"><img src="../main/img/sub/s3_editor_sample_img5.png" alt="샘플이미지5"></label></li>
+						<li><input type="radio" name="sampleImg" id="sampleImg6" value="6"><label for="sampleImg6"><img src="../main/img/sub/s3_editor_sample_img6.png" alt="샘플이미지6"></label></li>
+						<li><input type="radio" name="sampleImg" id="sampleImg7" value="7"><label for="sampleImg7"><img src="../main/img/sub/s3_editor_sample_img7.png" alt="샘플이미지7"></label></li>
+						<li><input type="radio" name="sampleImg" id="sampleImg8" value="8"><label for="sampleImg8"><img src="../main/img/sub/s3_editor_sample_img8.png" alt="샘플이미지8"></label></li>
+					</ul>
+				</div>
+				
+				<button class="btn_close"><i class="ri-close-fill"></i><span class="sr-only">닫기</span></button>
+			</div>
+			<!--/*  //bg_img */-->
+			<div class="deco_layout bg_color">
+				<h2 class="title_h2 mt0">배경컬러 선택</h2>
+				
+				<strong class="title">배경색</strong>
+				<div class="color_picker_set">
+					<input type="text" class="color_value form-control" title="배경색 코드값 출력" readonly>
+					<input type="color" id="bgColor" class="color_picker">
+					<label for="bgColor"><span class="sr-only">배경색 선택</span><i class="ri-sip-line"></i></label>
+				</div>
+			
+				<strong class="title">제목 타이틀색</strong>
+				<div class="color_picker_set">
+					<input type="text" class="color_value form-control" title="글씨색 코드값 출력" readonly>
+					<input type="color" id="textColor2" class="color_picker">
+					<label for="textColor2"><span class="sr-only">제목 타이틀색 선택</span><i class="ri-sip-line"></i></label>
+				</div>
+				<div class="sample_set">
+					<strong class="title">샘플컬러 모음</strong>
+					<ul class="item_list color_list">
+						<li><input type="radio" name="sampleColor" id="sampleColor1"><label for="sampleColor1"  style="background: #F1F6FC; color: #3E3E3E;"><span class="sr-only">set1</span><span class="txt">가</span></label></li>
+						<li><input type="radio" name="sampleColor" id="sampleColor2"><label for="sampleColor2" style="background:#FFE9FB; color: #3E3E3E;"><span class="sr-only">set2</span><span class="txt">가</span></label></li>
+						<li><input type="radio" name="sampleColor" id="sampleColor3"><label for="sampleColor3" style="background: #FEE100; color: #3E3E3E;"><span class="sr-only">set3</span><span class="txt">가</span></label></li>
+						<li><input type="radio" name="sampleColor" id="sampleColor4"><label for="sampleColor4" style="background: #173C74; color: #FBFBFC;"><span class="sr-only">set4</span><span class="txt">가</span></label></li>
+						<li><input type="radio" name="sampleColor" id="sampleColor5"><label for="sampleColor5" style="background: #FFFFFF; color: #3E3E3E; box-shadow:inset 0 0 1px #000;"><span class="sr-only">set5</span><span class="txt">가</span></label></li>
+						<li><input type="radio" name="sampleColor" id="sampleColor6"><label for="sampleColor6" style="background: #1198BB; color: #ffffff;"><span class="sr-only">set6</span><span class="txt">가</span></label></li>
+						<li><input type="radio" name="sampleColor" id="sampleColor7"><label for="sampleColor7" style="background: #E34891; color: #ffffff;"><span class="sr-only">set7</span><span class="txt">가</span></label></li>
+						<li><input type="radio" name="sampleColor" id="sampleColor8"><label for="sampleColor8" style="background: #202020; color: #ffffff;"><span class="sr-only">set8</span><span class="txt">가</span></label></li>
+						<li><input type="radio" name="sampleColor" id="sampleColor9"><label for="sampleColor9" style="background: #E2D9F9; color: #3E3E3E;"><span class="sr-only">set9</span><span class="txt">가</span></label></li>
+					</ul>
+				</div>
+				<!--/*  <div class="btn_area">
+					<button class="btn type2">적용</button>
+				</div>	 */-->
+				<button class="btn_close"><i class="ri-close-fill"></i><span class="sr-only">닫기</span></button>
+			</div>
+			<!--/*  //bg_color */-->
+		</main>	
+
+</body>
+
+</html>

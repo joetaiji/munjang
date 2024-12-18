@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="43.042" height="60.685" viewBox="0 0 43.042 60.685">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_57728" data-name="사각형 57728" width="43.042" height="60.685" fill="none" stroke="#202020" stroke-width="1.5"/>
+    </clipPath>
+  </defs>
+  <g id="icon4" transform="translate(0 0)">
+    <g id="그룹_22974" data-name="그룹 22974" transform="translate(0 0)" clip-path="url(#clip-path)">
+      <path id="패스_48318" data-name="패스 48318" d="M35.934,33.326V19.6L26.518,10.7,17.61,19.6V33.764L8.279,42.089v3.9H17.61v5.452H35.934V45.552h9.333v-3.9Z" transform="translate(-3.154 -4.074)" fill="none" stroke="#202020" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="패스_48319" data-name="패스 48319" d="M39.359,34.1A3.563,3.563,0,1,1,35.8,30.537,3.563,3.563,0,0,1,39.359,34.1Z" transform="translate(-12.278 -11.633)" fill="none" stroke="#202020" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="선_683" data-name="선 683" y2="2.949" transform="translate(17.345 50.012)" fill="none" stroke="#202020" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="선_684" data-name="선 684" y2="9.744" transform="translate(21.393 50.012)" fill="none" stroke="#202020" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="선_685" data-name="선 685" y2="6.118" transform="translate(25.617 50.012)" fill="none" stroke="#202020" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="선_686" data-name="선 686" y2="2.949" transform="translate(29.665 50.012)" fill="none" stroke="#202020" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="패스_48320" data-name="패스 48320" d="M63.71,32.926a2.56,2.56,0,1,1-2.56-2.56A2.56,2.56,0,0,1,63.71,32.926Z" transform="translate(-22.319 -11.567)" fill="none" stroke="#202020" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <circle id="타원_194" data-name="타원 194" cx="3.952" cy="3.952" r="3.952" transform="translate(0.929 7.588)" fill="none" stroke="#202020" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <circle id="타원_195" data-name="타원 195" cx="2.673" cy="2.673" r="2.673" transform="translate(4.881 21.245)" fill="none" stroke="#202020" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <circle id="타원_196" data-name="타원 196" cx="2.485" cy="2.485" r="2.485" transform="translate(28.87 0.928)" fill="none" stroke="#202020" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

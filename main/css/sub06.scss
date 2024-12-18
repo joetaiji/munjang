@@ -1,0 +1,66 @@
+@charset "utf-8";
+@import "../../css/mixin";
+
+/* ==============================================================================================================
+리스트
+============================================================================================================== */
+
+/* ==============================================================================================================
+공모전
+============================================================================================================== */
+
+//뷰
+.contest_view{overflow: hidden;
+	.cover_area{background: none; 
+		.cover_img{ width: 55rem;margin:7rem 9rem 0;position: relative;
+			.slick-counter{@include pos(rt, 0, -3rem)}
+		}
+		.cover_info_wrap{
+			.cover_info { position: relative;	padding:9rem 0; width: 100%;
+				&::before{content:""; display: block; background: var(--txtf);position: absolute;left: 0;top: 0;right: 0;bottom: 0;width:200vw; z-index: -1; transform:translateX(-50%);}		
+				.title_h3{margin:5rem 0 2rem;}
+				span{ display: block; color: var(--txt5);}
+			}
+			.btn_group {margin-top: 8rem; 
+				.btn.btn-lg{min-height:6rem; min-width:24rem;}
+			}
+			.btn_contest{ background: #503CD8; border: 0; 
+				&:hover{background-color:#3a28ad;}
+			}
+		}
+		
+	}		
+}
+
+//평가
+.btn_eval{@include pos(rb, 3.5rem, 4rem);}
+.eval_ment{border-top:1px solid var(--black); padding: 3rem 4rem; font-size: 2rem;}
+.score_slash{color: #A7A7A7;margin: 0 1rem;}
+
+
+@include media($container){	
+	.contest_view .cover_area .cover_img{margin-left:3rem; margin-right: 3rem;}
+	.contest_view .cover_area .cover_info_wrap .btn_group{text-align: center;}
+	.contest_view .cover_area .cover_info_wrap .btn_group .btn.btn-lg{min-width: 14rem;}
+}
+
+@include media($pad){
+	.contest_view .cover_area{flex-direction: column;}
+	.contest_view .cover_area .cover_img{margin-left: auto;margin-right: auto;margin-bottom: 5rem;width: 100%;}
+	.contest_view .cover_area .cover_info_wrap .cover_info{padding: 4rem 0;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,197 @@
+@charset "utf-8";
+@import "../../css/mixin";
+
+
+/* ==============================================================================================================
+콘텐츠
+============================================================================================================== */
+.cont_visual{ background-image: url('../img/sub/s7_visual.jpg')}	
+
+
+%verticalText{
+	.txt_bg{font-family: var(--font); font-size: 22rem; color: var(--txte);position: absolute;left: 0;bottom: 0; writing-mode:vertical-rl; text-orientation:sideways; transform: rotate(180deg); line-height: 1;z-index: -1; }
+}
+%worksGroup{display: grid;	grid: auto/repeat(2, 1fr); gap: 9rem 3.2rem;
+	.item{min-height: 45rem;padding: 5rem 3rem; position: relative;}
+	.category{font-size: 3.4rem;display: block;margin-bottom: 4rem;font-weight: 500;}
+	.title{font-family: var(--font); font-size: 3rem;@include ellipsis2(4, 16rem, "fix"); line-height: 1.3;}
+}
+
+
+/* 문학광장 소개 */
+.s7_01_intro{
+	.intro_major_txt{font-family: var(--font); font-size: 2.4rem;text-align: center;margin-bottom: 6rem;}
+	.info_card_wrap{margin-bottom: 6rem;
+		.box{position: relative;min-height: 28rem;}
+		.title_h4{font-size: 2.4rem;margin-bottom: 3rem;}
+		.txt_bg{color: var(--txtc);font-family: var(--font); font-size: 6.4rem;position: absolute;right: 2rem;bottom: 2rem;}
+	}
+	.intro_desc{padding: 6rem 5rem;margin-bottom: 9rem;
+		.title{font-size: 3.6rem;}
+		p{line-height: 1.75;}
+	}	
+
+	.history_list{display: block;position: relative; padding-top: 5rem;
+		&::before{content: ''; display: block; width: 1px;height: 100%;background: var(--txtd);position: absolute;left: 50%;top: 0;}
+		&::after { content: ""; display: block; @include circle(1.2rem, var(--txt1)); @include pos(lt, 50%, 0, -50%, 0);} 
+		&.active{display: block;}
+		.item{display: flex;
+			~.item{margin-top: 5rem;}
+			.year{flex:0 1 50%;font-size: 8rem; color:var(--white); -webkit-text-stroke: 1px var(--txt6);  padding:0 7.5rem; position: relative; transition: 0.2s;
+				&::before{content: '';display: block;@include circle(1.2rem, var(--txtb)); @include pos(rt, 0, 4rem);margin-right: -0.6rem; transition: 0.3s;}
+			}
+			ol{ flex:1; min-width:1px; padding:2rem 7.5rem;	transition: 0.2s;		
+				li{position: relative;display: flex;					
+					~li{margin-top: 2rem;}
+				}
+				span{flex:0 0 6rem; max-width:6rem; margin-left: 3rem;}				
+			}
+			
+			&:nth-child(odd) {
+				.year{text-align: right;}
+			}
+			&:nth-child(even) {
+				.year{order:2;
+					&::before{right:auto;left:0; margin-left: -0.6rem;}
+				}
+				ol{order:1;
+					li{text-align: right;
+						&::before{left: auto;right: 0;transform:translate(50%, -50%)}
+						span{order:2;text-align: right;margin-left: 0;margin-right: 3rem;}
+						em{order:1;margin-left: auto;}
+					}
+				}
+			}
+			
+			&.active{
+				.year{color:var(--txt1); -webkit-text-stroke: 1px var(--txt1);padding-left: 10rem;padding-right: 10rem;
+					&::before{ background:transparent; border: .3rem solid #F13131; animation: sizeUp .2s ease;}
+				}
+				ol{padding-left: 10rem;padding-right: 10rem;}
+			}
+		}
+		@extend %verticalText;
+		.bg2{left:auto; bottom:auto; right:0; top:0;}
+	}
+
+	.represent_category{
+		.row{
+			~.row{margin-top: 18rem;}
+		}	
+		.title_group{ position: relative; margin-top: 0;
+			.desc{margin-bottom: 8rem;width: 40rem;}
+			.bg{position: absolute;right: 8rem; bottom: 0;transform: translateY(50%);z-index: -1;}			
+		}
+		@extend %verticalText;
+	
+		.works_group{@extend %worksGroup;
+			.item{background: var(--white); box-shadow:0 1rem 2rem #7D7D7D29;	
+				img{position: absolute;right: 4rem;bottom: 4rem;}
+			}
+			.item:nth-child(even){ transform:translateY(9rem)/* margin-top: 9rem; */}
+		}
+		.plant path {fill:var(--txt2);}
+		.circle{position: absolute; right: 4rem; bottom: 4rem; 
+			i{font-size: 10rem; font-family: var(--font); color: transparent; -webkit-text-stroke:1px var(--txte);position: absolute;right: -3rem;bottom: 0;}
+			&::before{content: ""; display: block; @include circle(10.5rem);}
+			@for $i from 1 through 4 {
+				&.type#{$i}::before{
+					background: var(--category#{$i});
+				}
+			}
+		}	
+	}
+	
+}
+
+
+
+/* BI소개 */
+.s7_02_bi{
+	.bi_box{padding: 13rem 2rem;text-align: center;background: #fff;@include flex(space-evenly);}
+	.sub_bi_box{padding: 6rem 2rem; display: flex; flex-wrap:wrap; background: #fff;
+		.item{width: 50%;text-align: center;padding:3rem 0;}
+	}
+	.btn {font-size: 1.6rem;
+		.ri-download-line{font-size: 2.4rem;}
+	}
+	.grid_system{text-align: center;background: #fff;}
+	.color_bg{height: 12.2rem; flex:0 1 30rem; margin-right: 3rem;}
+	.color_txt{flex:1; min-width: 1px;}
+	.type1{background: #63513D;}
+	.type2{background: #FFCD00;}
+	.type3{background: #FFCD00;}
+	.type4{background: #FF7000;}
+	.type5{background: #C2D500;}
+	.type6{background: #00A887;}
+	.type7{background: #2A7DFF;}	
+	.color_system{
+		.title_h4{display: block; margin-top: 0; margin-bottom: 2rem;}
+		.item{display: flex;}
+		li{
+			~li{margin-top: 0.6rem;}
+			strong{display: inline-block;width: 10rem;font-size: 1.6rem;font-weight: 500;}
+		}		
+	}
+	.word_mark{text-align: center;background: #fff;}
+	.prohibit_rule{display: flex; justify-content: space-evenly;align-items: flex-start; flex-wrap:wrap; background: #fff;}
+}
+
+
+/* 역대참여작가 */
+.channel_staff .works_group .category{color: #1198BB;}
+
+
+@include media($web){	
+	/* .s7_01_intro .title_group,
+	.s7_03_staff .title_group{margin-bottom: 5rem;}
+	.s7_01_intro .represent_category .txt_bg,
+	.s7_03_staff .txt_bg{left: inherit;bottom: inherit; right: 0; top: 0; writing-mode:inherit; text-orientation: inherit; transform:none; font-size: 12rem;}
+	.s7_01_intro .intro_desc .title br{display: none;}
+	.s7_03_staff .works_group .item img{margin-bottom: 3rem;} */
+}
+
+@include media($pad){
+	.s7_02_bi .bi_box,
+	.s7_02_bi .sub_bi_box{display: block;}
+	.s7_02_bi .sub_bi_box .item{width: 100%;}
+	.s7_02_bi .color_bg{flex-basis: 12.2rem;}
+	.s7_02_bi .prohibit_rule img{margin:2rem 0;}
+	/* .s7_01_intro {
+		.intro_desc {padding: 3rem 2.5rem;}
+		.title_group .bg{right: 0;}
+		.works_group .item{padding: 2.5rem 1.5rem;}
+		
+		.works_group .item .category{font-size: 2.7rem;}
+		.works_group .item .title{font-size: 2rem;}
+		.history_list::before,
+		.history_list::after{left:1rem;}
+		.history_list .item{display: block;margin-left: 1rem;}
+		.history_list .txt_bg{display: none;}
+		.history_list .item:nth-child(even) ol li{text-align: left;display: block;}
+		.history_list .item .year::before{right:inherit; left:0;margin-right: 0;margin-left: -0.6rem; }
+	}
+	.s7_02_bi .color_system .item ~ .item{margin-top: 2rem;}	
+	.s7_02_bi .color_bg{flex-basis: 12.2rem;}
+	.s7_02_bi .sub_bi_box{display: block;text-align: center;
+		img~img{margin-top: 5rem;}
+	}
+	.s7_03_staff .works_group,
+	.s7_01_intro .works_group{gap:5rem 1.6rem;} */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

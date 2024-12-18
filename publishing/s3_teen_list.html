@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<title>문학광장 – 생활 속 작은 여유로움 "문장"</title>
+	<meta name="keywords" content="문학광장, 문장">
+	<meta name="description" content="생활 속 작은 여유로움 '문장'">
+	<meta name="copyright" content="문학광장">
+	<meta name="author" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="shortcut icon" href="../main/img/common/favicon.png">
+	<link rel="stylesheet" href="../css/slick.css">
+	
+	<link rel="stylesheet" href="../css/font.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/board.css">
+	<link rel="stylesheet" href="../main/css/layout.css">
+	<link rel="stylesheet" href="../main/css/contents.css">
+	<link rel="stylesheet" href="../main/css/sub03.css"><!--/* 대카테고리별 css파일*/-->
+	<script src="../js/jquery-3.2.1.min.js "></script>		
+	<script src="../js/slick.min.js"></script>	
+	<script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+<script src="../js/letterfx.min.js"></script> <!-- 리스트 비주얼 타이포애니 -->
+<link rel="stylesheet" href="../js/letterfx.css"> <!-- 리스트 비주얼 타이포애니 -->	
+</head>
+
+<body>
+<!--/*  skipNavigation*/-->
+	<div id="skipNav">
+		<a href="#contents">본문으로 바로가기</a>
+		<a href="#gnb1">주메뉴 바로가기</a>
+	</div>
+	<!--/*  //skipNavigation */-->
+	
+	<div id="wrap">
+		<header id="header" class="header" data-include="include/header_teen.html"></header>
+	<!--/*  //header */-->
+
+		<!--/*  Main */-->
+		<main id="main" class="main">
+			<section class="visual">
+				<div class="container">
+					<h2 class="font">
+						<span class="text1">글틴10대</span>
+						<span class="text2">감성쟁이</span>
+					</h2>					
+				</div>
+			</section>
+			<div id="contents" class="contents">
+				<div class="title_area">
+					<h3 class="title_h1">감상&amp;비평</h3>
+					<span class="sub_head">문학광장 감상&amp;비평</span>
+				</div>
+				<!--/*  //title_area */-->
+				<section class="list_section">
+					
+					<div class="board container">
+						<form id="srhForm" name="srhForm" method="GET" action="" class="board_search board_detail_search">
+							<!--/*  
+								<div class="form-inline">
+									<span class="custom-input mr20"><input type="checkbox" id="dateNo"><label for="dateNo">날짜 미지정</label></span>
+									<div class="form-group">
+										<div class="input_date">
+											<input type="date" name="beginDt" min="" max="" id="sdate"  maxlength="10" title="시작일을 입력하세요." class="form-control">
+											<span class="validity">연도, 월, 일을 모두 입력해주세요.</span>
+										</div>
+										<span class="form-term"> - </span>
+										<div class="input_date">
+											<input type="date" name="endDt" min="" max="" id="edate"  maxlength="10" title="종료일을 입력하세요." class="form-control">
+											<span class="validity">연도, 월, 일을 모두 입력해주세요.</span>
+										</div>
+									</div>
+									<div class="btn_wrap">
+										<button class="active">1주일</button>
+										<button>1개월</button>
+										<button>3개월</button>
+									</div>
+								</div>
+							 */-->
+							
+							<div class="form-inline">
+								<select class="form-select arr select_type" id="searchType2" name="searchType2" title="검색분류선택">
+									<option >전체</option>
+									<option >제목</option>
+									<option >내용</option>
+									<option >필명</option>
+								</select>
+								<input type="text" class="form-control select_type"  id="searchKeyword1" name="searchKeyword1" placeholder="검색어를 입력해 주세요." title="검색어를 입력해 주세요.">
+								<button type="button" onclick="" class="search_btn"><i class="ri-search-line"></i><span class="sr-only">검색</span></button>
+							</div>
+						</form>
+						<!--/*  //board_detail_search */-->
+					
+						<div class="board_info">
+							<div class="page_info">
+								<span class="total_page">전체<strong>3212건</strong></span>
+								<span class="current_page">현재 페이지<strong>1 / 322</strong></span>
+							</div>
+							<div class="board_sort">
+								<a href="" class="active">최신순</a>
+								<a href="">조회순</a>
+							</div>
+							<div class="list_type">
+								<button class="list_row active">
+									<svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
+										<path id="align_row" d="M22-11v7a.966.966,0,0,1-.29.71A.966.966,0,0,1,21-3H13v-8Zm-9,0v8H3a.966.966,0,0,1-.71-.29A.966.966,0,0,1,2-4v-7Zm0-10v8H2v-7a.966.966,0,0,1,.29-.71A.966.966,0,0,1,3-21Zm8,0a.966.966,0,0,1,.71.29A.966.966,0,0,1,22-20v7H13v-8Z" transform="translate(-2 21)"/>
+									</svg>
+								</button>
+								<button class="list_thumb">									
+									<svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
+										<path id="align_card" d="M22-11v7a.966.966,0,0,1-.29.71A.966.966,0,0,1,21-3H13v-8ZM11-11v8H3a.966.966,0,0,1-.71-.29A.966.966,0,0,1,2-4v-7Zm0-10v8H2v-7a.966.966,0,0,1,.29-.71A.966.966,0,0,1,3-21Zm10,0a.966.966,0,0,1,.71.29A.966.966,0,0,1,22-20v7H13v-8Z" transform="translate(-2 21)"/>
+									</svg>
+								</button>
+							</div>
+						</div>
+						<!--/*  //board_info */-->
+				
+						<div class="board_list thumb_list">
+
+							<ul class="list_ul">
+								<li class="list_li">
+									<!--/*  
+									카테고리별 클래스명
+									감상&비평 : type1
+									소설 : type2
+									수필 : type3
+									시 : type4
+									*/-->							
+									<a href="board_view.html" class="item type1">
+										<div class="thumb">
+											<img src="../main/img/sub/list_thumb_sample1.jpg" alt="">
+										</div>										
+										<div class="txt">
+											<span class="category">감상&amp;비평</span>
+											<strong class="title">이상과 현실, 낭만과 한숨 사이. (QM 3집 [돈숨]과 we can love again)</strong>
+											<p class="desc">당신은 좋아하는 일을 하라는 말을 처음 누구에게 들었는지 생각해 보라. 아마 쉽게 답이 나오지 않을 것이다. 그런 문장은 결국 좋아하는 것을 하면서 즐겁게 살아가는, 추상적인 이미지로만 남기 때문이다. 낭만으로 포장하는 소비자와, 이미지를 이용하는 공급자들의 사이에는 정말로 그런 사람들이 살고 있다. 나는 이전 글에서 두 부류를 모두 다루었다고 생각하며, 이번 글에서는 소비자도, 공급자도 아닌, 그 이미지를 실제로 가지고 있는 한 사람의 삶에 대해 말하려 한다. UGRS right here "'UGRS right here". 이 문장의 뜻을 아는가? 길게 말하면 "underground rockstar right here"(언더그라운드 락스타가 여기 있다)는 뜻으로, 자신의 출신이 언더그라운드라는 것에 애정을</p>
+											<div class="etc_info">
+												<span class="date">
+													<em class="sr-only">작성일</em>
+													<span>2022-12-12</span>
+												</span>
+												<span class="writer">
+													<em class="sr-only">작성자</em>
+													<span>흰색 눈 토끼</span>
+												</span>
+												<span class="like">
+													<em class="sr-only">좋아요</em>
+													<i class="ri-heart-line"></i><span>58</span>
+												</span>
+												<span class="cmt">
+													<em class="sr-only">댓글수</em>
+													<i class="ri-chat-smile-2-line"></i><span>58</span>
+												</span>
+												<span class="hit">
+													<em class="sr-only">조회수</em>
+													<i class="ri-eye-line"></i><span>58</span>
+												</span>
+											</div>
+											<!--/*  //etc_info */-->
+										</div>
+										<div class="btn_wrap">
+											<i class="icon_more"><span class="sr-only">상세보기</span></i>
+										</div>
+									</a>
+									<div class="thumb_hover">
+										<div class="link_wrap">
+											<button class="btn_like mr10">
+												<i class="ri-heart-line"></i>
+												<span class="sr-only">좋아요</span>
+												<em class="num">23</em>
+											</button>
+											<button class="btn_share mr10" data-id="modal_share">
+												<i class="ri-share-line"></i>
+												<span class="sr-only">공유하기</span>
+												<em class="num">23</em>
+											</button>
+											<a href="" class="btn_view"><i class="ri-arrow-right-line"></i><span class="sr-only">상세보기</span></a>
+										</div>
+									</div>
+								</li>
+								<li class="list_li">									
+									<a href="board_view.html" class="item type1">
+										<div class="thumb">
+											<!--/*  //등록된 이미지가 없을때 */-->
+										</div>
+										<div class="txt">
+											<span class="category">감상&amp;비평</span>
+											<strong class="title">완벽한 악인은 없다 – 영화 '우리들'을 보고</strong>
+											<p class="desc">[우리들]을 감상하는 내내, ‘영화’를 보는 것보다는 아는 동생의 하루하루를 훔쳐보는 것 같았다. 허구의 이야기라는 것이 믿기지 않을 만큼 생생한 영화였다. 영화 속에 등장하는 아이들만이 아니라 어른들까지 모두가 제 자리에서 최선을 다하고 있다. 그러나 서로가 맞물리며 좋지 않은 결과가 나타날 때가 많아 안타까웠다. 가령 주인공 두 사람의 담임 선생님은 다수의 반 아이들에게 유쾌한 사람이지만, 이선이 겪는 어려움을 해결해줄 수 없는 사람이다. 지아의 할머니와 선의 엄마 또한 자신의 아이를 사랑하고 있지만, 사는 것이 바빠 가끔은 아이에게 무심하고 매정한 사람이 된다. 지아와 선 또한 ‘잘 지내고 싶은 마음’에 서로와, 그리고 보라를 비롯한 여러</p>
+											<div class="etc_info">
+												<span class="date">
+													<em class="sr-only">작성일</em>
+													<span>2022-12-12</span>
+												</span>
+												<span class="writer">
+													<em class="sr-only">작성자</em>
+													<span>흰색 눈 토끼</span>
+												</span>
+												<span class="like">
+													<em class="sr-only">좋아요</em>
+													<i class="ri-heart-line"></i><span>58</span>
+												</span>
+												<span class="cmt">
+													<em class="sr-only">댓글수</em>
+													<i class="ri-chat-smile-2-line"></i><span>58</span>
+												</span>
+												<span class="hit">
+													<em class="sr-only">조회수</em>
+													<i class="ri-eye-line"></i><span>58</span>
+												</span>
+											</div>
+										</div>
+										<div class="btn_wrap">
+											<i class="icon_more"><span class="sr-only">상세보기</span></i>
+										</div>
+									</a>
+									<div class="thumb_hover">
+										<div class="link_wrap">
+											<button class="btn_like mr10">
+												<i class="ri-heart-line"></i>
+												<span class="sr-only">좋아요</span>
+												<em class="num">23</em>
+											</button>
+											<button class="btn_share mr10" data-id="modal_share">
+												<i class="ri-share-line"></i>
+												<span class="sr-only">공유하기</span>
+												<em class="num">23</em>
+											</button>
+											<a href="" class="btn_view"><i class="ri-arrow-right-line"></i><span class="sr-only">상세보기</span></a>
+										</div>
+									</div>
+								</li>
+								<li class="list_li">									
+									<a href="board_view.html" class="item type1">
+										<div class="thumb"></div>
+										<div class="txt">
+											<span class="category">감상&amp;비평</span>
+											<strong class="title">평범과 비평범을 너머, 너와 나를 넘나드는 사랑 – 이희영의 '보통의 노을'을 읽고</strong>
+											<p class="desc">보통 특별하지 아니하고 흔히 볼 수 있음. 또는 뛰어나지도 열등하지도 아니한 중간 정도. 세간에는 시집의 첫 시와 마지막 시와 중간 페이지를 읽고 좋다면 그 시집을 사도 좋다는 팁이 있는데, 나는 이 팁을 시집만이 아닌 모든 갈래의 문학 작품을 읽을 때 사용한다. 그러므로 내가 가장 먼저 읽어 냈던 [보통의 노을]의 페이지는 가장 처음과 마지막 부분이었고, 아주 쾌활한 ‘최지혜’ 씨의 손에 이끌려 패딩을 구매하고, 끝에 가서는 새로운 계절이 와도 ‘그것’만은 용서 할 수 없다는 독백과 함께 앞서 등장한 패딩이 언급된다. 이희영 작가의 다른 작품 [페인트]를 읽을 때에도 느꼈다. 촘촘하게 엮인 등장</p>
+											<div class="etc_info">
+												<span class="date">
+													<em class="sr-only">작성일</em>
+													<span>2022-12-12</span>
+												</span>
+												<span class="writer">
+													<em class="sr-only">작성자</em>
+													<span>흰색 눈 토끼</span>
+												</span>	
+												<span class="like">
+													<em class="sr-only">좋아요</em>
+													<i class="ri-heart-line"></i><span>58</span>
+												</span>
+												<span class="cmt">
+													<em class="sr-only">댓글수</em>
+													<i class="ri-chat-smile-2-line"></i><span>58</span>
+												</span>
+												<span class="hit">
+													<em class="sr-only">조회수</em>
+													<i class="ri-eye-line"></i><span>58</span>
+												</span>
+											</div>
+										</div>
+										<div class="btn_wrap">
+											<i class="icon_more"><span class="sr-only">상세보기</span></i>
+										</div>
+									</a>
+									<div class="thumb_hover">
+										<div class="link_wrap">
+											<button class="btn_like mr10">
+												<i class="ri-heart-line"></i>
+												<span class="sr-only">좋아요</span>
+												<em class="num">23</em>
+											</button>
+											<button class="btn_share mr10" data-id="modal_share">
+												<i class="ri-share-line"></i>
+												<span class="sr-only">공유하기</span>
+												<em class="num">23</em>
+											</button>
+											<a href="" class="btn_view"><i class="ri-arrow-right-line"></i><span class="sr-only">상세보기</span></a>
+										</div>
+									</div>
+								</li>
+								<li class="list_li">									
+									<a href="board_view.html" class="item type1">
+										<div class="thumb">
+											<img src="../main/img/sub/list_thumb_sample2.jpg" alt="">
+										</div>										
+										<div class="txt">
+											<span class="category">감상&amp;비평</span>
+											<strong class="title">나쓰메 소세끼의 '도련님'을 보고 나서 든 생각</strong>
+											<p class="desc">남의 밭을 망치거나 논에 물 대는 구멍을 막고, 다른 아이와 말싸움을 하다 자존심 때문에 자기 손가락을 베는 등, 어려서부터 천방지축에다 드센 성격을 가졌던 주인공은 하루가 멀다고 까불었다. 하지만 그의 부모는 그런 그가 탐탁지 않았고, 그의 어머니는 하필 그를 심하게 야단친 지 2일 만에 돌아가시고, 아버지 역시 몇 년이 지나자 따라가게 된다. 주인공에게는 옛날부터 가족처럼 지내온 나이 든 하녀가 있었고, 하녀는 일찍 가버린 부모를 대신해 항상 그를 챙겨준다. 어느덧 나이가 들어 일할 때가 된 주인공은, 대충 공부한 수학 지식으로 지방에 있는 학교의 수학 선생으로 부임하게 된다. 하지만 자존심이 강한 그가 사회생활을</p>
+											<div class="etc_info">	
+												<span class="date">
+													<em class="sr-only">작성일</em>
+													<span>2022-12-12</span>
+												</span>
+												<span class="writer">
+													<em class="sr-only">작성자</em>
+													<span>흰색 눈 토끼</span>
+												</span>
+												<span class="like">
+													<em class="sr-only">좋아요</em>
+													<i class="ri-heart-line"></i><span>58</span>
+												</span>
+												<span class="cmt">
+													<em class="sr-only">댓글수</em>
+													<i class="ri-chat-smile-2-line"></i><span>58</span>
+												</span>
+												<span class="hit">
+													<em class="sr-only">조회수</em>
+													<i class="ri-eye-line"></i><span>58</span>
+												</span>
+											</div>
+											<!--/*  //etc_info */-->
+										</div>
+										<div class="btn_wrap">
+											<i class="icon_more"><span class="sr-only">상세보기</span></i>
+										</div>
+									</a>
+									<div class="thumb_hover">
+										<div class="link_wrap">
+											<button class="btn_like mr10">
+												<i class="ri-heart-line"></i>
+												<span class="sr-only">좋아요</span>
+												<em class="num">23</em>
+											</button>
+											<button class="btn_share mr10" data-id="modal_share">
+												<i class="ri-share-line"></i>
+												<span class="sr-only">공유하기</span>
+												<em class="num">23</em>
+											</button>
+											<a href="" class="btn_view"><i class="ri-arrow-right-line"></i><span class="sr-only">상세보기</span></a>
+										</div>
+									</div>
+								</li>
+								<li class="list_li">									
+									<a href="board_view.html" class="item type1">
+										<div class="thumb">
+											<img src="../main/img/sub/list_thumb_sample3.jpg" alt="">
+										</div>										
+										<div class="txt">
+											<span class="category">감상&amp;비평</span>
+											<strong class="title">김애란 작품 「도도한 생활」을 읽고</strong>
+											<p class="desc">김애란의 소설 「도도한 생활」은 제목에서도 찾을 수 있는 ‘도도하다’는 전혀 도도하지 않은 화자의 삶을 비꼬는 반어이다. 그리고 피아노를 통해 계속 등장하는 음계 ‘도’가 있다. 고급스러움을 품고 있는 피아노와 화자의 삶이 대비된다. 필자는 이러한 대비되는 상황들을 찾고 왜 그러한지를 주제로 설정했다. 만두가게에서 살아온 화자는 대단하지 않은 흥미와 실력으로 피아노를 쳤다. 화자의 어머니는 가난한 삶에도 불구하고 피아노를 사 집에 둔다. 집과 가게의 구별이 마땅하지 않는 집에 거대한 피아노를 둔다. 도도하지 않은 이들에게 도도함의 상징이 들어선다. 이는 시대적 배경을 고려해보면 좋을 듯하다. 80년대에 이루어진 ‘피아노붐‘은 당시 성공한 중산층 여성들을 일컫는 말이었다. 당시의 피아노는</p>
+											<div class="etc_info">	
+												<span class="date">
+													<em class="sr-only">작성일</em>
+													<span>2022-12-12</span>
+												</span>
+												<span class="writer">
+													<em class="sr-only">작성자</em>
+													<span>흰색 눈 토끼</span>
+												</span>
+												<span class="like">
+													<em class="sr-only">좋아요</em>
+													<i class="ri-heart-line"></i><span>58</span>
+												</span>
+												<span class="cmt">
+													<em class="sr-only">댓글수</em>
+													<i class="ri-chat-smile-2-line"></i><span>58</span>
+												</span>
+												<span class="hit">
+													<em class="sr-only">조회수</em>
+													<i class="ri-eye-line"></i><span>58</span>
+												</span>
+											</div>
+											<!--/*  //etc_info */-->
+										</div>
+										<div class="btn_wrap">
+											<i class="icon_more"><span class="sr-only">상세보기</span></i>
+										</div>
+									</a>
+									<div class="thumb_hover">
+										<div class="link_wrap">
+											<button class="btn_like mr10">
+												<i class="ri-heart-line"></i>
+												<span class="sr-only">좋아요</span>
+												<em class="num">23</em>
+											</button>
+											<button class="btn_share mr10" data-id="modal_share">
+												<i class="ri-share-line"></i>
+												<span class="sr-only">공유하기</span>
+												<em class="num">23</em>
+											</button>
+											<a href="" class="btn_view"><i class="ri-arrow-right-line"></i><span class="sr-only">상세보기</span></a>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+				
+						<div class="board_pager">
+							<a href="" class="arr first"><span class="sr-only">처음</span></a>
+							<a href="" class="arr prev"><span class="sr-only">이전</span></a>
+							<span class="group">
+								<a href="" class="active" title="현재 페이지"><strong>1</strong></a>
+								<a href="">2</a>
+							</span>									
+							<a href="" class="arr next"><span class="sr-only">다음</span></a>
+							<a href="" class="arr last"><span class="sr-only">마지막</span></a>
+						</div>
+						<!--/*  //board_pager */-->
+					</div>
+					<!--/*  //board_list */-->
+
+					
+
+				</section>
+				<!--/*  //list_section */-->
+			</div>
+			<!--/*  //contents */-->
+			
+			
+		</main>
+		<!--/*  //Main */-->
+		<div class="side_left_util active" data-include="include/side_left.html"></div>
+		<!--/*  //side_left_util */-->
+
+		<div class="side_right_util" data-include="include/side_right.html"></div>
+		<!--/*  //side_right_util */-->
+
+		<footer id="footer" class="footer" data-include="include/footer.html"></footer>
+		<!--/*  //footer */-->
+	</div>
+	<!--/*  //wrap */-->
+	
+	<script src="../main/js/func.js" defer></script>
+	<script src="../main/js/layout.js" defer></script>
+	<script src="../main/js/sub.js" defer></script>
+<!--/*  //아래 파일은 local에서 include하기 위한 스크립트 파일로 개발에 입힐때는 필요없는 파일입니다.  */-->
+
+	<script src="../main/js/include.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<title>문학광장 – 생활 속 작은 여유로움 "문장"</title>
+	<meta name="keywords" content="문학광장, 문장">
+	<meta name="description" content="생활 속 작은 여유로움 '문장'">
+	<meta name="copyright" content="문학광장">
+	<meta name="author" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="shortcut icon" href="../main/img/common/favicon.png">
+	<link rel="stylesheet" href="../css/slick.css">
+	
+	<link rel="stylesheet" href="../css/font.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/board.css">
+	<link rel="stylesheet" href="../css/member.css">
+	<link rel="stylesheet" href="../main/css/layout.css">
+	<link rel="stylesheet" href="../main/css/contents.css">
+	<link rel="stylesheet" href="../main/css/sub08.css"><!--/* 대카테고리별 css파일*/-->
+	<script src="../js/jquery-3.2.1.min.js "></script>		
+	<script src="../js/slick.min.js"></script>	
+	<script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+<script src="../js/letterfx.min.js"></script> <!-- 리스트 비주얼 타이포애니 -->
+<link rel="stylesheet" href="../js/letterfx.css"> <!-- 리스트 비주얼 타이포애니 -->		
+	
+</head>
+
+<body>
+	<!--/*  skipNavigation*/-->
+	<div id="skipNav">
+		<a href="#contents">본문으로 바로가기</a>
+		<a href="#gnb1">주메뉴 바로가기</a>
+	</div>
+	<!--/*  //skipNavigation */-->
+	
+	<div id="wrap">
+		<header id="header" class="header" data-include="include/header.html" data-id="8"></header>
+		<!--/*  //header */-->
+
+		<!--/*  Main */-->
+		<main id="main" class="main">
+
+			<div id="contents" class="contents">
+
+				<div class="snb_wrap container">
+					<section class="snb_section">
+						<h2 class="title">회원정보</h2>						
+						<div class="snb">
+							<nav class="nav">
+								<ul id="left_menu_top" class="depth2">								
+									<li><a href="" class="active">회원정보수정</a></li>
+									<li><a href="">비밀번호 관리</a></li>
+									<li><a href="">회원탈퇴</a></li>
+								</ul>
+							</nav>
+						</div>
+					</section>
+					<!-- /* //snb_section */ -->
+					<section class="contents_section">
+						<div class="title_area">
+							<h3 class="title_h1">회원정보수정</h3>
+						</div>
+						<!--/*  //title_area */-->
+						<section class="my_cont_section member_section">
+							
+							<div class="id_pw_search_result_cont">
+								<div class="box bg_gray">
+									<div class="inline_box">
+										<div class="pw_input">
+											<div class="form-row flex-col">
+												<label for="inputPw0" class="form-label">현재 비밀번호</label>
+												<input type="password" id="inputPw0" class="form-control" placeholder="현재 비밀번호 입력">
+											</div>
+											<div class="form-row mt20 flex-col">
+												<label for="inputPw1" class="form-label">새 비밀번호</label>
+												<div class="form-group">
+													<input type="password" id="inputPw1" class="form-control" placeholder="새 비밀번호 입력">	
+													<button type="button" class="btn_pw_view"><span class="sr-only">비밀번호보기</span><i class="ri-eye-off-line"></i></button>
+												</div>
+											</div>
+											<div class="note">
+												<!--/*  
+													비밀번호 안전강도에 따른 combi_step클래스에 level_1~5 클래스추가 및 icon_note출력 메시지
+													기본 : 비밀번호를 입력해 주세요
+													.level_1 : 8~16자리 영문 대소문자, 숫자, 특수문자중 3가지 이상 조합
+													.level_2 : 8~16자리 영문 대소문자, 숫자, 특수문자중 3가지 이상 조합
+													.level_3 : 8~16자리 영문 대소문자, 숫자, 특수문자중 3가지 이상 조합
+													.level_4 : 사용가능한 비밀번호입니다.(안전성 강도 강함)
+													.level_5 : 사용가능한 비밀번호입니다.(안전성 강도 매우 강함)
+													3자리 이상 연속되는 경우 : 3자리 이상 연속되는 영문, 숫자, 특수문자는 비밀번호로 사용할 수 없습니다.
+												*/-->
+												<!--/*  <div class="combi_step level_2">
+													<i class="icon" aria-hidden="true"><span class="sr-only">비밀번호 안전강도 매우 약함</span></i>
+													<i class="icon" aria-hidden="true"><span class="sr-only">비밀번호 안전강도 약함</span></i>
+													<i class="icon" aria-hidden="true"><span class="sr-only">비밀번호 안전강도 보통</span></i>
+													<i class="icon" aria-hidden="true"><span class="sr-only">비밀번호 안전강도 강함</span></i>
+													<i class="icon" aria-hidden="true"><span class="sr-only">비밀번호 안전강도 매우 강함</span></i>
+												</div> */-->
+												<p class="basic_note"><i class="ri-check-line"></i>영문, 숫자, 특수문자를 포함한 8~16자 조합으로 입력해 주세요.</p>
+												<p class="basic_note"><i class="ri-check-line"></i>공백 및 3자 이상의 연속 또는 중복 문자는 사용 불가</p>
+											</div>
+											<div class="form-row mt20 flex-col">
+												<label for="inputPw2" class="form-label">새 비밀번호 확인</label>
+												<div class="form-group">
+													<input type="password" id="inputPw2" class="form-control" placeholder="변경할 비밀번호 확인">
+													<button type="button" class="btn_pw_view"><span class="sr-only">비밀번호보기</span><i class="ri-eye-off-line"></i></button>
+												</div>
+											</div>	
+											<div class="note">
+												<p class="basic_note"><i class="ri-check-line"></i> 비밀번호 확인을 위해 다시 한번 입력해 주세요.</p>
+												<p class="invalid_note"><i class="ri-check-line"></i> 일치하지 않습니다.</p>
+												<p class="invalid_note"><i class="ri-check-line"></i> 비밀번호 규칙에 맞게 입력해 주세요.</p>
+											</div>				
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--/*  //id_pw_search_result_cont */-->
+							<div class="btn_area mt50">
+								<button type="button" class="btn btn-lg type2">비밀번호 변경하기</button>
+							</div>
+							
+
+							
+						</section>
+						<!--/*  //my_cont_section */-->
+					</section>
+					<!--/*  //content_section */-->	
+
+				</div>
+				<!--/*  //snb_wrap */-->
+				
+				
+			</div>
+			<!--/*  //contents */-->
+			
+			
+		</main>
+		<!--/*  //Main */-->
+		<div class="side_right_util" data-include="include/side_right.html"></div>
+		<!--/*  //side_right_util */-->
+
+		<footer id="footer" class="footer" data-include="include/footer.html"></footer>
+		<!--/*  //footer */-->
+		
+
+	</div>
+	<!--/*  //wrap */-->
+	<script src="../main/js/include.js"></script><!--/*  //local에서 include하기 위한 임시파일로 개발에 입힐때는 필요없는 파일입니다.  */-->
+	
+	<script src="../main/js/func.js"></script>
+	<script src="../main/js/layout.js" defer></script>
+	<script src="../main/js/sub.js" defer></script>
+</body>
+
+</html>

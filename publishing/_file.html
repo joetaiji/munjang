@@ -1,0 +1,470 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<style>
+*{box-sizing:border-box;}
+body {margin:0; padding:30px; font-family:'맑은 고딕'; font-size:12px; color:#333; line-height:1.5;}
+i{font-style: normal;border-radius: 3px;padding:2px 4px;color:#fff;font-weight: bold;font-size: 10px;line-height: 1;margin-left: 5px;margin-right:5px;display: inline-block;}
+.new{background-color:#bb05e8!important; color:#fff;font-weight: bold;}
+.del,
+.del:hover{text-decoration: line-through;cursor:default;}
+.note{display: inline-block;background: #ff3300!important; color: #fff;padding: 0px 3px;}
+em {display: inline-block;background-color: #777;color: #fff;border-radius: 3px;padding:0px 3px;font-style: normal;font-size: 11px; font-weight: bold; margin: 2px 0 2px 5px;}
+a{color:inherit;text-decoration:none;}
+a:hover{text-decoration:underline;}
+.info{border: 1px solid #ddd;background: #f5f5f5;padding: 1rem;margin-bottom: 2rem;}
+.nav{border-top:3px solid #333;border-bottom:3px solid #333;}
+.nav ul{margin:0;padding:0;list-style:none;}
+.topmenu{padding:0;}
+.topmenu .title_area{display: none;}
+.topmenu a{ padding:5px;}
+.topmenu span{color:#f3a600;}
+.topmenu li{display: flex;padding:5px;}
+.topmenu li~li{border-top:1px solid #ddd;}
+.topmenu li::after{content:"";display:block;clear:both;}
+.topmenu .type{background-color:#889;display: block;}
+.topmenu .type>a{font-weight:bold;font-size:14px;text-align:center;display:block;float:none;width:100%;color:#fff;}
+.topmenu .type>a>em{background: #333;}
+.topmenu .depth1{background-color:#f1f1f5;}
+.topmenu .depth1>li>a{font-weight: bold;}
+.topmenu .depth1>li>a + .depth2{background-color:#fff;}
+.topmenu .depth2>li>a{background:#f9f9fc;}
+.topmenu .depth1>li>a + .depth2,
+.topmenu .depth2>li>a + .depth3,
+.topmenu .depth3>li>a + .depth4{flex:1 1 80%; max-width:80%;border-left:1px solid #eee;font-size:11px;}
+.topmenu .depth1>li>a,
+.topmenu .depth2>li>a,
+.topmenu .depth3>li>a{flex:1 1 auto;}
+.topmenu .nodata{background-color:#f8f8f8;color:#ccc;}
+
+@media screen and (max-width:767px){
+	body{padding:10px;}
+	.topmenu a{max-width:100%!important;display:block;}
+	.topmenu a + ul{max-width:100%!important;}
+	.topmenu li{display: block;}
+	.topmenu .depth3{border-top:1px solid #f6f6f6;}
+	.topmenu .depth3 li{margin-left:15px;}
+}
+</style>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'></script>
+<script>
+$(document).ready(function(){
+	$("title").text($("h1").text());
+	$(".topmenu a").attr("target","_new");
+	$(".topmenu a").each(function(){
+		$(this).append(" <span> " + $(this).attr("href") + "</span>");		
+	});   
+    $("em").each(function(){    
+        var day = $(this).data("day");  
+        $(this).prepend(day);        
+    }); 
+});
+</script>
+</head>
+<body>
+<h1><a href="javascript:window.open('_file.html', '', 'width=320, height=1000, left=0, top=0')">파일리스트 - 문학광장</a></h1>
+<div class="info">	
+	<p>2022.12.15 - JYC</p>
+	<p>작업완료일<em data-day="월/일"></em> <em class="new">new</em> <em class="note">미수급</em> <span class="del">삭제된 파일</span></p>
+	<p>대카테고리 명 옆에 괄호는 구 메뉴명입니다.</p>
+</div>
+<nav class="nav" id="gnb">
+<ul id="head_menu" class="topmenu">
+	<li class="type"><a href="">레이아웃</a>
+		<ul class="depth1">
+			<li><a href="_main.html">메인<em data-day="02/10"></em><em data-day="03/03수정"></em><em data-day="03/29수정 팝업추가된 메인" class="new"></em></a></li>
+			<li><a href="_sub_layout.html">서브레이아웃<em data-day=""></em></a></li> 			
+			<li><a href="_sub_layout_list.html">서브레이아웃 리스트<em data-day=""></em><em class="note">썸네일변환</em></a></li> 			
+			<li><a href="_sub_layout_view.html">서브레이아웃 상세보기<em data-day=""></em></a></li> 			
+			<li><a href="">콘텐츠 공통요소<em data-day=""></em></a></li> 
+		</ul>
+	</li>
+	<li class="type"><a href="s1_main.html">01. 월간웹진 - 서브메인<em data-day="02/13"></em><em class="note">현재호 목차보기</em><em class="note">이전호 보러가기</em></a>
+		<ul class="depth1">
+			<li><a href="">최근호/지난호</a>
+				<ul class="depth2">
+					<li><a href="s1_webzine_list.html">목록<em data-day="01/06"></em></a></li>
+					<li><a href="s1_webzine_cover.html">커버스토리뷰<em data-day="01/06"></em></a></li>
+					<li><a href="s1_webzine_view.html">상세<em data-day="01/09~11"></em><em class="note">퀵메뉴</em><em class="note">공유팝업</em><em class="note">형광펜</em><em class="note">본문보기설정팝업</em><em class="note">과월호보기</em></a></li>
+					<li><a href="s1_poem_view.html">시 상세<em data-day="01/12"></em><em class="note">○○○외 1편 링크</em></a></li>
+					<li><a href="s1_webzine_sample.html">기존 웹진 데이터 적용<em data-day="04/04"></em></a></li>
+				</ul>
+			</li>
+			<li><a href="">아르코문학창작</a>
+				<ul class="depth2">
+					<li><a href=""><em data-day=""></em>웹진과 동일</a></li>
+				</ul>
+			</li>	
+		</ul>
+	</li>
+	
+	<li class="type"><a href="s2_main.html">02. Ch.문장 - 서브메인<em data-day="02/14"></em><em class="note">ch.문장은 기본이 다크모드이므로 html태그에 dark-theme클래스가 들어가 있어야 함</em><em data-day="04/06" class="new">수정</em></a>
+		<ul class="depth1">
+			<li><a href="s2_channel_01.html">스태프소개<em data-day="04/06" class="new">추가</em></a></li>
+			<li><a href="">문장의소리, 공개방송, 북콘서트, 문학비타민 </a>
+				<ul class="depth2">
+					<li><a href="s2_channel_list.html">목록<em data-day="02/03"></em><em class="note">검색 select앞에 년도선택 추가</em></a></li>
+					<li><a href="s2_channel_view.html">상세<em data-day="02/03"></em><em class="note">공개방송 상세부분 포함</em></a></li>
+				</ul>
+			</li>
+			<li><a href="s2_channel_02.html">집배원소개</a></li>
+			<li><a href="s2_channel_delivery_view.html">문학집배원<em data-day="02/06"></em></a></li>
+			<li><a href="s2_channel_book_view.html">책 내게로 오다<em data-day="02/06"></em><em class="note">한줄남기기(별점)</em></a></li>
+			
+		</ul>
+	</li>
+	<li class="type"><a href="s3_main.html">03. 글틴 - 서브메인<em data-day="02/15"></em></a>
+		<ul class="depth1">
+			<li><a href="s3_teen_best.html">명예의 전당<em data-day="01/04"></em><em class="note">읽은 정도 표시</em></a></li>
+			<li><a href="">감상&비평 / 소설 / 수필 / 시</a>
+				<ul class="depth2">
+					<li><a href="s3_teen_list.html">목록<em data-day="12/28"></em></a></li>
+					<li><a href="s3_teen_list_mento.html">멘토로그인후 목록<em data-day="01/04"></em></a></li>
+					<li><a href="s3_teen_view.html">상세<em data-day="12/28"></em><em class="note">이어보기 팝업</em><em class="note">댓글-신고하기</em><em class="note">댓글-멘토의견</em></a></li>
+				</ul>
+			</li>
+			<li><a href="">소식</a>
+				<ul class="depth2">
+					<li><a href="">공지사항 / 글틴Q&A(커뮤니티?)<em data-day=""></em></a>
+						<ul class="depth3">
+							<li><a href="board_list.html">목록<em data-day=""></em></a></li>
+							<li><a href="board_view.html">상세<em data-day=""></em></a></li>
+						</ul>
+					</li>
+					<li><a href="">글틴캠프 / 이벤트<em data-day=""></em></a>
+						<ul class="depth3">
+							<li><a href="board_gallery_list.html">목록<em data-day=""></em></a></li>
+							<li><a href="board_gallery_view.html">상세<em data-day=""></em></a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li><a href="s3_glteen.html">글틴은<em data-day="02/28"></em><em class="note">콘텐츠 미수급</em></a></li>
+			<li><a href="s3_editor.html">에디터<em data-day="12/28"></em></a></li>
+		</ul>
+	</li>
+	<li class="type"><a href="">사업광장 <small>(04. 문학 사업)</small></a>
+		<ul class="depth1">
+			<li><a href=""><a href="s4_main.html">서브메인<em data-day="04/10" class="new">수정</em></a>
+			<li><a href="">문학주간<em data-day=""></em></a>
+				<ul class="depth2">
+					<li><a href="s4_05.html">사업소개<em data-day="02/16"></em></a></li>					
+					<li><a href="s4_05_02.html">소식<em data-day="02/17"></em></a></li>				
+					<li><a href="s4_05_02_view.html">소식-상세<em data-day="02/17"></em></a></li>				
+				</ul>
+			</li>
+			<li><a href="">문학나눔<em data-day=""></em></a>
+				<ul class="depth2">
+					<li><a href="s4_06.html">사업소개<em data-day="02/16"></em></a></li>					
+					<li><a href="s4_06_02.html">소식<em data-day="02/17"></em></a></li>				
+					<li><a href="s4_06_03.html">선정도서<em data-day="02/17"></em></a></li>				
+				</ul>
+			</li>
+			<li><a href="">아르코문학창작기금<em data-day=""></em></a>
+				<ul class="depth2">
+					<li><a href="s4_01.html">사업소개<em data-day="02/15"></em></a></li>					
+					<li><a href="s4_01_02.html">역대선정작<em data-day="02/16"></em></a></li>					
+					<li><a href="s4_01_03.html">역대수상작<em data-day="02/16"></em></a></li>					
+				</ul>
+			</li>
+			<li><a href="">창작의과정<em data-day=""></em></a>
+				<ul class="depth2">
+					<li><a href="s4_03.html">사업소개<em data-day="02/16"></em></a></li>				
+				</ul>
+			</li>
+			<li><a href="">마로니에백일장<em data-day=""></em></a>
+				<ul class="depth2">
+					<li><a href="s4_10.html">사업소개<em data-day="02/16"></em></a></li>			
+					<li><a href="s4_10_02.html">주요수상작<em data-day="02/20"></em></a></li>					
+					<li><a href="s4_10_03.html">역대수상작<em data-day="02/20"></em></a></li>					
+				</ul>
+			</li>
+			<li><a href="">소설가의 방<em data-day=""></em></a>
+				<ul class="depth2">
+					<li><a href="s4_09.html">사업소개<em data-day="02/16"></em></a></li>					
+					<li><a href="s4_09_02.html">소식<em data-day="02/17"></em></a></li>				
+				</ul>
+			</li>
+			<li><a href="">문예지발간지원<em data-day=""></em></a>
+				<ul class="depth2">
+					<li><a href="s4_02.html">사업소개<em data-day="02/16"></em></a></li>					
+					<li><a href="s4_02_02.html">선정문예지<em data-day="02/17"></em></a></li>	
+				</ul>
+			</li>
+			
+			<li><a href="">문학집필공간운영지원<em data-day=""></em></a>
+				<ul class="depth2">
+					<li><a href="s4_04.html">사업소개<em data-day="02/16"></em></a></li>					
+					<li><a href="s4_04_02.html">공간소개<em data-day="02/17"></em></a></li>				
+					<li><a href="s4_04_02_view.html">공간소개-상세보기<em data-day="02/17"></em></a></li>				
+				</ul>
+			</li>
+			<li><a href="">도서관 상주작가<em data-day=""></em></a>
+				<ul class="depth2">
+					<li><a href="s4_07.html">사업소개<em data-day="02/16"></em></a></li>					
+					<li><a href="s4_07_02.html">소식<em data-day="02/17"></em></a></li>				
+					<li><a href="s4_07_03.html">2023년 선정도서관 및 작가<em data-day="02/17"></em></a></li>				
+					<li><a href="s4_07_04.html">역대도서관<em data-day="02/17"></em></a></li>				
+					<li><a href="s4_07_05.html">역대작가<em data-day="02/17"></em></a></li>				
+				</ul>
+			</li>
+			<li><a href="">작고문인<em data-day=""></em></a>
+				<ul class="depth2">
+					<li><a href="s4_08.html">사업소개<em data-day="02/16"></em></a></li>					
+					<li><a href="s4_08_02.html">소식<em data-day="02/17"></em></a></li>				
+					<li><a href="s4_08_03.html">역대 선정단체<em data-day="02/17"></em></a></li>				
+				</ul>
+			</li>
+			
+			
+			
+		</ul>
+	</li>
+	<li class="type"><a href="">자료광장 <small>(05. 문학 DB)</small></a>
+		<ul class="depth1">
+			<li><a href="s5_main.html">서브메인<em data-day="12/19"></em></a></li>
+			<li><a href="s5_db_search_list.html">검색결과 목록<em data-day="03/20" class="new"></em></a></li>
+			<li><a href="s5_db_list.html">문예지, 근대문학총서, 문학상, 문학추천 - 목록<em data-day="12/19"></em><em class="note">공유팝업</em></a></li>
+			<li><a href="s5_db_view.html">문예지, 근대문학총서, 문학상, 문학추천, 문학연구 - 상세<em data-day="12/20"></em><em class="note">한줄남기기(별점)</em></a></li>
+			<li><a href="s5_db_writer_list.html">문학작가 - 목록<em data-day="12/19"></em></a></li>
+			<li><a href="s5_db_writer_view.html">문학작가 - 상세<em data-day="12/21"></em></a></li>
+			<li><a href="s5_db_store_view.html">문학서점 - 상세<em data-day="12/21"></em><em data-day="03/21" class="new">수정</em></a></li>
+			<li><a href="s5_db_publish_view.html">문학출판 - 상세<em data-day="12/21"></em><em data-day="03/21" class="new">수정</em></a></li>
+			<li><a href="s5_db_research_list.html">문학연구 - 목록<em data-day="02/09"></em></a></li>
+			<li><a href="s5_db_research_view.html">문학연구 - 상세<em data-day="02/09"></em></a></li>
+			
+		</ul>
+	</li>
+	<li class="type"><a href="">알림광장 <small>(06. 문장 소식 + 07. 문장 소개)</small></a>
+		<ul class="depth1">
+			<li><a href="">뉴스, 공지사항<em data-day=""></em></a>
+				<ul class="depth2">
+					<li><a href="board_list.html">목록<em data-day="12/27"></em><em class="note">글쓰기버튼</em></a></li>
+					<li><a href="board_view.html">상세<em data-day="12/27"></em></a></li>
+				</ul>
+			</li>	
+			<li><a href="">이벤트<em data-day=""></em></a>
+				<ul class="depth2">
+					<li><a href="board_gallery_list.html">목록<em data-day="12/27"></em></a></li>
+					<li><a href="board_gallery_view.html">상세<em data-day="12/27"></em></a></li>
+				</ul>
+			</li>			
+			<li><a href="">문장홍보<em data-day=""></em></a>
+				<ul class="depth2">
+					<li><a href="board_media_list.html">문장영상 - 목록<em data-day=""></em></a></li>
+					<li><a href="board_media_view.html">문장영상 - 상세<em data-day=""></em></a></li>
+					<li><a href="board_gallery_list.html">문장사진 - 목록<em data-day=""></em></a></li>
+					<li><a href="board_gallery_view.html">문장사진 - 상세<em data-day=""></em></a></li>		
+				</ul>
+			</li>	
+			<li><a href="">문장광장이란?<em data-day=""></em></a>
+				<ul class="depth2">
+					<li><a href="s7_01.html">문학광장 소개<em data-day="02/28"></em><em data-day="04/06" class="new">수정</em><em class="note">콘텐츠 미수급</em></a></li>
+					<li><a href="s7_02.html">BI소개<em data-day="02/28"></em><em data-day="04/14" class="new">수정</em></a></li>	
+					<li><a href="s7_03.html">역대참여작가<em data-day="04/14" class="new"></em><em class="note">콘텐츠 미수급</em></a></li>	
+				</ul>		
+			<li><a href="">문장수다</a>
+				<ul class="depth2">
+					<li><a href="board_write.html">쓰기<em data-day="01/16"></em></a></li>
+				</ul>
+			</li>			
+		</ul>
+	</li>
+	<li class="type"><a href="">참여광장 <small>(06. 문장 소식 중 공모전메뉴 이동)</small></a>
+		<ul class="depth1">
+			<li><a href="">공모전<em data-day=""></em></a>
+				<ul class="depth2">
+					<li><a href="s6_contest_list.html">목록<em data-day="12/27"></em></a></li>
+					<li><a href="s6_contest_view.html">상세<em data-day="12/26"></em></a></li>
+					<li><a href="s6_contest_form.html">신청폼<em data-day="12/21"></em></a></li>
+					<li><a href="s6_entry_list.html">출품작 리스트<em data-day="12/22"></em></a></li>
+					<li><a href="s6_entry_eval.html">출품작 평가<em data-day="12/22"></em></a></li>
+					<li><a href="s6_contest_mail.html">메일<em data-day="12/23"></em></a></li>
+					<li><a href="s6_entry_mail.html">메일_결과발표<em data-day="12/23"></em></a></li>
+				</ul>
+			</li>
+			
+			
+			<li><a href="">고객문의<em data-day=""></em></a>
+				<ul class="depth2">
+					<li><a href="board_qna_list.html">리스트<em data-day="01/18"></em><em class="note">검색분류</em></a></li>
+					<li><a href="board_qna_reply.html">답변<em data-day="01/18"></em></a></li>
+				</ul>
+			</li>			
+			<li><a href="board_faq.html">FAQ<em data-day="01/18"></em></a></li>			
+		</ul>
+	</li>
+	<li class="type"><a href="">08. 나의 문장 - 서브메인</a>
+		<ul class="depth2">
+			<li><a href="s8_my_main_01.html">홈<em data-day="01/19"></em></a></li>
+			<li><a href="s8_my_main_02.html">큐레이션<em data-day="01/19"></em></a>
+			<li><a href="s8_my_main_02_set.html">큐레이션 설정하기<em data-day="01/20"></em></a></li>
+			</li>
+			<li><a href="s8_my_main_03.html">내구독<em data-day="01/20"></em></a></li>
+			<li><a href="s8_my_main_default.html">디폴트박스<em data-day="02/07"></em></a></li>
+		</ul>
+		<ul class="depth2">
+			<li><a href="s8_your_main_01.html">타인이 보는 내문장 - 홈<em data-day="01/25"></em><em class="note">팔로워 팝업, 팔로잉 팝업, 관심작가 팝업</em></a></li>
+			<li><a href="s8_your_main_02.html">타인이 보는 내문장 - 작가정보<em data-day="01/25"></em></a></li>
+			<li><a href="s8_your_main_03.html">타인이 보는 내문장 - 작성한 글<em data-day="01/25"></em></a></li>
+		</ul>
+		<ul class="depth1">			
+			<li><a href="">나의 글방<em data-day=""></em></a>
+				<ul class="depth2">
+					<li><a href="s8_library_01.html">담은 글 - 관심글<em data-day="01/25"></em></a>
+						<ul class="depth3">
+							<li><a href="s8_library_01_pen.html">담은 글 - 형광펜<em data-day="01/26"></em><em class="note">형광펜 팝업</em></a></li>
+							<li><a href="s8_library_01_webzine.html">담은 글 - 웹진<em data-day="01/26"></em></a></li>
+						</ul>
+					</li>
+					<li><a href="s8_library_02.html">작성한 글<em data-day="01/26"></em><em class="note">삭제 팝업</em></a></a></li>
+					<li><a href="s8_library_03.html">다 읽은 글<em data-day="01/27"></em><em class="note">메모하기, 메모수정팝업</em></a></a></li>
+					<li><a href="s8_library_04.html">읽고있는 글<em data-day="01/27"></em></a></li>
+					<li><a href="s8_library_05.html">작성한 댓글<em data-day="01/27"></em></a></li>
+				</ul>
+			</li>
+			<li><a href="">나의 작가<em data-day=""></em></a>
+				<ul class="depth2">
+					<li><a href="s8_author_01.html">팔로우<em data-day="01/27"></em><em class="note">삭제 팝업</em></a></li>
+					<li><a href="s8_author_02.html">팔로잉<em data-day="01/27"></em><em class="note">삭제 팝업</em></a></li>
+					<li><a href="s8_author_03.html">관심작가<em data-day="01/27"></em><em class="note">삭제 팝업</em></a></li>
+				</ul>
+			</li>			
+			<li><a href="">알림<em data-day=""></em></a>
+				<ul class="depth2">
+					<li><a href="s8_notify_01.html">알림<em data-day="02/07"></em><em data-day="02/21 수정" class="new"></em></a></li>
+					<li><a href="s8_notify_02.html">알림설정<em data-day="02/21"></em></a></li>
+				</ul>
+			</li>
+			<li><a href="">멘토링<em data-day=""></em></a>
+				<ul class="depth2">
+					<li><a href="s8_mento_01.html">멘토링<em data-day="02/21"></em></a></li>
+					<li><a href="s8_mento_02.html">월장원 선정<em data-day="02/21"></em></a></li>
+				</ul>
+			</li>
+			
+			<li><a href="">문의내역<em data-day=""></em></a>
+				<ul class="depth2">
+					<li><a href="s8_qna_01.html">1:1 문의내역<em data-day="02/21"></em></a></li>
+					<li><a href="s8_qna_02.html">1:1 문의하기<em data-day="02/22"></em></a></li>
+				</ul>
+			</li>
+			
+			<li><a href="">프로필관리<em data-day=""></em></a>
+				<ul class="depth2">
+					<li><a href="s8_profile_01.html">프로필설정<em data-day="1/30"></em></a></li>
+					<li><a href="s8_profile_02.html">활동정보<em data-day="1/30"></em></a></li>
+					<li><a href="s8_profile_03.html">활동정보작품<em data-day="1/30"></em><em class="note">작품검색 팝업</em></a></li>
+					<li><a href="s8_profile_04.html">활동정보수상<em data-day="1/30"></em></a></li>
+				</ul>
+			</li>
+			<li><a href="">회원정보<em data-day=""></em></a>
+				<ul class="depth2">
+					<li><a href="s8_member_01.html">회원정보 수정-비밀번호입력<em data-day="1/30"></em></a></li>
+					<li><a href="s8_member_01_form.html">회원정보 수정-폼<em data-day="1/30"></em></a></li>
+					<li><a href="s8_member_02.html">비밀번호 관리<em data-day="1/30"></em></a></li>
+					<li><a href="s8_member_03.html">회원탈퇴<em data-day="1/30"></em></a></li>
+				</ul>
+			</li>
+			<li><a href="">통계<em data-day=""></em></a>
+				<ul class="depth2">
+					<li><a href="">활동 통계<em data-day="1/31"></em></a>
+						<ul class="depth3">
+							<li><a href="s8_stats_01_day.html">활동 통계-일간<em data-day="1/31"></em></a></li>
+							<li><a href="s8_stats_01_month.html">활동 통계-월간<em data-day="1/31"></em></a></li>
+							<li><a href="s8_stats_01_year.html">활동 통계-연간<em data-day="2/1"></em></a></li>
+						</ul>
+					</li>
+					<li><a href="">날짜별 조회수<em data-day=""></em></a>
+						<ul class="depth3">
+							<li><a href="s8_stats_02_day.html">날짜별 조회수-일간<em data-day="2/22"></em></a></li>
+							<li><a href="s8_stats_02_month.html">날짜별 조회수-월간<em data-day="2/22"></em></a></li>
+							<li><a href="s8_stats_02_year.html">날짜별 조회수-연간<em data-day="2/22"></em></a></li>
+						</ul>
+					</li>
+					<li><a href="s8_stats_03.html">글 랭킹<em data-day="2/23"></em></a></li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li class="type"><a href="">99.회원서비스</a>
+		<ul class="depth1">
+			<li><a href="s99_login.html">로그인<em data-day="01/16"></em><em class="note">연동정보 팝업</em><em class="note">비밀번호변경 팝업</em><em class="new">02/20 추가 - 약관재동의팝업</em></a></li>
+			<li><a href="s99_id_search.html">아이디찾기-인증<em data-day="01/16"></em></a></li>
+			<li><a href="s99_id_search_result.html">아이디찾기-결과<em data-day="01/16"></em></a></li>
+			<li><a href="s99_pw_search.html">비밀번호찾기<em data-day="01/16"></em></a></li>
+			<li><a href="s99_join_type.html">회원유형선택<em data-day="01/17"></em></a></li>
+			<li><a href="">청소년회원<em data-day=""></em></a>
+				<ul class="depth2">
+					<li><a href="s99_join_type1_step1.html">약관동의<em data-day="01/17"></em></a></li>
+					<li><a href="s99_join_type1_step2.html">본인인증<em data-day="01/17"></em></a></li>
+					<li><a href="s99_join_type1_step3.html">정보입력<em data-day="01/17"></em><em class="note">아이디 중복확인 팝업</em><em class="note">필명 중복확인 팝업</em></a></li>
+					<li><a href="s99_join_type1_step4.html">가입완료<em data-day="01/17"></em></a></li>
+				</ul>
+			</li>
+			<li><a href="">일반회원<em data-day=""></em></a>
+				<ul class="depth2">
+					<li><a href="">약관동의<em>청소년회원과 동일</em></a></li>
+					<li><a href="s99_join_type2_step2.html">본인인증<em data-day="01/17"></em></a></li>
+					<li><a href="s99_join_type2_step3.html">정보입력<em data-day="01/17"></em></a></li>
+				</ul>
+			</li>
+			<li><a href="s99_complete_mail.html">회원가입메일<em data-day="01/17"></em></a></li>
+			<li><a href="s99_dormant_mail.html">휴면계정메일<em data-day="02/20 추가" class="new"></em></a></li>
+			<li><a href="s99_confirm_info_mail.html">회원정보확인메일<em data-day="02/20 추가" class="new"></em></a></li>
+			<li><a href="s99_mbr_update1.html">회원정보 업데이트1 - 본인인증1<em data-day="02/20 추가" class="new"></em></a></li>
+			<li><a href="s99_mbr_update1_2.html">회원정보 업데이트1 - 본인인증2<em data-day="02/20 추가" class="new"></em></a></li>
+			<li><a href="s99_mbr_update1_3.html">회원정보 업데이트1 - 본인인증3<em data-day="02/20 추가" class="new"></em></a></li>
+			<li><a href="s99_mbr_update2.html">회원정보 업데이트2 - 약관동의<em data-day="02/20 추가" class="new"></em></a></li>
+			<li><a href="s99_mbr_update3.html">회원정보 업데이트3 - 정보입력<em data-day="02/20 추가" class="new"></em></a></li>
+			<li><a href="s99_mbr_update4.html">회원정보 업데이트4 - 수정완료<em data-day="02/20 추가" class="new"></em></a></li>
+			<li><a href="">개인정보처리방침<em data-day=""></em></a></li>
+			<li><a href="">저작권정책<em data-day=""></em></a></li>
+			<li><a href="s99_email_reject.html">이메일무단수집거부<em data-day="04/05"></em></a></li>
+			<li><a href="s99_user_term.html">이용약관<em data-day="04/05">내용 업데이트 필요</em></a></li>
+		</ul>
+	</li>
+	<li class="type"><a href="">통합검색</a>
+		<ul class="depth1">
+			<li><a href="total_search.html">전체<em data-day="02/23"></em></a></li>
+			<li><a href="total_sch_db.html">문학DB<em data-day="02/27"></em></a></li>
+		</ul>
+	</li>  
+	<li class="type"><a href="">게시판</a>
+		<ul class="depth1">
+			<li><a href="">게시판 일반형</a>
+				<ul class="depth2">
+					<li><a href="board_list.html">일반형_리스트</a></li>
+					<li><a href="board_view.html">보기</a></li>
+					<li><a href="board_write.html">쓰기</a></li>
+					<li><a href="board_list_thumb.html">썸네일형_리스트</a></li>
+					<li><a href="board_gallery_view.html">썸네일형_보기, 갤러리형_보기</a></li>
+				</ul>
+			</li>
+			<li><a href="">게시판 갤러리형</a>
+				<ul class="depth2">
+					<li><a href="board_gallery_list.html">갤러리형_리스트</a></li>
+					<li><a href="board_gallery_view.html">갤러리형_보기<em data-day=""></em></a></li>		
+					<li><a href="board_media_list.html">동영상형_리스트<em data-day=""></em></a></li>					
+					<li><a href="board_media_view.html">동영상형_보기</a></li>
+					<li><a href="board_qna_list.html">Q&A</a></li>
+					<li><a href="board_qna_reply.html">Q&A 답변</a></li>
+				</ul>
+			</li>
+			<li><a href="">게시판 FAQ</a>
+				<ul class="depth2">
+					<li><a href="board_faq.html">FAQ</a></li>
+				</ul>
+			</li>
+		</ul>
+	</li> 
+</ul>
+</nav>
+
+</body>
+</html>
